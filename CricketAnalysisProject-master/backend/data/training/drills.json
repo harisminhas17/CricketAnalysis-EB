@@ -1,0 +1,67 @@
+{
+  "basic_footwork": {
+    "name": "Basic Footwork",
+    "description": "Practice basic batting footwork and movement",
+    "duration": 15,
+    "difficulty": "beginner",
+    "focus_areas": [
+      "footwork",
+      "balance",
+      "movement"
+    ],
+    "required_equipment": [
+      "bat",
+      "cones"
+    ],
+    "instructions": [
+      "Set up cones in a grid pattern",
+      "Practice moving between cones",
+      "Focus on quick, balanced movements",
+      "Maintain proper batting stance"
+    ]
+  },
+  "shot_selection": {
+    "name": "Shot Selection",
+    "description": "Practice different shot types and selection",
+    "duration": 20,
+    "difficulty": "intermediate",
+    "focus_areas": [
+      "shot_selection",
+      "technique",
+      "decision_making"
+    ],
+    "required_equipment": [
+      "bat",
+      "balls",
+      "stumps"
+    ],
+    "instructions": [
+      "Set up different delivery types",
+      "Practice playing appropriate shots",
+      "Focus on shot selection",
+      "Work on shot execution"
+    ]
+  },
+  "power_hitting": {
+    "name": "Power Hitting",
+    "description": "Develop power hitting skills",
+    "duration": 25,
+    "difficulty": "advanced",
+    "focus_areas": [
+      "power",
+      "timing",
+      "technique"
+    ],
+    "required_equipment": [
+      "bat",
+      "balls",
+      "stumps"
+    ],
+    "instructions": [
+      "Practice hitting through the line",
+      "Focus on bat speed",
+      "Work on timing",
+      "Develop power through proper technique"
+    ]
+  }
+}
