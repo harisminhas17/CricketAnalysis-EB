@@ -2,6 +2,7 @@ import os
 from datetime import timedelta
 
 class Config:
+
     """Base configuration class"""
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret-key-here'
     DEBUG = False
@@ -20,11 +21,7 @@ class Config:
     # MySQL specific configurations
     MYSQL_CHARSET = 'utf8mb4'
     MYSQL_COLLATION = 'utf8mb4_unicode_ci'
-    
-    # API configuration
-    API_TITLE = 'Cricket Analysis API'
-    API_VERSION = 'v1'
-    
+
     # CORS configuration
     CORS_ORIGINS = ['http://localhost:3000', 'http://127.0.0.1:3000']
     
@@ -41,7 +38,6 @@ class DevelopmentConfig(Config):
     DEBUG = True
     MYSQL_DATABASE = os.environ.get('MYSQL_DATABASE') or 'cricket_db'
     DATABASE_URL = f"mysql+pymysql://{Config.MYSQL_USER}:{Config.MYSQL_PASSWORD}@{Config.MYSQL_HOST}:{Config.MYSQL_PORT}/{MYSQL_DATABASE}"
-
 class ProductionConfig(Config):
     """Production configuration"""
     DEBUG = False

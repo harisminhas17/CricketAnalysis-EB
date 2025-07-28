@@ -54,6 +54,8 @@ def test_connection(app):
     except Exception as e:
         print(f"MySQL connection test failed: {e}")
         return False
+
+def create_database_if_not_exists(app):
     """Create database if it doesn't exist"""
     try:
         # Get database configuration
@@ -61,7 +63,7 @@ def test_connection(app):
         host = config.get('MYSQL_HOST', 'localhost')
         port = config.get('MYSQL_PORT', 3306)
         user = config.get('MYSQL_USER', 'root')
-        password = config.get('MYSQL_PASSWORD', '')
+        password = config.get('MYSQL_PASSWORD', '') 
         database = config.get('MYSQL_DATABASE', 'cricket_db')
         
         # Create connection without database
@@ -71,6 +73,6 @@ def test_connection(app):
             connection.execute(f"CREATE DATABASE IF NOT EXISTS {database} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci")
             print(f"Database '{database}' created or already exists!")
             
-    except Exception as e:
+    except Exception as e:  
         print(f"Error creating database: {e}")
         print("Please check your MySQL server is running and credentials are correct.") 
