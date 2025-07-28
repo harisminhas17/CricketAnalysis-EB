@@ -1,8 +1,6 @@
 from datetime import datetime
-from flask_sqlalchemy import SQLAlchemy
 from .enums import AdminRoleEnum, GenderEnum
-
-db = SQLAlchemy()
+from models import db
 
 class SuperAdmin(db.Model):
     __tablename__ = 'super_admins'

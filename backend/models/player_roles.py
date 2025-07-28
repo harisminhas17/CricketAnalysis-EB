@@ -1,7 +1,5 @@
-from flask_sqlalchemy import SQLAlchemy
 from .enums import SportType
-
-db = SQLAlchemy()
+from models import db
 
 class PlayerRole(db.Model):
     __tablename__ = 'player_roles'

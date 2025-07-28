@@ -1,9 +1,6 @@
 from datetime import datetime
-from flask_sqlalchemy import SQLAlchemy
 from .enums import SportType, GenderEnum
-from .player_roles import PlayerRole
-
-db = SQLAlchemy()
+from models import db
 
 class Player(db.Model):
     __tablename__ = 'players'
