@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 require('dotenv').config();
 
-const { sequelize } = require('./database/connection');
+const { prisma, testConnection } = require('./lib/prisma');
 const config = require('./config/config');
 
 // Import routes
@@ -78,14 +78,7 @@ app.use('*', (req, res) => {
 // Database connection and server start
 async function startServer() {
   try {
-    await sequelize.authenticate();
-    console.log('Database connection established successfully.');
-    
-    // Sync database (in development)
-    if (process.env.NODE_ENV === 'development') {
-      await sequelize.sync({ alter: true });
-      console.log('Database synced successfully.');
-    }
+    await testConnection();
     
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
