@@ -3,12 +3,12 @@ import { useAppSelector, useAppDispatch } from "@/hooks/redux";
 import { setCurrentState, setFirstLaunch } from "@/store/slices/appSlice";
 import { SplashScreen } from "@/components/ui/splash-screen";
 import { LoadingScreen } from "@/components/ui/loading-screen";
-import { LoginForm } from "@/components/auth/login-page";
-import { SignUpPage } from "@/components/auth/signup-page";
-import { ForgotPasswordPage } from "@/components/auth/forgot-password-page";
-import { OTPVerificationPage } from "@/components/auth/otp-verification-page";
-import { ResetPasswordPage } from "@/components/auth/reset-password-page";
-import { OnboardingCarousel } from "@/components/onboarding/onboarding-carousel";
+import { LoginForm } from "@/components/player/auth/login-page";
+import { SignUpPage } from "@/components/player/auth/signup-page";
+import { ForgotPasswordPage } from "@/components/player/auth/forgot-password-page";
+import { OTPVerificationPage } from "@/components/player/auth/otp-verification-page";
+import { ResetPasswordPage } from "@/components/player/auth/reset-password-page";
+import { OnboardingCarousel } from "@/components/player/onboarding/onboarding-carousel";
 import { HomePage } from "./home-page";
 
 const Index = () => {
