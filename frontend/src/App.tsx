@@ -5,15 +5,15 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
+import Index from "./pages/player/Index";
 import NotFound from "./pages/NotFound";
-import { HomePage } from "./pages/home-page";
-import { LoginForm } from "./components/auth/login-page";
-import { SignUpPage } from "./components/auth/signup-page";
-import { ForgotPasswordPage } from "./components/auth/forgot-password-page";
-import { OTPVerificationPage } from "./components/auth/otp-verification-page";
-import { ResetPasswordPage } from "./components/auth/reset-password-page";
-import { OnboardingCarousel } from "./components/onboarding/onboarding-carousel";
+import { HomePage } from "./pages/player/home-page";
+import { LoginForm } from "./components/player/auth/login-page";
+import { SignUpPage } from "./components/player/auth/signup-page";
+import { ForgotPasswordPage } from "./components/player/auth/forgot-password-page";
+import { OTPVerificationPage } from "./components/player/auth/otp-verification-page";
+import { ResetPasswordPage } from "./components/player/auth/reset-password-page";
+import { OnboardingCarousel } from "./components/player/onboarding/onboarding-carousel";
 
 const queryClient = new QueryClient();
 

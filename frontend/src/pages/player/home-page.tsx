@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Dashboard } from "@/components/home/Dashboard";
-import { SocialMedia } from "@/components/home/SocialMedia";
+import { Dashboard } from "@/components/player/home/Dashboard";
+import { SocialMedia } from "@/components/player/home/SocialMedia";
 
 interface HomePageProps {
   onLogout: () => void;
