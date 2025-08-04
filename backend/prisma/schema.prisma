@@ -73,10 +73,11 @@ model Coach {
 
 model Player {
     id            BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
-    userName      String    @unique @map("user_name") @db.VarChar(50)
+    userName      String    @map("user_name") @db.VarChar(50)
     email         String    @unique @db.VarChar(120)
     password      String    @db.VarChar(255)
     phoneNumber   String?   @map("phone_number") @db.VarChar(20)
+    loginType     LoginType @default(manual) @map("login_type")
     address       String?   @db.VarChar(255)
     state         String?   @db.VarChar(50)
     city          String?   @db.VarChar(50)
@@ -114,6 +115,16 @@ model Player {
     @@map("players")
 }
 
+enum LoginType {
+    manual
+    google
+    facebook
+    twitter
+    linkedin
+    instagram
+    github
+}
+
 model Club {
     id            BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
     name          String    @db.VarChar(100)
@@ -142,6 +153,17 @@ model Club {
     coach   Coach?   @relation(fields: [coachId], references: [id])
 
     @@map("clubs")
+}
+
+model Session {
+    id            String  @id @db.Char(255)
+    user_id       BigInt? @db.UnsignedBigInt
+    ip_address    String? @db.VarChar(45)
+    user_agent    String? @db.Text
+    payload       String  @db.LongText
+    last_activity Int     @db.UnsignedInt
+
+    @@map("sessions")
 }
 
 enum Gender {
