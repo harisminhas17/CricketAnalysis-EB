@@ -1,0 +1,162 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model SuperAdmin {
+  id           BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+  email        String    @unique @db.VarChar(120)
+  password     String    @db.VarChar(255)
+  name         String    @db.VarChar(100)
+  phoneNumber  String?   @db.VarChar(20)
+  profileImage String?   @db.VarChar(255)
+  state        String?   @db.VarChar(100)
+  city         String?   @db.VarChar(100)
+  address      String?   @db.VarChar(255)
+  zipCode      String?   @db.VarChar(10)
+  country      String?   @db.VarChar(100)
+  isActive     Boolean   @default(true)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  deletedAt    DateTime?
+
+  @@map("super_admins")
+}
+
+model PlayerRole {
+  id          BigInt     @id @default(autoincrement()) @db.UnsignedBigInt
+  name        String     @unique @db.VarChar(50)
+  description String?    @db.Text
+  sportType   SportType  @default(cricket) @map("sport_type")
+  isActive    Boolean    @default(true) @map("is_active")
+  createdAt   DateTime   @default(now()) @map("created_at")
+  updatedAt   DateTime   @default(now()) @updatedAt @map("updated_at")
+
+  players     Player[]
+
+  @@map("player_roles")
+}
+
+model Coach {
+  id              BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+  email           String    @unique @db.VarChar(120)
+  password        String    @db.VarChar(255)
+  name            String    @db.VarChar(100)
+  dateOfBirth     DateTime? @map("date_of_birth") @db.Date
+  gender          Gender    @default(male)
+  sportType       SportType @default(cricket) @map("sport_type")
+  phoneNumber     String?   @map("phone_number") @db.VarChar(20)
+  country         String?   @db.VarChar(50)
+  city            String?   @db.VarChar(50)
+  state           String?   @db.VarChar(50)
+  address         String?   @db.VarChar(255)
+  zipCode         String?   @db.VarChar(10)
+  profileImage    String?   @map("profile_image") @db.VarChar(255)
+  coachRole       CoachRole @default(cricket_coach) @map("coach_role")
+  coachSpeciality String?   @map("coach_speciality") @db.VarChar(100)
+  assignedTeam    String?   @map("assigned_team") @db.VarChar(100)
+  experienceYears Int?      @map("experience_years")
+  isActive        Boolean   @default(true) @map("is_active")
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @default(now()) @updatedAt @map("updated_at")
+  deletedAt       DateTime? @map("deleted_at")
+
+  players Player[]
+  club    Club[]
+
+  @@map("coaches")
+}
+
+model Player {
+  id            BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+  userName      String    @unique @map("user_name") @db.VarChar(50)
+  email         String    @unique @db.VarChar(120)
+  password      String    @db.VarChar(255)
+  name          String    @db.VarChar(100)
+  phoneNumber   String?   @map("phone_number") @db.VarChar(20)
+  address       String?   @db.VarChar(255)
+  state         String?   @db.VarChar(50)
+  city          String?   @db.VarChar(50)
+  zipCode       String?   @db.VarChar(10)
+  country       String?   @db.VarChar(50)
+  location      String?   @db.VarChar(255)
+  isActive      Boolean   @default(true) @map("is_active")
+  dateOfBirth   DateTime? @map("date_of_birth") @db.Date
+  gender        Gender    @default(male)
+  profileImage  String?   @map("profile_image") @db.VarChar(255)
+  sportType     SportType @default(cricket) @map("sport_type")
+  dominantHand  String?   @map("dominant_hand") @db.VarChar(10)
+  battingStyle  String?   @map("batting_style") @db.VarChar(50)
+  bowlingStyle  String?   @map("bowling_style") @db.VarChar(50)
+  heightCm      Float?    @map("height_cm")
+  weightKg      Float?    @map("weight_kg")
+  teamName      String?   @map("team_name") @db.VarChar(100)
+  instagramLink String?   @map("instagram_link") @db.VarChar(255)
+  facebookLink  String?   @map("facebook_link") @db.VarChar(255)
+  twitterLink   String?   @map("twitter_link") @db.VarChar(255)
+  youtubeLink   String?   @map("youtube_link") @db.VarChar(255)
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @default(now()) @updatedAt @map("updated_at")
+  deletedAt     DateTime? @map("deleted_at")
+
+  playerRoleId BigInt     @db.UnsignedBigInt @map("player_role_id")
+  playerRole   PlayerRole @relation(fields: [playerRoleId], references: [id])
+
+  coachId BigInt? @db.UnsignedBigInt @map("coach_id")
+  coach   Coach?  @relation(fields: [coachId], references: [id])
+
+  clubId BigInt? @db.UnsignedBigInt @map("club_id")
+  club   Club?   @relation(fields: [clubId], references: [id])
+
+  @@map("players")
+}
+
+model Club {
+  id            BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+  name          String    @db.VarChar(100)
+  email         String    @unique @db.VarChar(120)
+  password      String    @db.VarChar(255)
+  address       String?   @db.VarChar(255)
+  state         String?   @db.VarChar(50)
+  city          String?   @db.VarChar(50)
+  zipCode       String?   @db.VarChar(10)
+  country       String?   @db.VarChar(50)
+  phoneNumber   String?   @db.VarChar(20)
+  location      String?   @db.VarChar(255)
+  coachId       BigInt?   @db.UnsignedBigInt @map("coach_id")
+  profileImage  String?   @map("profile_image") @db.VarChar(255)
+  sportType     SportType @default(cricket) @map("sport_type")
+  isActive      Boolean   @default(true) @map("is_active")
+  instagramLink String?   @map("instagram_link") @db.VarChar(255)
+  facebookLink  String?   @map("facebook_link") @db.VarChar(255)
+  twitterLink   String?   @map("twitter_link") @db.VarChar(255)
+  youtubeLink   String?   @map("youtube_link") @db.VarChar(255)
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @default(now()) @updatedAt @map("updated_at")
+  deletedAt     DateTime? @map("deleted_at")
+
+  players Player[]
+  coach   Coach? @relation(fields: [coachId], references: [id])
+
+  @@map("clubs")
+}
+
+enum Gender {
+  male
+  female
+  other
+}
+
+enum SportType {
+  cricket
+  football
+}
+
+enum CoachRole {
+  cricket_coach
+  football_coach
+}
