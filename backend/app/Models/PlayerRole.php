@@ -4,8 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SuperAdmin extends Model
+class PlayerRole extends Model
 {
-    protected $table = 'super_admins';
+    protected $table = 'player_roles';
     protected $guarded = [];
+
 }
