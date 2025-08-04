@@ -16,28 +16,26 @@ interface SignUpPageProps {
 }
 
 interface FormData {
-  // Personal Information
+  // Personal Information (Page 1)
   name: string;
   email: string;
   password: string;
+  sportType: string;
+  
+  // Contact & Location (Page 2)
+  phoneNo: string;
+  address: string;
+  gender: string;
+  nationality: string;
+  
+  // Profile (Page 3)
+  profileImage: File | null;
   dateOfBirth: string;
   
-  // Player Details
-  nationality: string;
+  // Player Details (Page 4)
   roleInTeam: string;
   battingStyle: string;
   bowlingStyle: string;
-  
-  // Performance & Upload
-  clipFile: File | null;
-  tag: string;
-  title: string;
-  description: string;
-  
-  // Access & Permission
-  assignToSession: string;
-  grantAccessTo: string;
-  accessType: string[];
 }
 
 export const SignUpPage = ({ onBack, onSignUp, onLogin }: SignUpPageProps) => {
@@ -46,18 +44,16 @@ export const SignUpPage = ({ onBack, onSignUp, onLogin }: SignUpPageProps) => {
     name: "",
     email: "",
     password: "",
-    dateOfBirth: "",
+    sportType: "cricket",
+    phoneNo: "",
+    address: "",
+    gender: "",
     nationality: "",
+    profileImage: null,
+    dateOfBirth: "",
     roleInTeam: "",
     battingStyle: "",
     bowlingStyle: "",
-    clipFile: null,
-    tag: "",
-    title: "",
-    description: "",
-    assignToSession: "",
-    grantAccessTo: "",
-    accessType: []
   });
 
   const updateFormData = (field: keyof FormData, value: any) => {
@@ -80,19 +76,10 @@ export const SignUpPage = ({ onBack, onSignUp, onLogin }: SignUpPageProps) => {
     }
   };
 
-  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleProfileImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
-      updateFormData('clipFile', file);
-    }
-  };
-
-  const handleAccessTypeChange = (accessType: string, checked: boolean) => {
-    const currentAccessTypes = formData.accessType;
-    if (checked) {
-      updateFormData('accessType', [...currentAccessTypes, accessType]);
-    } else {
-      updateFormData('accessType', currentAccessTypes.filter(type => type !== accessType));
+      updateFormData('profileImage', file);
     }
   };
 
@@ -143,17 +130,16 @@ export const SignUpPage = ({ onBack, onSignUp, onLogin }: SignUpPageProps) => {
             </div>
             
             <div className="space-y-2">
-              <Label htmlFor="dob" className="text-base font-normal text-black">Date of Birth</Label>
-              <Input
-                id="dob"
-                type="date"
-                placeholder="Enter Date"
-                value={formData.dateOfBirth}
-                onChange={(e) => updateFormData('dateOfBirth', e.target.value)}
-                max={new Date().toISOString().split('T')[0]}
-                className="h-11 text-sm border-gray-300 rounded-lg hover:border-[#344FA5] focus:border-[#344FA5] transition-colors placeholder:text-gray-500"
-                required
-              />
+              <Label htmlFor="sportType" className="text-base font-normal text-black">Sport Type</Label>
+              <Select value={formData.sportType} onValueChange={(value) => updateFormData('sportType', value)}>
+                <SelectTrigger className="h-11 text-sm border-gray-300 rounded-lg hover:border-[#344FA5] focus:border-[#344FA5] transition-colors">
+                  <SelectValue placeholder="Select Sport Type" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="cricket">Cricket</SelectItem>
+                  <SelectItem value="football">Football</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
           </div>
         );
@@ -161,7 +147,46 @@ export const SignUpPage = ({ onBack, onSignUp, onLogin }: SignUpPageProps) => {
       case 2:
         return (
           <div className="space-y-6">
-            <h2 className="text-lg font-medium text-center mb-6 text-black">Player Details</h2>
+            <h2 className="text-lg font-medium text-center mb-6 text-black">Contact & Location Details</h2>
+            
+            <div className="space-y-2">
+              <Label htmlFor="phoneNo" className="text-base font-normal text-black">Phone Number</Label>
+              <Input
+                id="phoneNo"
+                type="tel"
+                placeholder="Enter Phone Number"
+                value={formData.phoneNo}
+                onChange={(e) => updateFormData('phoneNo', e.target.value)}
+                className="h-11 text-sm border-gray-300 rounded-lg hover:border-[#344FA5] focus:border-[#344FA5] transition-colors placeholder:text-gray-500"
+                required
+              />
+            </div>
+            
+            <div className="space-y-2">
+              <Label htmlFor="address" className="text-base font-normal text-black">Address</Label>
+              <Textarea
+                id="address"
+                placeholder="Enter Address"
+                value={formData.address}
+                onChange={(e) => updateFormData('address', e.target.value)}
+                className="rounded-lg border-gray-300 hover:border-[#344FA5] focus:border-[#344FA5] transition-colors text-sm min-h-[80px] placeholder:text-gray-500"
+                required
+              />
+            </div>
+            
+            <div className="space-y-2">
+              <Label htmlFor="gender" className="text-base font-normal text-black">Gender</Label>
+              <Select value={formData.gender} onValueChange={(value) => updateFormData('gender', value)}>
+                <SelectTrigger className="h-11 text-sm border-gray-300 rounded-lg hover:border-[#344FA5] focus:border-[#344FA5] transition-colors">
+                  <SelectValue placeholder="Select Gender" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="male">Male</SelectItem>
+                  <SelectItem value="female">Female</SelectItem>
+                  <SelectItem value="other">Other</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
             
             <div className="space-y-2">
               <Label htmlFor="nationality" className="text-base font-normal text-black">Nationality</Label>
@@ -179,9 +204,74 @@ export const SignUpPage = ({ onBack, onSignUp, onLogin }: SignUpPageProps) => {
                   <SelectItem value="pakistan">Pakistan</SelectItem>
                   <SelectItem value="srilanka">Sri Lanka</SelectItem>
                   <SelectItem value="bangladesh">Bangladesh</SelectItem>
+                  <SelectItem value="afghanistan">Afghanistan</SelectItem>
+                  <SelectItem value="zimbabwe">Zimbabwe</SelectItem>
+                  <SelectItem value="ireland">Ireland</SelectItem>
+                  <SelectItem value="netherlands">Netherlands</SelectItem>
+                  <SelectItem value="usa">United States</SelectItem>
+                  <SelectItem value="canada">Canada</SelectItem>
+                  <SelectItem value="other">Other</SelectItem>
                 </SelectContent>
               </Select>
             </div>
+          </div>
+        );
+
+      case 3:
+        return (
+          <div className="space-y-6">
+            <h2 className="text-lg font-medium text-center mb-6 text-black">Profile Setup</h2>
+            
+            <div className="space-y-2">
+              <Label htmlFor="profileImage" className="text-base font-normal text-black">Profile Image</Label>
+              <div className="relative">
+                <Input
+                  id="profileImage"
+                  type="file"
+                  accept="image/*"
+                  onChange={handleProfileImageUpload}
+                  className="hidden"
+                />
+                <Label
+                  htmlFor="profileImage"
+                  className="flex items-center justify-center h-32 rounded-lg border-2 border-dashed border-gray-300 hover:border-[#344FA5] cursor-pointer text-sm text-gray-500 transition-colors"
+                >
+                  <div className="text-center">
+                    <Upload className="w-8 h-8 mx-auto mb-2" />
+                    <p>{formData.profileImage ? formData.profileImage.name : "Upload Profile Image"}</p>
+                    <p className="text-xs text-gray-400 mt-1">PNG, JPG up to 5MB</p>
+                  </div>
+                </Label>
+                {formData.profileImage && (
+                  <div className="mt-2 text-center">
+                    <img
+                      src={URL.createObjectURL(formData.profileImage)}
+                      alt="Profile Preview"
+                      className="w-20 h-20 rounded-full mx-auto object-cover"
+                    />
+                  </div>
+                )}
+              </div>
+            </div>
+            
+            <div className="space-y-2">
+              <Label htmlFor="dateOfBirth" className="text-base font-normal text-black">Date of Birth</Label>
+              <Input
+                id="dateOfBirth"
+                type="date"
+                value={formData.dateOfBirth}
+                onChange={(e) => updateFormData('dateOfBirth', e.target.value)}
+                className="h-11 text-sm border-gray-300 rounded-lg hover:border-[#344FA5] focus:border-[#344FA5] transition-colors"
+                required
+              />
+            </div>
+          </div>
+        );
+
+      case 4:
+        return (
+          <div className="space-y-6">
+            <h2 className="text-lg font-medium text-center mb-6 text-black">Player Details</h2>
             
             <div className="space-y-2">
               <Label htmlFor="role" className="text-base font-normal text-black">Role in Team</Label>
@@ -228,135 +318,6 @@ export const SignUpPage = ({ onBack, onSignUp, onLogin }: SignUpPageProps) => {
                   <SelectItem value="none">None</SelectItem>
                 </SelectContent>
               </Select>
-            </div>
-          </div>
-        );
-
-      case 3:
-        return (
-          <div className="space-y-6">
-            <h2 className="text-lg font-medium text-center mb-6 text-black">Performance & Upload</h2>
-            
-            <div className="space-y-2">
-              <Label htmlFor="clip" className="text-base font-normal text-black">Clip Upload</Label>
-              <div className="relative">
-                <Input
-                  id="clip"
-                  type="file"
-                  accept="video/*"
-                  onChange={handleFileUpload}
-                  className="hidden"
-                />
-                <Label
-                  htmlFor="clip"
-                  className="flex items-center justify-center h-11 rounded-lg border-2 border-dashed border-gray-300 hover:border-[#344FA5] cursor-pointer text-sm text-gray-500 transition-colors"
-                >
-                  <Upload className="w-4 h-4 mr-2" />
-                  {formData.clipFile ? formData.clipFile.name : "Upload clip"}
-                </Label>
-              </div>
-            </div>
-            
-            <div className="space-y-2">
-              <Label htmlFor="tag" className="text-base font-normal text-black">Tag</Label>
-              <Input
-                id="tag"
-                type="text"
-                placeholder="Enter Tag"
-                value={formData.tag}
-                onChange={(e) => updateFormData('tag', e.target.value)}
-                className="h-11 text-sm border-gray-300 rounded-lg hover:border-[#344FA5] focus:border-[#344FA5] transition-colors placeholder:text-gray-500"
-              />
-            </div>
-            
-            <div className="space-y-2">
-              <Label htmlFor="title" className="text-base font-normal text-black">Title</Label>
-              <Input
-                id="title"
-                type="text"
-                placeholder="Enter Title"
-                value={formData.title}
-                onChange={(e) => updateFormData('title', e.target.value)}
-                className="h-11 text-sm border-gray-300 rounded-lg hover:border-[#344FA5] focus:border-[#344FA5] transition-colors placeholder:text-gray-500"
-              />
-            </div>
-            
-            <div className="space-y-2">
-              <Label htmlFor="description" className="text-base font-normal text-black">Description</Label>
-              <Textarea
-                id="description"
-                placeholder="Enter Description"
-                value={formData.description}
-                onChange={(e) => updateFormData('description', e.target.value)}
-                className="rounded-lg border-gray-300 hover:border-[#344FA5] focus:border-[#344FA5] transition-colors text-sm min-h-[80px] placeholder:text-gray-500"
-              />
-            </div>
-          </div>
-        );
-
-      case 4:
-        return (
-          <div className="space-y-6">
-            <h2 className="text-lg font-medium text-center mb-6 text-black">Access & Permission</h2>
-            
-            <div className="space-y-2">
-              <Label htmlFor="session" className="text-base font-normal text-black">Assign to session</Label>
-              <Select value={formData.assignToSession} onValueChange={(value) => updateFormData('assignToSession', value)}>
-                <SelectTrigger className="h-11 text-sm border-gray-300 rounded-lg hover:border-[#344FA5] focus:border-[#344FA5] transition-colors">
-                  <SelectValue placeholder="Select Session" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="training1">Training Session 1</SelectItem>
-                  <SelectItem value="training2">Training Session 2</SelectItem>
-                  <SelectItem value="match1">Match Session 1</SelectItem>
-                  <SelectItem value="practice">Practice Session</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-            
-            <div className="space-y-2">
-              <Label htmlFor="access" className="text-base font-normal text-black">Grant Access To</Label>
-              <Select value={formData.grantAccessTo} onValueChange={(value) => updateFormData('grantAccessTo', value)}>
-                <SelectTrigger className="h-11 text-sm border-gray-300 rounded-lg hover:border-[#344FA5] focus:border-[#344FA5] transition-colors">
-                  <SelectValue placeholder="Access Type" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="coach">Coach</SelectItem>
-                  <SelectItem value="team">Team Members</SelectItem>
-                  <SelectItem value="public">Public</SelectItem>
-                  <SelectItem value="private">Private</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-            
-            <div className="space-y-4">
-              <Label className="text-base font-normal text-black">Access Type</Label>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <Checkbox
-                    id="video"
-                    checked={formData.accessType.includes('video')}
-                    onCheckedChange={(checked) => handleAccessTypeChange('video', checked as boolean)}
-                  />
-                  <Label htmlFor="video" className="text-sm text-black">Video</Label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Checkbox
-                    id="stats"
-                    checked={formData.accessType.includes('stats')}
-                    onCheckedChange={(checked) => handleAccessTypeChange('stats', checked as boolean)}
-                  />
-                  <Label htmlFor="stats" className="text-sm text-black">Stats</Label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Checkbox
-                    id="all"
-                    checked={formData.accessType.includes('all')}
-                    onCheckedChange={(checked) => handleAccessTypeChange('all', checked as boolean)}
-                  />
-                  <Label htmlFor="all" className="text-sm text-black">All</Label>
-                </div>
-              </div>
             </div>
           </div>
         );
