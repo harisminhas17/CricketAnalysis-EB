@@ -12,17 +12,17 @@ model SuperAdmin {
     email        String    @unique @db.VarChar(120)
     password     String    @db.VarChar(255)
     name         String    @db.VarChar(100)
-    phoneNumber  String?   @db.VarChar(20)
-    profileImage String?   @db.VarChar(255)
+    phone_number  String?   @db.VarChar(20)
+    profile_image String?   @db.VarChar(255)
     state        String?   @db.VarChar(100)
     city         String?   @db.VarChar(100)
     address      String?   @db.VarChar(255)
-    zipCode      String?   @db.VarChar(10)
+    zip_code      String?   @db.VarChar(10)
     country      String?   @db.VarChar(100)
-    isActive     Boolean   @default(true)
-    createdAt    DateTime  @default(now())
-    updatedAt    DateTime  @updatedAt
-    deletedAt    DateTime?
+    is_active     Boolean   @default(true)
+    created_at    DateTime  @default(now())
+    updated_at    DateTime  @updatedAt
+    deleted_at    DateTime?
 
     @@map("super_admins")
 }
@@ -31,10 +31,10 @@ model PlayerRole {
     id          BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
     name        String    @unique @db.VarChar(50)
     description String?   @db.Text
-    sportType   SportType @default(cricket) @map("sport_type")
-    isActive    Boolean   @default(true) @map("is_active")
-    createdAt   DateTime  @default(now()) @map("created_at")
-    updatedAt   DateTime  @default(now()) @updatedAt @map("updated_at")
+    sport_type  SportType @default(cricket) @map("sport_type")
+    is_active   Boolean   @default(true) @map("is_active")
+    created_at  DateTime  @default(now()) @map("created_at")
+    updated_at  DateTime  @default(now()) @updatedAt @map("updated_at")
 
     players Player[]
 
@@ -46,24 +46,24 @@ model Coach {
     email           String    @unique @db.VarChar(120)
     password        String    @db.VarChar(255)
     name            String    @db.VarChar(100)
-    dateOfBirth     DateTime? @map("date_of_birth") @db.Date
+    date_of_birth   DateTime? @map("date_of_birth") @db.Date
     gender          Gender    @default(male)
-    sportType       SportType @default(cricket) @map("sport_type")
-    phoneNumber     String?   @map("phone_number") @db.VarChar(20)
+    sport_type      SportType @default(cricket) @map("sport_type")
+    phone_number    String?   @map("phone_number") @db.VarChar(20)
     country         String?   @db.VarChar(50)
     city            String?   @db.VarChar(50)
     state           String?   @db.VarChar(50)
     address         String?   @db.VarChar(255)
-    zipCode         String?   @db.VarChar(10)
-    profileImage    String?   @map("profile_image") @db.VarChar(255)
-    coachRole       CoachRole @default(cricket_coach) @map("coach_role")
-    coachSpeciality String?   @map("coach_speciality") @db.VarChar(100)
-    assignedTeam    String?   @map("assigned_team") @db.VarChar(100)
-    experienceYears Int?      @map("experience_years")
-    isActive        Boolean   @default(true) @map("is_active")
-    createdAt       DateTime  @default(now()) @map("created_at")
-    updatedAt       DateTime  @default(now()) @updatedAt @map("updated_at")
-    deletedAt       DateTime? @map("deleted_at")
+    zip_code        String?   @db.VarChar(10)
+    profile_image   String?   @map("profile_image") @db.VarChar(255)
+    coach_role      CoachRole @default(cricket_coach) @map("coach_role")
+    coach_speciality  String?   @map("coach_speciality") @db.VarChar(100)
+    assigned_team    String?   @map("assigned_team") @db.VarChar(100)
+    experience_years Int?      @map("experience_years")
+    is_active        Boolean   @default(true) @map("is_active")
+    created_at       DateTime  @default(now()) @map("created_at")
+    updated_at       DateTime  @default(now()) @updatedAt @map("updated_at")
+    deleted_at       DateTime? @map("deleted_at")
 
     players Player[]
     club    Club[]
@@ -73,44 +73,44 @@ model Coach {
 
 model Player {
     id            BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
-    userName      String    @map("user_name") @db.VarChar(50)
+    user_name     String    @map("user_name") @db.VarChar(50)
     email         String    @unique @db.VarChar(120)
     password      String    @db.VarChar(255)
-    phoneNumber   String?   @map("phone_number") @db.VarChar(20)
-    loginType     LoginType @default(manual) @map("login_type")
+    phone_number  String?   @map("phone_number") @db.VarChar(20)
+    login_type    LoginType @default(manual) @map("login_type")
     address       String?   @db.VarChar(255)
     state         String?   @db.VarChar(50)
     city          String?   @db.VarChar(50)
-    zipCode       String?   @db.VarChar(10)
+    zip_code      String?   @db.VarChar(10)
     country       String?   @db.VarChar(50)
     location      String?   @db.VarChar(255)
-    isActive      Boolean   @default(true) @map("is_active")
-    dateOfBirth   DateTime? @map("date_of_birth") @db.Date
+    is_active     Boolean   @default(true) @map("is_active")
+    date_of_birth DateTime? @map("date_of_birth") @db.Date
     gender        Gender    @default(male)
-    profileImage  String?   @map("profile_image") @db.VarChar(255)
-    sportType     SportType @default(cricket) @map("sport_type")
-    dominantHand  String?   @map("dominant_hand") @db.VarChar(10)
-    battingStyle  String?   @map("batting_style") @db.VarChar(50)
-    bowlingStyle  String?   @map("bowling_style") @db.VarChar(50)
-    heightCm      Float?    @map("height_cm")
-    weightKg      Float?    @map("weight_kg")
-    teamName      String?   @map("team_name") @db.VarChar(100)
-    instagramLink String?   @map("instagram_link") @db.VarChar(255)
-    facebookLink  String?   @map("facebook_link") @db.VarChar(255)
-    twitterLink   String?   @map("twitter_link") @db.VarChar(255)
-    youtubeLink   String?   @map("youtube_link") @db.VarChar(255)
-    createdAt     DateTime  @default(now()) @map("created_at")
-    updatedAt     DateTime  @default(now()) @updatedAt @map("updated_at")
-    deletedAt     DateTime? @map("deleted_at")
+    profile_image String?   @map("profile_image") @db.VarChar(255)
+    sport_type    SportType @default(cricket) @map("sport_type")
+    dominant_hand String?   @map("dominant_hand") @db.VarChar(10)
+    batting_style String?   @map("batting_style") @db.VarChar(50)
+    bowling_style String?   @map("bowling_style") @db.VarChar(50)
+    height_cm     Float?    @map("height_cm")
+    weight_kg     Float?    @map("weight_kg")
+    team_name     String?   @map("team_name") @db.VarChar(100)
+    instagram_link String?   @map("instagram_link") @db.VarChar(255)
+    facebook_link  String?   @map("facebook_link") @db.VarChar(255)
+    twitter_link   String?   @map("twitter_link") @db.VarChar(255)
+    youtube_link   String?   @map("youtube_link") @db.VarChar(255)
+    created_at     DateTime  @default(now()) @map("created_at")
+    updated_at     DateTime  @default(now()) @updatedAt @map("updated_at")
+    deleted_at     DateTime? @map("deleted_at")
 
-    playerRoleId BigInt     @map("player_role_id") @db.UnsignedBigInt
-    playerRole   PlayerRole @relation(fields: [playerRoleId], references: [id])
+    player_role_id BigInt?    @map("player_role_id") @db.UnsignedBigInt
+    player_role   PlayerRole? @relation(fields: [player_role_id], references: [id])
 
-    coachId BigInt? @map("coach_id") @db.UnsignedBigInt
-    coach   Coach?  @relation(fields: [coachId], references: [id])
+    coach_id   BigInt? @map("coach_id") @db.UnsignedBigInt
+    coach   Coach?  @relation(fields: [coach_id], references: [id])
 
-    clubId BigInt? @map("club_id") @db.UnsignedBigInt
-    club   Club?   @relation(fields: [clubId], references: [id])
+    club_id  BigInt? @map("club_id") @db.UnsignedBigInt
+    club   Club?   @relation(fields: [club_id], references: [id])
 
     @@map("players")
 }
@@ -133,24 +133,24 @@ model Club {
     address       String?   @db.VarChar(255)
     state         String?   @db.VarChar(50)
     city          String?   @db.VarChar(50)
-    zipCode       String?   @db.VarChar(10)
+    zip_code      String?   @db.VarChar(10)
     country       String?   @db.VarChar(50)
-    phoneNumber   String?   @db.VarChar(20)
+    phone_number  String?   @db.VarChar(20)
     location      String?   @db.VarChar(255)
-    coachId       BigInt?   @map("coach_id") @db.UnsignedBigInt
-    profileImage  String?   @map("profile_image") @db.VarChar(255)
-    sportType     SportType @default(cricket) @map("sport_type")
-    isActive      Boolean   @default(true) @map("is_active")
-    instagramLink String?   @map("instagram_link") @db.VarChar(255)
-    facebookLink  String?   @map("facebook_link") @db.VarChar(255)
-    twitterLink   String?   @map("twitter_link") @db.VarChar(255)
-    youtubeLink   String?   @map("youtube_link") @db.VarChar(255)
-    createdAt     DateTime  @default(now()) @map("created_at")
-    updatedAt     DateTime  @default(now()) @updatedAt @map("updated_at")
-    deletedAt     DateTime? @map("deleted_at")
+    coach_id      BigInt?   @map("coach_id") @db.UnsignedBigInt
+    profile_image String?   @map("profile_image") @db.VarChar(255)
+    sport_type    SportType @default(cricket) @map("sport_type")
+    is_active     Boolean   @default(true) @map("is_active")
+    instagram_link String?   @map("instagram_link") @db.VarChar(255)
+    facebook_link  String?   @map("facebook_link") @db.VarChar(255)
+    twitter_link   String?   @map("twitter_link") @db.VarChar(255)
+    youtube_link   String?   @map("youtube_link") @db.VarChar(255)
+    created_at     DateTime  @default(now()) @map("created_at")
+    updated_at     DateTime  @default(now()) @updatedAt @map("updated_at")
+    deleted_at     DateTime? @map("deleted_at")
 
     players Player[]
-    coach   Coach?   @relation(fields: [coachId], references: [id])
+    coach   Coach?   @relation(fields: [coach_id], references: [id])
 
     @@map("clubs")
 }
