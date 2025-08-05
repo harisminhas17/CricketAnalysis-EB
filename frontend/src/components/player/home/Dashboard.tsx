@@ -1,8 +1,9 @@
 "use client"
-import { Calendar, Users, Trophy, Target, TrendingUp, Activity, ChevronDown, Play } from "lucide-react"
+import { Users, Trophy, Target, TrendingUp, Activity, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { useState } from "react"
 
 export const Dashboard = () => {
   // Add custom styles for animations
@@ -51,6 +52,30 @@ export const Dashboard = () => {
     { title: "Match Session", location: "Stadium A", image: "/placeholder.svg?height=48&width=48&text=Stadium+A" },
     { title: "Training Session", location: "Stadium B", image: "/placeholder.svg?height=48&width=48&text=Stadium+B" },
   ]
+
+  const [selectedDate, setSelectedDate] = useState("2025-01-08")
+  const [selectedMatchType, setSelectedMatchType] = useState("")
+
+  const handleSubmit = () => {
+    if (!selectedMatchType) {
+      alert("Please select a match type")
+      return
+    }
+
+    const formData = {
+      datePlayed: selectedDate,
+      matchType: selectedMatchType,
+      submittedAt: new Date().toISOString(),
+    }
+
+    console.log("Form submitted:", formData)
+    alert(`Match details submitted successfully!\n\nDate: ${selectedDate}\nMatch Type: ${selectedMatchType}`)
+  }
+
+  const handleVideoPlay = (videoTitle) => {
+    console.log(`Playing video: ${videoTitle}`)
+    alert(`Now playing: ${videoTitle}`)
+  }
 
   return (
     <>
@@ -201,21 +226,39 @@ export const Dashboard = () => {
                 <div>
                   <label className="text-sm text-gray-600">Date Played</label>
                   <div className="mt-1 p-3 border border-gray-200 rounded-lg">
-                    <span className="text-sm">4 June, 2025</span>
-                    <Calendar className="w-4 h-4 float-right text-gray-400" />
+                    <input
+                      type="date"
+                      value={selectedDate}
+                      onChange={(e) => setSelectedDate(e.target.value)}
+                      className="text-sm w-full bg-transparent border-none outline-none"
+                    />
                   </div>
                 </div>
 
                 <div>
                   <label className="text-sm text-gray-600">Match Type</label>
-                  <div className="mt-1 p-3 border border-gray-200 rounded-lg flex items-center justify-between">
-                    <span className="text-sm text-gray-400">Select Match Type</span>
-                    <ChevronDown className="w-4 h-4 text-gray-400" />
+                  <div className="mt-1">
+                    <select
+                      value={selectedMatchType}
+                      onChange={(e) => setSelectedMatchType(e.target.value)}
+                      className="w-full p-3 border border-gray-200 rounded-lg text-sm bg-white"
+                    >
+                      <option value="">Select Match Type</option>
+                      <option value="ODI">ODI (One Day International)</option>
+                      <option value="T20">T20 (Twenty20)</option>
+                      <option value="Test">Test Match</option>
+                      <option value="Practice">Practice Match</option>
+                    </select>
                   </div>
                 </div>
               </div>
 
-              <Button className="w-full bg-[#344FA5] hover:bg-[#2A3F85] transition-colors duration-200">Submit</Button>
+              <Button
+                onClick={handleSubmit}
+                className="w-full bg-[#344FA5] hover:bg-[#2A3F85] transition-colors duration-200"
+              >
+                Submit
+              </Button>
             </CardContent>
           </Card>
         </div>
@@ -287,7 +330,7 @@ export const Dashboard = () => {
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {recentVideos.map((video, index) => (
-                <div key={index} className="relative group cursor-pointer">
+                <div key={index} className="relative group cursor-pointer" onClick={() => handleVideoPlay(video.title)}>
                   <div className="aspect-video bg-gray-100 rounded-lg flex items-center justify-center relative overflow-hidden">
                     <img
                       src={video.thumbnail || "/placeholder.svg"}

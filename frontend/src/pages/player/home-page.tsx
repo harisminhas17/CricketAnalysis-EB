@@ -23,6 +23,9 @@ import { Dashboard } from "@/components/player/home/Dashboard"
 import { SocialMedia } from "@/components/player/home/SocialMedia"
 import { cn } from "@/lib/utils"
 import { motion, AnimatePresence } from "framer-motion"
+import { StatsModule } from "@/components/player/home/StatsModule"
+import { BallTracking } from "@/components/player/home/BallTracking"
+import { Following } from "@/components/player/home/Following"
 
 interface HomePageProps {
   onLogout: () => void
@@ -238,23 +241,23 @@ export const HomePage = ({ onLogout }: HomePageProps) => {
   const SidebarContent = () => (
     <div className="flex flex-col h-full bg-white/95 backdrop-blur-sm transition-all duration-300 ease-in-out">
       {/* Profile Section */}
-      <div className="p-6 border-b border-gray-100/50 relative overflow-hidden">
+      <div className="p-4 lg:p-6 border-b border-gray-100/50 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute -top-12 -right-12 w-32 h-32 bg-gradient-to-br from-[#344FA5]/10 to-[#344FA5]/5 rounded-full blur-xl"></div>
         <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-gradient-to-tr from-[#344FA5]/10 to-[#344FA5]/5 rounded-full blur-lg"></div>
 
-        <div className="relative flex items-center gap-4">
+        <div className="relative flex items-center gap-3 lg:gap-4">
           <div className="relative group flex-shrink-0">
             <div className="absolute inset-0 bg-gradient-to-r from-[#344FA5] to-[#4A5FB8] rounded-full blur-md opacity-50 group-hover:opacity-70 transition-all duration-500 animate-pulse"></div>
             <Avatar
               className={`border-4 border-white shadow-xl relative hover:scale-105 transition-all duration-300 ${
-                sidebarCollapsed && !sidebarHovered ? "w-10 h-10" : "w-14 h-14"
+                sidebarCollapsed && !sidebarHovered ? "w-10 h-10" : "w-12 h-12 lg:w-14 lg:h-14"
               }`}
             >
               <AvatarImage src="/placeholder.svg?height=72&width=72&text=KW" className="object-cover" />
               <AvatarFallback
                 className={`bg-gradient-to-br from-[#344FA5] to-[#4A5FB8] text-white font-bold ${
-                  sidebarCollapsed && !sidebarHovered ? "text-sm" : "text-lg"
+                  sidebarCollapsed && !sidebarHovered ? "text-sm" : "text-base lg:text-lg"
                 }`}
               >
                 KW
@@ -262,26 +265,26 @@ export const HomePage = ({ onLogout }: HomePageProps) => {
             </Avatar>
             <div
               className={`absolute -bottom-1 -right-1 bg-green-500 border-2 border-white rounded-full shadow-md animate-pulse ${
-                sidebarCollapsed && !sidebarHovered ? "w-3 h-3" : "w-5 h-5"
+                sidebarCollapsed && !sidebarHovered ? "w-3 h-3" : "w-4 h-4 lg:w-5 lg:h-5"
               }`}
             ></div>
           </div>
 
-          {/* Profile Info - Hidden when collapsed and not hovered */}
+          {/* Profile Info - Better spacing and typography */}
           <div
-            className={`flex-1 transition-all duration-300 ease-in-out ${
+            className={`flex-1 min-w-0 transition-all duration-300 ease-in-out ${
               sidebarCollapsed && !sidebarHovered ? "opacity-0 w-0 overflow-hidden ml-0" : "opacity-100 ml-0"
             }`}
           >
-            <h3 className="font-bold text-base md:text-lg text-gray-900 flex items-center whitespace-nowrap">
+            <h3 className="font-bold text-sm lg:text-base xl:text-lg text-gray-900 flex items-center truncate">
               Kane Williamson
-              <span className="ml-2 inline-flex items-center justify-center">
-                <Sparkles className="w-4 h-4 text-yellow-500" />
+              <span className="ml-2 inline-flex items-center justify-center flex-shrink-0">
+                <Sparkles className="w-3 h-3 lg:w-4 lg:h-4 text-yellow-500" />
               </span>
             </h3>
-            <p className="text-sm text-[#344FA5] font-medium whitespace-nowrap">Team Newzealand</p>
-            <p className="text-xs text-gray-500 flex items-center gap-1 whitespace-nowrap">
-              <span className="inline-block w-2 h-2 bg-green-500 rounded-full"></span>
+            <p className="text-xs lg:text-sm text-[#344FA5] font-medium truncate">Team Newzealand</p>
+            <p className="text-xs text-gray-500 flex items-center gap-1 truncate">
+              <span className="inline-block w-1.5 h-1.5 lg:w-2 lg:h-2 bg-green-500 rounded-full flex-shrink-0"></span>
               Professional Cricketer
             </p>
           </div>
@@ -451,15 +454,15 @@ export const HomePage = ({ onLogout }: HomePageProps) => {
         {/* Main Content */}
         <div className="flex-1 min-w-0 relative">
           {/* Header */}
-          <div className="bg-white/95 backdrop-blur-sm border-b border-gray-100/50 p-4 sticky top-0 z-40 shadow-sm">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
+          <div className="bg-white/95 backdrop-blur-sm border-b border-gray-100/50 p-4 lg:p-6 sticky top-0 z-40 shadow-sm">
+            <div className="flex items-center justify-between gap-4">
+              <div className="flex items-center gap-4 min-w-0 flex-1">
                 <Sheet open={sidebarOpen} onOpenChange={setSidebarOpen}>
                   <SheetTrigger asChild>
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="lg:hidden hover:bg-gray-100 rounded-xl group relative overflow-hidden"
+                      className="lg:hidden hover:bg-gray-100 rounded-xl group relative overflow-hidden flex-shrink-0"
                     >
                       <span className="absolute inset-0 bg-gray-100/80 scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full"></span>
                       <Menu className="w-6 h-6 relative z-10 group-hover:rotate-3 transition-transform duration-300" />
@@ -473,14 +476,15 @@ export const HomePage = ({ onLogout }: HomePageProps) => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
                   transition={{ duration: 0.3 }}
-                  className="text-2xl font-bold bg-gradient-to-r from-[#344FA5] to-[#4A5FB8] text-transparent bg-clip-text"
+                  className="text-xl lg:text-2xl font-bold bg-gradient-to-r from-[#344FA5] to-[#4A5FB8] text-transparent bg-clip-text truncate"
                 >
                   {activeTab}
                 </motion.h1>
               </div>
 
-              <div className="flex items-center gap-4">
-                <div className="relative hidden sm:block group">
+              <div className="flex items-center gap-2 lg:gap-4 flex-shrink-0">
+                {/* Search - Hidden on small screens */}
+                <div className="relative hidden md:block group">
                   <div className="absolute inset-0 bg-gray-100/50 rounded-xl blur-sm group-hover:bg-gray-100/80 transition-colors duration-300"></div>
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 z-10" />
                   <Input
@@ -489,7 +493,7 @@ export const HomePage = ({ onLogout }: HomePageProps) => {
                     onChange={handleSearchChange}
                     onFocus={() => searchQuery.length > 0 && setShowSuggestions(true)}
                     onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
-                    className="pl-10 w-64 xl:w-80 bg-white/80 border-gray-100/80 focus:border-[#344FA5]/30 focus:ring-[#344FA5]/20 rounded-xl transition-all duration-300 relative z-10"
+                    className="pl-10 w-48 lg:w-64 xl:w-80 bg-white/80 border-gray-100/80 focus:border-[#344FA5]/30 focus:ring-[#344FA5]/20 rounded-xl transition-all duration-300 relative z-10"
                   />
 
                   {/* Search Suggestions Dropdown */}
@@ -560,12 +564,13 @@ export const HomePage = ({ onLogout }: HomePageProps) => {
                   </AnimatePresence>
                 </div>
 
-                <Button variant="ghost" size="icon" className="sm:hidden hover:bg-gray-100 rounded-xl">
+                {/* Mobile search button */}
+                <Button variant="ghost" size="icon" className="md:hidden hover:bg-gray-100 rounded-xl flex-shrink-0">
                   <Search className="w-5 h-5" />
                 </Button>
 
                 {/* Notifications */}
-                <div className="relative">
+                <div className="relative flex-shrink-0">
                   <Button
                     variant="ghost"
                     size="icon"
@@ -670,10 +675,11 @@ export const HomePage = ({ onLogout }: HomePageProps) => {
                   )}
                 </div>
 
+                {/* Logout button - Hidden on mobile */}
                 <Button
                   variant="outline"
                   onClick={onLogout}
-                  className="hidden sm:flex rounded-xl border-gray-200 hover:border-red-300 hover:text-red-600 transition-colors duration-200 bg-transparent"
+                  className="hidden lg:flex rounded-xl border-gray-200 hover:border-red-300 hover:text-red-600 transition-colors duration-200 bg-transparent flex-shrink-0"
                 >
                   Logout
                 </Button>
@@ -685,15 +691,9 @@ export const HomePage = ({ onLogout }: HomePageProps) => {
           <div className="flex-1 overflow-auto relative z-10">
             {activeTab === "Dashboard" && <Dashboard />}
             {activeTab === "Social Media" && <SocialMedia />}
-            {activeTab === "Stats" && (
-              <div className="text-center py-20 text-gray-500">Stats content coming soon...</div>
-            )}
-            {activeTab === "Ball Track" && (
-              <div className="text-center py-20 text-gray-500">Ball Track content coming soon...</div>
-            )}
-            {activeTab === "Following" && (
-              <div className="text-center py-20 text-gray-500">Following content coming soon...</div>
-            )}
+            {activeTab === "Stats" && <StatsModule />}
+            {activeTab === "Ball Track" && <BallTracking />}
+            {activeTab === "Following" && <Following />}
           </div>
         </div>
       </div>
