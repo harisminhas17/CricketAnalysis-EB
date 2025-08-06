@@ -1,7 +1,5 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SuperAdminController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
