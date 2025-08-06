@@ -8,17 +8,17 @@ datasource db {
 }
 
 model SuperAdmin {
-    id           BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
-    email        String    @unique @db.VarChar(120)
-    password     String    @db.VarChar(255)
-    name         String    @db.VarChar(100)
+    id            BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+    email         String    @unique @db.VarChar(120)
+    password      String    @db.VarChar(255)
+    name          String    @db.VarChar(100)
     phone_number  String?   @db.VarChar(20)
     profile_image String?   @db.VarChar(255)
-    state        String?   @db.VarChar(100)
-    city         String?   @db.VarChar(100)
-    address      String?   @db.VarChar(255)
+    state         String?   @db.VarChar(100)
+    city          String?   @db.VarChar(100)
+    address       String?   @db.VarChar(255)
     zip_code      String?   @db.VarChar(10)
-    country      String?   @db.VarChar(100)
+    country       String?   @db.VarChar(100)
     is_active     Boolean   @default(true)
     created_at    DateTime  @default(now())
     updated_at    DateTime  @updatedAt
@@ -42,22 +42,22 @@ model PlayerRole {
 }
 
 model Coach {
-    id              BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
-    email           String    @unique @db.VarChar(120)
-    password        String    @db.VarChar(255)
-    name            String    @db.VarChar(100)
-    date_of_birth   DateTime? @map("date_of_birth") @db.Date
-    gender          Gender    @default(male)
-    sport_type      SportType @default(cricket) @map("sport_type")
-    phone_number    String?   @map("phone_number") @db.VarChar(20)
-    country         String?   @db.VarChar(50)
-    city            String?   @db.VarChar(50)
-    state           String?   @db.VarChar(50)
-    address         String?   @db.VarChar(255)
-    zip_code        String?   @db.VarChar(10)
-    profile_image   String?   @map("profile_image") @db.VarChar(255)
-    coach_role      CoachRole @default(cricket_coach) @map("coach_role")
-    coach_speciality  String?   @map("coach_speciality") @db.VarChar(100)
+    id               BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+    email            String    @unique @db.VarChar(120)
+    password         String    @db.VarChar(255)
+    name             String    @db.VarChar(100)
+    date_of_birth    DateTime? @map("date_of_birth") @db.Date
+    gender           Gender    @default(male)
+    sport_type       SportType @default(cricket) @map("sport_type")
+    phone_number     String?   @map("phone_number") @db.VarChar(20)
+    country          String?   @db.VarChar(50)
+    city             String?   @db.VarChar(50)
+    state            String?   @db.VarChar(50)
+    address          String?   @db.VarChar(255)
+    zip_code         String?   @db.VarChar(10)
+    profile_image    String?   @map("profile_image") @db.VarChar(255)
+    coach_role       CoachRole @default(cricket_coach) @map("coach_role")
+    coach_speciality String?   @map("coach_speciality") @db.VarChar(100)
     assigned_team    String?   @map("assigned_team") @db.VarChar(100)
     experience_years Int?      @map("experience_years")
     is_active        Boolean   @default(true) @map("is_active")
@@ -72,29 +72,29 @@ model Coach {
 }
 
 model Player {
-    id            BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
-    user_name     String    @map("user_name") @db.VarChar(50)
-    email         String    @unique @db.VarChar(120)
-    password      String    @db.VarChar(255)
-    phone_number  String?   @map("phone_number") @db.VarChar(20)
-    login_type    LoginType @default(manual) @map("login_type")
-    address       String?   @db.VarChar(255)
-    state         String?   @db.VarChar(50)
-    city          String?   @db.VarChar(50)
-    zip_code      String?   @db.VarChar(10)
-    country       String?   @db.VarChar(50)
-    location      String?   @db.VarChar(255)
-    is_active     Boolean   @default(true) @map("is_active")
-    date_of_birth DateTime? @map("date_of_birth") @db.Date
-    gender        Gender    @default(male)
-    profile_image String?   @map("profile_image") @db.VarChar(255)
-    sport_type    SportType @default(cricket) @map("sport_type")
-    dominant_hand String?   @map("dominant_hand") @db.VarChar(10)
-    batting_style String?   @map("batting_style") @db.VarChar(50)
-    bowling_style String?   @map("bowling_style") @db.VarChar(50)
-    height_cm     Float?    @map("height_cm")
-    weight_kg     Float?    @map("weight_kg")
-    team_name     String?   @map("team_name") @db.VarChar(100)
+    id             BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+    user_name      String    @map("user_name") @db.VarChar(50)
+    email          String    @db.VarChar(120)
+    password       String    @db.VarChar(255)
+    phone_number   String?   @unique @map("phone_number") @db.VarChar(20)
+    login_type     LoginType @default(manual) @map("login_type")
+    address        String?   @db.VarChar(255)
+    state          String?   @db.VarChar(50)
+    city           String?   @db.VarChar(50)
+    zip_code       String?   @db.VarChar(10)
+    country        String?   @db.VarChar(50)
+    location       String?   @db.VarChar(255)
+    is_active      Boolean   @default(true) @map("is_active")
+    date_of_birth  DateTime? @map("date_of_birth") @db.Date
+    gender         Gender    @default(male)
+    profile_image  String?   @map("profile_image") @db.VarChar(255)
+    sport_type     SportType @default(cricket) @map("sport_type")
+    dominant_hand  String?   @map("dominant_hand") @db.VarChar(10)
+    batting_style  String?   @map("batting_style") @db.VarChar(50)
+    bowling_style  String?   @map("bowling_style") @db.VarChar(50)
+    height_cm      Float?    @map("height_cm")
+    weight_kg      Float?    @map("weight_kg")
+    team_name      String?   @map("team_name") @db.VarChar(100)
     instagram_link String?   @map("instagram_link") @db.VarChar(255)
     facebook_link  String?   @map("facebook_link") @db.VarChar(255)
     twitter_link   String?   @map("twitter_link") @db.VarChar(255)
@@ -103,15 +103,16 @@ model Player {
     updated_at     DateTime  @default(now()) @updatedAt @map("updated_at")
     deleted_at     DateTime? @map("deleted_at")
 
-    player_role_id BigInt?    @map("player_role_id") @db.UnsignedBigInt
-    player_role   PlayerRole? @relation(fields: [player_role_id], references: [id])
+    player_role_id BigInt?     @map("player_role_id") @db.UnsignedBigInt
+    player_role    PlayerRole? @relation(fields: [player_role_id], references: [id])
 
-    coach_id   BigInt? @map("coach_id") @db.UnsignedBigInt
-    coach   Coach?  @relation(fields: [coach_id], references: [id])
+    coach_id BigInt? @map("coach_id") @db.UnsignedBigInt
+    coach    Coach?  @relation(fields: [coach_id], references: [id])
 
-    club_id  BigInt? @map("club_id") @db.UnsignedBigInt
-    club   Club?   @relation(fields: [club_id], references: [id])
+    club_id BigInt? @map("club_id") @db.UnsignedBigInt
+    club    Club?   @relation(fields: [club_id], references: [id])
 
+    @@unique([email, login_type])
     @@map("players")
 }
 
@@ -126,21 +127,21 @@ enum LoginType {
 }
 
 model Club {
-    id            BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
-    name          String    @db.VarChar(100)
-    email         String    @unique @db.VarChar(120)
-    password      String    @db.VarChar(255)
-    address       String?   @db.VarChar(255)
-    state         String?   @db.VarChar(50)
-    city          String?   @db.VarChar(50)
-    zip_code      String?   @db.VarChar(10)
-    country       String?   @db.VarChar(50)
-    phone_number  String?   @db.VarChar(20)
-    location      String?   @db.VarChar(255)
-    coach_id      BigInt?   @map("coach_id") @db.UnsignedBigInt
-    profile_image String?   @map("profile_image") @db.VarChar(255)
-    sport_type    SportType @default(cricket) @map("sport_type")
-    is_active     Boolean   @default(true) @map("is_active")
+    id             BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+    name           String    @db.VarChar(100)
+    email          String    @unique @db.VarChar(120)
+    password       String    @db.VarChar(255)
+    address        String?   @db.VarChar(255)
+    state          String?   @db.VarChar(50)
+    city           String?   @db.VarChar(50)
+    zip_code       String?   @db.VarChar(10)
+    country        String?   @db.VarChar(50)
+    phone_number   String?   @db.VarChar(20)
+    location       String?   @db.VarChar(255)
+    coach_id       BigInt?   @map("coach_id") @db.UnsignedBigInt
+    profile_image  String?   @map("profile_image") @db.VarChar(255)
+    sport_type     SportType @default(cricket) @map("sport_type")
+    is_active      Boolean   @default(true) @map("is_active")
     instagram_link String?   @map("instagram_link") @db.VarChar(255)
     facebook_link  String?   @map("facebook_link") @db.VarChar(255)
     twitter_link   String?   @map("twitter_link") @db.VarChar(255)
