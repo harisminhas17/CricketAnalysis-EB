@@ -112,8 +112,23 @@ model Player {
     club_id BigInt? @map("club_id") @db.UnsignedBigInt
     club    Club?   @relation(fields: [club_id], references: [id])
 
-    @@unique([email, login_type])
+    @@unique([email, login_type, sport_type])
     @@map("players")
+}
+
+model PersonalAccessToken {
+    id             BigInt   @id @default(autoincrement()) @db.UnsignedBigInt
+    tokenable_type String   @map("tokenable_type") @db.VarChar(255)
+    tokenable_id   BigInt   @map("tokenable_id") @db.UnsignedBigInt
+    name           String   @db.VarChar(255)
+    token          String   @unique @db.VarChar(64)
+    abilities      String?  @db.Text
+    last_used_at   DateTime? @map("last_used_at")
+    expires_at     DateTime? @map("expires_at")
+    created_at     DateTime? @map("created_at")
+    updated_at     DateTime? @map("updated_at")
+
+    @@map("personal_access_tokens")
 }
 
 enum LoginType {

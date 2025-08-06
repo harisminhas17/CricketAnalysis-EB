@@ -28,11 +28,12 @@ class AuthController extends Controller
         // Check if email already exists
         if (Player::where('email', $request->email)
             ->where('login_type', $request->login_type)
+            ->where('sport_type', $request->sport_type)
             ->exists()
         ) {
             return response()->json([
                 'error' => true,
-                'message' => 'Email already exists' . ' with ' . $request->login_type,
+                'message' => 'Email already exists with ' . $request->login_type . ' for ' . $request->sport_type,
             ], 200);
         }
 
@@ -67,7 +68,7 @@ class AuthController extends Controller
 
         return response()->json([
             'error' => false,
-            'message' => 'Player registered successfully' . ' with ' . $request->login_type,
+            'message' => 'Player registered successfully' . ' with ' . $request->login_type . ' for ' . $request->sport_type,
             'records' => $player
         ]);
     }
@@ -75,10 +76,10 @@ class AuthController extends Controller
     public function playerLogin(Request $request)
     {
         $request->validate([
-
             'email' => 'required',
             'password' => 'required',
             'login_type' => 'required',
+            'sport_type' => 'required',
             'phone_number' => 'nullable',
         ]);
 
@@ -86,11 +87,12 @@ class AuthController extends Controller
 
             $player = Player::where('email', $request->email)
                 ->where('login_type', $request->login_type)
+                ->where('sport_type', $request->sport_type)
                 ->first();
 
             if (!$player) {
                 return response()->json([
-                    'message' => 'Player email not found with ' . $request->login_type,
+                    'message' => 'Player email not found with ' . $request->login_type . ' for ' . $request->sport_type,
                     'error' => true,
                 ], 200);
             }
@@ -110,11 +112,13 @@ class AuthController extends Controller
                 ], 200);
             }
 
+            $token = $player->createToken('PlayerToken', ['*'])->plainTextToken;
+
             // Success response
             return response()->json([
                 'error' => false,
-                'message' => 'Player Login successful' . ' with ' . $request->login_type,
-                'token' => $player->createToken('PlayerToken')->plainTextToken,
+                'message' => 'Player Login successful' . ' with ' . $request->login_type . ' for ' . $request->sport_type,
+                'token' => $token,
                 'records' => $player
             ], 200);
         } catch (\Exception $e) {
