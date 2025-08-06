@@ -1,12 +1,13 @@
 import { useState } from "react";
-import { ArrowLeft, Upload } from "lucide-react";
+import { ArrowLeft, Upload, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
+import { useToast } from "@/hooks/use-toast";
+import { registerPlayer, type RegisterRequest, type ApiError } from "@/services/player/authService";
 import cricketPlayer from "@/assets/cricket-player.png";
 
 interface SignUpPageProps {
@@ -15,32 +16,12 @@ interface SignUpPageProps {
   onLogin: () => void;
 }
 
-interface FormData {
-  // Personal Information (Page 1)
-  name: string;
-  email: string;
-  password: string;
-  sportType: string;
-  
-  // Contact & Location (Page 2)
-  phoneNo: string;
-  address: string;
-  gender: string;
-  nationality: string;
-  
-  // Profile (Page 3)
-  profileImage: File | null;
-  dateOfBirth: string;
-  
-  // Player Details (Page 4)
-  roleInTeam: string;
-  battingStyle: string;
-  bowlingStyle: string;
-}
-
 export const SignUpPage = ({ onBack, onSignUp, onLogin }: SignUpPageProps) => {
   const [currentStep, setCurrentStep] = useState(1);
-  const [formData, setFormData] = useState<FormData>({
+  const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
+  
+  const [formData, setFormData] = useState<RegisterRequest>({
     name: "",
     email: "",
     password: "",
@@ -49,14 +30,14 @@ export const SignUpPage = ({ onBack, onSignUp, onLogin }: SignUpPageProps) => {
     address: "",
     gender: "",
     nationality: "",
-    profileImage: null,
     dateOfBirth: "",
+    profileImage: undefined,
     roleInTeam: "",
     battingStyle: "",
     bowlingStyle: "",
   });
 
-  const updateFormData = (field: keyof FormData, value: any) => {
+  const updateFormData = (field: keyof RegisterRequest, value: any) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
@@ -64,7 +45,7 @@ export const SignUpPage = ({ onBack, onSignUp, onLogin }: SignUpPageProps) => {
     if (currentStep < 4) {
       setCurrentStep(currentStep + 1);
     } else {
-      onSignUp();
+      handleSubmit();
     }
   };
 
@@ -73,6 +54,42 @@ export const SignUpPage = ({ onBack, onSignUp, onLogin }: SignUpPageProps) => {
       setCurrentStep(currentStep - 1);
     } else {
       onBack();
+    }
+  };
+
+  const handleSubmit = async () => {
+    setIsLoading(true);
+    
+    try {
+      const response = await registerPlayer(formData);
+      
+      if (response.success) {
+        toast({
+          title: "Registration Successful",
+          description: "Welcome! Your account has been created successfully.",
+          variant: "default",
+        });
+        
+        // Redirect to dashboard after successful registration
+        setTimeout(() => {
+          onSignUp();
+        }, 1000);
+      }
+    } catch (error: any) {
+      const apiError = error as ApiError;
+      
+      toast({
+        title: "Registration Failed",
+        description: apiError.message || "Please check your information and try again.",
+        variant: "destructive",
+      });
+      
+      // Handle specific field errors
+      if (apiError.errors) {
+        console.error('Field errors:', apiError.errors);
+      }
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -337,6 +354,7 @@ export const SignUpPage = ({ onBack, onSignUp, onLogin }: SignUpPageProps) => {
               onClick={handleBack}
               type="button"
               className="hover:bg-gray-100 p-2 rounded-full transition-colors mb-6 inline-flex items-center"
+              disabled={isLoading}
             >
               <ArrowLeft className="w-5 h-5 text-gray-600" />
             </button>
@@ -354,15 +372,23 @@ export const SignUpPage = ({ onBack, onSignUp, onLogin }: SignUpPageProps) => {
               <div className="flex justify-center">
                 <Button
                   type="submit"
-                  className="bg-[#344FA5] hover:bg-[#2a3f8f] text-white text-base font-medium rounded-lg transition-colors"
+                  disabled={isLoading}
+                  className="bg-[#344FA5] hover:bg-[#2a3f8f] text-white text-base font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   style={{ width: '160px', height: '55px' }}
                 >
-                  {currentStep === 4 ? 'Sign up' : 'Next'}
+                  {isLoading ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      {currentStep === 4 ? 'Creating...' : 'Processing...'}
+                    </>
+                  ) : (
+                    currentStep === 4 ? 'Sign up' : 'Next'
+                  )}
                 </Button>
               </div>
             </form>
             
-            {currentStep === 4 && (
+            {currentStep === 4 && !isLoading && (
               <div className="text-center pt-4">
                 <p className="text-sm text-black">
                   Already have an account?{" "}
