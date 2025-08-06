@@ -1,11 +1,13 @@
 import type React from "react"
 import { useState } from "react"
-import { Eye, EyeOff } from "lucide-react"
+import { Eye, EyeOff, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent } from "@/components/ui/card"
+import { useToast } from "@/hooks/use-toast"
+import { loginPlayer, type LoginRequest, type ApiError } from "@/services/player/authService"
 import cricketPlayerImage from "@/assets/cricket-player.png"
 
 interface LoginPageProps {
@@ -16,21 +18,53 @@ interface LoginPageProps {
 }
 
 export function LoginForm({ onBack, onLogin, onForgotPassword, onSignUp }: LoginPageProps) {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<LoginRequest>({
     email: "",
     password: "",
-    role: "",
-    teamCode: "",
+    sportType: "cricket",
   })
   const [showPassword, setShowPassword] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const { toast } = useToast()
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
-    onLogin()
+    setIsLoading(true)
+    
+    try {
+      const response = await loginPlayer(formData)
+      
+      if (response.success) {
+        toast({
+          title: "Login Successful",
+          description: "Welcome back! Redirecting to dashboard...",
+          variant: "default",
+        })
+        
+        // Redirect to dashboard after successful login
+        setTimeout(() => {
+          onLogin()
+        }, 1000)
+      }
+    } catch (error: any) {
+      const apiError = error as ApiError
+      
+      toast({
+        title: "Login Failed",
+        description: apiError.message || "Please check your credentials and try again.",
+        variant: "destructive",
+      })
+      
+      // Handle specific field errors
+      if (apiError.errors) {
+        console.error('Field errors:', apiError.errors)
+      }
+    } finally {
+      setIsLoading(false)
+    }
   }
 
-  const handleInputChange = (field: string, value: string) => {
+  const handleInputChange = (field: keyof LoginRequest, value: string) => {
     setFormData((prev) => ({
       ...prev,
       [field]: value,
@@ -62,6 +96,7 @@ export function LoginForm({ onBack, onLogin, onForgotPassword, onSignUp }: Login
                   onChange={(e) => handleInputChange("email", e.target.value)}
                   className="h-11 text-sm border-gray-300 rounded-lg hover:border-[#344FA5] focus:border-[#344FA5] transition-colors placeholder:text-gray-500"
                   required
+                  disabled={isLoading}
                 />
               </div>
 
@@ -79,11 +114,13 @@ export function LoginForm({ onBack, onLogin, onForgotPassword, onSignUp }: Login
                     onChange={(e) => handleInputChange("password", e.target.value)}
                     className="h-11 text-sm border-gray-300 rounded-lg hover:border-[#344FA5] focus:border-[#344FA5] transition-colors placeholder:text-gray-500 pr-10"
                     required
+                    disabled={isLoading}
                   />
                   <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
                     className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 hover:text-gray-600"
+                    disabled={isLoading}
                   >
                     {showPassword ? (
                       <EyeOff className="h-4 w-4" />
@@ -94,42 +131,24 @@ export function LoginForm({ onBack, onLogin, onForgotPassword, onSignUp }: Login
                 </div>
               </div>
 
-              {/* Role in Team Field */}
+              {/* Sport Type Field */}
               <div className="space-y-2">
-                <Label htmlFor="role" className="text-base font-normal text-black">
-                  Role in Team
+                <Label htmlFor="sportType" className="text-base font-normal text-black">
+                  Sport Type
                 </Label>
-                <Select value={formData.role} onValueChange={(value) => handleInputChange("role", value)}>
+                <Select 
+                  value={formData.sportType} 
+                  onValueChange={(value) => handleInputChange("sportType", value)}
+                  disabled={isLoading}
+                >
                   <SelectTrigger className="h-11 text-sm border-gray-300 rounded-lg hover:border-[#344FA5] focus:border-[#344FA5] transition-colors">
-                    <SelectValue placeholder="Select Role" />
+                    <SelectValue placeholder="Select Sport Type" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="batsman">Batsman</SelectItem>
-                    <SelectItem value="bowler">Bowler</SelectItem>
-                    <SelectItem value="all-rounder">All-Rounder</SelectItem>
-                    <SelectItem value="wicket-keeper">Wicket Keeper</SelectItem>
-                    <SelectItem value="captain">Captain</SelectItem>
-                    <SelectItem value="vice-captain">Vice Captain</SelectItem>
-                    <SelectItem value="coach">Coach</SelectItem>
-                    <SelectItem value="analyst">Analyst</SelectItem>
+                    <SelectItem value="cricket">Cricket</SelectItem>
+                    <SelectItem value="football">Football</SelectItem>
                   </SelectContent>
                 </Select>
-              </div>
-
-              {/* Team Code Field */}
-              <div className="space-y-2">
-                <Label htmlFor="teamCode" className="text-base font-normal text-black">
-                  Team Code
-                </Label>
-                <Input
-                  id="teamCode"
-                  type="text"
-                  placeholder="Enter Team Code"
-                  value={formData.teamCode}
-                  onChange={(e) => handleInputChange("teamCode", e.target.value)}
-                  className="h-11 text-sm border-gray-300 rounded-lg hover:border-[#344FA5] focus:border-[#344FA5] transition-colors placeholder:text-gray-500"
-                  required
-                />
               </div>
 
               {/* Forgot Password Link */}
@@ -138,6 +157,7 @@ export function LoginForm({ onBack, onLogin, onForgotPassword, onSignUp }: Login
                   type="button"
                   onClick={onForgotPassword}
                   className="text-sm text-black hover:text-[#344FA5] transition-colors border-none bg-transparent cursor-pointer"
+                  disabled={isLoading}
                 >
                   Forgot Password?
                 </button>
@@ -147,10 +167,18 @@ export function LoginForm({ onBack, onLogin, onForgotPassword, onSignUp }: Login
                <div className="flex justify-center">
                     <Button
                       type="submit"
-                      className="bg-[#344FA5] hover:bg-[#2a3f8f] text-white text-base font-medium rounded-lg transition-colors"
+                      disabled={isLoading}
+                      className="bg-[#344FA5] hover:bg-[#2a3f8f] text-white text-base font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                       style={{ width: '160px', height: '55px' }}
                     >
-                      Login
+                      {isLoading ? (
+                        <>
+                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                          Logging in...
+                        </>
+                      ) : (
+                        'Login'
+                      )}
                     </Button>
                </div>
               
@@ -163,6 +191,7 @@ export function LoginForm({ onBack, onLogin, onForgotPassword, onSignUp }: Login
                     type="button"
                     onClick={onSignUp}
                     className="text-[#344FA5] hover:underline font-medium border-none bg-transparent cursor-pointer"
+                    disabled={isLoading}
                   >
                     Sign up
                   </button>
