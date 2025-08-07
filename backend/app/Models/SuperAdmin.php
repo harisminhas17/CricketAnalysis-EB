@@ -2,30 +2,22 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
-class SuperAdmin extends Model
+class SuperAdmin extends Authenticatable
 {
-    use HasFactory;
+    use HasApiTokens, Notifiable;
+
+    protected $table = 'super_admins';
 
     protected $fillable = [
-        'name',
-        'email',
-        'password',
-        'phone_number',
-        'profile_image',
-        'state',
-        'city',
-        'address',
-        'zip_code',
-        'country',
-        'is_active'
+        'name', 'email', 'password', 'phone_number', 'profile_image',
+        'state', 'city', 'address', 'zip_code', 'country', 'is_active',
     ];
-   
 
-    // Hide sensitive attributes
     protected $hidden = [
-        'password',
+        'password', 'remember_token',
     ];
 }
