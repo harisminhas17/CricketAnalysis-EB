@@ -2,10 +2,22 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
-class SuperAdmin extends Model
+class SuperAdmin extends Authenticatable
 {
-    protected $table = 'super_Admin';
-    protected $guarded = [];
+    use HasApiTokens, Notifiable;
+
+    protected $table = 'super_admins';
+
+    protected $fillable = [
+        'name', 'email', 'password', 'phone_number', 'profile_image',
+        'state', 'city', 'address', 'zip_code', 'country', 'is_active',
+    ];
+
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
 }
