@@ -4,9 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class PlayerRole extends Model
+class PlayerPerformance extends Model
 {
-    protected $table = 'player_Roles';
+    protected $table = 'player_Performances';
     protected $guarded = [];
-
 }
