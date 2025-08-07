@@ -60,7 +60,7 @@ class AuthController extends Controller
             $imagePath = null;
             // Handle profile image upload
             if ($request->hasFile('profile_image')) {
-                $imagePath = uploadImage($request->file('profile_image'), 'uploads/players/');
+                $imagePath = HelperFunctions::uploadImage($request->file('profile_image'), 'uploads/players/');
             }
 
             $player = Player::create([
