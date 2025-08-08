@@ -21,7 +21,14 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // ✅ Admin Profile route
     Route::get('/adminProfile', [SuperAdminController::class, 'adminProfile']);
-
-    // ✅ Update Admin Profile route (with image upload)
     Route::post('/updateProfile', [SuperAdminController::class, 'updateProfile']);
+
+
+
+
+    // ✅ Player route
+
+    Route::post('updatePlayerProfile', [AuthController::class, 'updatePlayerProfile']);
+
+
 });
