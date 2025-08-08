@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use App\Models\SuperAdmin;
+use App\HelperFunctions; // ✅ Import your helper class
 
 class SuperAdminController extends Controller
 {
@@ -16,10 +17,10 @@ class SuperAdminController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name'          => 'required|string|max:100',
-            'email'         => 'required|email|unique:super_admins,email',
+            'email'         => 'required|email|unique:super_admin,email',
             'password'      => 'required|string|min:6',
             'phone_number'  => 'nullable|string|max:20',
-            'profile_image' => 'nullable|string|max:255',
+            'profile_image' => 'nullable',
             'state'         => 'nullable|string|max:100',
             'city'          => 'nullable|string|max:100',
             'address'       => 'nullable|string|max:255',
@@ -36,12 +37,21 @@ class SuperAdminController extends Controller
             ], 422);
         }
 
+        // ✅ Handle image if uploaded
+        $imagePath = null;
+        if ($request->hasFile('profile_image')) {
+            $imagePath = HelperFunctions::uploadImage(
+                $request->file('profile_image'),
+                'profiles/superadmin'
+            );
+        }
+
         $admin = SuperAdmin::create([
             'name'          => $request->name,
             'email'         => $request->email,
             'password'      => Hash::make($request->password),
             'phone_number'  => $request->phone_number,
-            'profile_image' => $request->profile_image,
+            'profile_image' => $imagePath,
             'state'         => $request->state,
             'city'          => $request->city,
             'address'       => $request->address,
@@ -116,5 +126,62 @@ class SuperAdminController extends Controller
                 'state', 'city', 'address', 'zip_code', 'country', 'is_active'
             ])
         ], 200);
+    }
+
+    /**
+     * ✅ Update Admin Profile
+     */
+    public function updateProfile(Request $request)
+    {
+        $admin = $request->user(); // Logged-in admin via Sanctum
+
+        $validator = Validator::make($request->all(), [
+            'name'          => 'sometimes|required|string|max:100',
+            'phone_number'  => 'nullable|string|max:20',
+            'profile_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'state'         => 'nullable|string|max:100',
+            'city'          => 'nullable|string|max:100',
+            'address'       => 'nullable|string|max:255',
+            'zip_code'      => 'nullable|string|max:10',
+            'country'       => 'nullable|string|max:100',
+            'password'      => 'nullable|string|min:6',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'Validation failed',
+                'errors'  => $validator->errors()
+            ], 422);
+        }
+
+        // ✅ Handle profile image upload
+        if ($request->hasFile('profile_image')) {
+            $imagePath = HelperFunctions::uploadImage(
+                $request->file('profile_image'),
+                'profiles/superadmin'
+            );
+            $admin->profile_image = $imagePath;
+        }
+
+        // ✅ Update other fields
+        $admin->fill($request->only([
+            'name', 'phone_number', 'state', 'city', 'address', 'zip_code', 'country'
+        ]));
+
+        if ($request->filled('password')) {
+            $admin->password = Hash::make($request->password);
+        }
+
+        $admin->save();
+
+        return response()->json([
+            'error'   => false,
+            'message' => 'Profile updated successfully',
+            'records' => $admin->only([
+                'id', 'name', 'email', 'phone_number', 'profile_image',
+                'state', 'city', 'address', 'zip_code', 'country', 'is_active'
+            ])
+        ]);
     }
 }
