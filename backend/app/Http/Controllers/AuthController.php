@@ -9,6 +9,7 @@ use App\Models\PlayerRole;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 
@@ -216,30 +217,37 @@ class AuthController extends Controller
                 ], 200);
             }
 
-            // ✅ Upload image if exists
             if ($request->hasFile('profile_image')) {
                 $imagePath = HelperFunctions::uploadImage(
                     $request->file('profile_image'),
                     'profiles'
                 );
-                $player->profile_image = $imagePath;
-                $player->save();
             }
 
-            // ✅ Update using Eloquent update()
-            $player->update([
-                'user_name'     => $request->user_name     ?? $player->user_name,
-                'address'       => $request->address       ?? $player->address,
-                'city'          => $request->city          ?? $player->city,
-                'state'         => $request->state         ?? $player->state,
-                'zip_code'      => $request->zip_code      ?? $player->zip_code,
-                'country'       => $request->country       ?? $player->country,
-                'gender'        => $request->gender        ?? $player->gender,
-                'date_of_birth' => $request->date_of_birth ?? $player->date_of_birth,
-                'dominant_hand' => $request->dominant_hand ?? $player->dominant_hand,
-                'batting_style' => $request->batting_style ?? $player->batting_style,
-                'bowling_style' => $request->bowling_style ?? $player->bowling_style,
-            ]);
+            $updateData = [];
+            if ($request->user_name) $updateData['user_name'] = $request->user_name;
+            if ($request->address) $updateData['address'] = $request->address;
+            if ($request->city) $updateData['city'] = $request->city;
+            if ($request->state) $updateData['state'] = $request->state;
+            if ($request->zip_code) $updateData['zip_code'] = $request->zip_code;
+            if ($request->country) $updateData['country'] = $request->country;
+            if ($request->gender) $updateData['gender'] = $request->gender;
+            if ($request->date_of_birth) $updateData['date_of_birth'] = date('Y-m-d', strtotime($request->date_of_birth));
+            if ($request->dominant_hand) $updateData['dominant_hand'] = $request->dominant_hand;
+            if ($request->batting_style) $updateData['batting_style'] = $request->batting_style;
+            if ($request->bowling_style) $updateData['bowling_style'] = $request->bowling_style;
+            if (isset($imagePath)) $updateData['profile_image'] = $imagePath;
+
+            try {
+                Player::where('id', $player->id)->update($updateData);
+                $player = Player::find($player->id);
+            } catch (\Exception $e) {
+                return response()->json([
+                    'error' => true,
+                    'message' => 'Failed to update profile.',
+                    'exception' => $e->getMessage(),
+                ], 200);
+            }
 
             return response()->json([
                 'error' => false,
