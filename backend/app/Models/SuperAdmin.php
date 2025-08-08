@@ -10,7 +10,7 @@ class SuperAdmin extends Authenticatable
 {
     use HasApiTokens, Notifiable;
 
-    protected $table = 'super_admins';
+    protected $table = 'super_admin';
 
     protected $fillable = [
         'name', 'email', 'password', 'phone_number', 'profile_image',
