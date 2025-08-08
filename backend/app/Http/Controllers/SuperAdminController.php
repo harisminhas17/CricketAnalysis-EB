@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use App\Models\SuperAdmin;
-use App\HelperFunctions; // ✅ Import your helper class
+use App\HelperFunctions\HelperFunctions;
 
 class SuperAdminController extends Controller
 {
