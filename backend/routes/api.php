@@ -15,11 +15,12 @@ Route::get('getNationalities', [AuthController::class, 'getNationalities']);
 Route::get('getPlayerRoles', [AuthController::class, 'getPlayerRoles']);
 
 
-
 Route::post('checkCredentials', [AuthController::class, 'checkCredentials']);
 
 // Protected routes (Require Sanctum token)
 Route::middleware('auth:sanctum')->group(function () {
+
+
     // ✅ Admin Profile route using controller
     Route::get('/adminProfile', [SuperAdminController::class, 'adminProfile']);
 

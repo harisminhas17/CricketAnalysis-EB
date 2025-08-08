@@ -8,14 +8,16 @@ datasource db {
 }
 
 model nationality {
-    id   BigInt  @id @default(autoincrement()) @db.UnsignedBigInt
+    id   BigInt @id @default(autoincrement()) @db.UnsignedBigInt
     name String @unique @db.VarChar(50)
 
     players player[]
 
     @@map("nationalities")
 }
+
 model superAdmin {
+
     id            BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
     email         String    @unique @db.VarChar(120)
     password      String    @db.VarChar(255)
@@ -33,10 +35,11 @@ model superAdmin {
     updated_at    DateTime  @updatedAt
     deleted_at    DateTime?
 
-    @@map("super_Admin")
+    @@map("super_admin")
 }
 
 model playerRole {
+
     id          BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
     name        String    @unique @db.VarChar(50)
     description String?   @db.Text
@@ -47,10 +50,11 @@ model playerRole {
 
     players player[]
 
-    @@map("player_Roles")
+    @@map("player_roles")
 }
 
 model cricketPlayerPerformance {
+    
     id            BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
     player_id     BigInt    @db.UnsignedBigInt
     sport_type    sportType @default(cricket)
@@ -61,30 +65,37 @@ model cricketPlayerPerformance {
     is_home_match Boolean?  @default(false)
 
     // Batting Stats
-    runs_scored Int?
-    balls_faced Int?
-    fours       Int?   @db.SmallInt
-    sixes       Int?   @db.SmallInt
-    strike_rate Float?
-
-    dismissal_type String? @db.VarChar(50)
-    minutes_batted Int?
+    runs_scored      Int?
+    balls_faced      Int?
+    fours            Int?    @db.SmallInt
+    sixes            Int?    @db.SmallInt
+    strike_rate      Float?
+    dismissal_type   String? @db.VarChar(50)
+    minutes_batted   Int?
+    batting_position Int? // ✅ NEW
 
     // Bowling Stats
     overs_bowled              Float?
-    maidens                   Int?   @db.SmallInt
+    maidens                   Int?    @db.SmallInt
     runs_conceded             Int?
     wickets_taken             Int?
     economy_rate              Float?
-    no_balls                  Int?   @db.SmallInt
-    wides                     Int?   @db.SmallInt
+    no_balls                  Int?    @db.SmallInt
+    wides                     Int?    @db.SmallInt
     dot_balls                 Int?
-    boundaries_conceded_fours Int?   @default(0)
-    boundaries_conceded_sixes Int?   @default(0)
+    boundaries_conceded_fours Int?    @default(0)
+    boundaries_conceded_sixes Int?    @default(0)
+    bowling_type              String? @db.VarChar(50) // ✅ NEW
+    bowling_avg_speed         Float? // ✅ NEW
 
     // Fielding
     catches   Int? @db.SmallInt
     stumpings Int? @db.SmallInt
+
+    // Advanced Analytics (Optional JSON Fields)
+    shot_type_summary Json? // ✅ NEW e.g., {"cut":4,"pull":2}
+    pitchmap_data     Json? // ✅ NEW
+    wagon_wheel_data  Json? // ✅ NEW
 
     // Metadata
     created_at DateTime @default(now())
@@ -93,7 +104,62 @@ model cricketPlayerPerformance {
     // Relations
     player player @relation(fields: [player_id], references: [id])
 
-    @@map("player_Performances")
+    @@map("player_performances")
+}
+
+model playerFitness {
+    id         BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+    player_id  BigInt    @db.UnsignedBigInt
+    sport_type sportType @default(cricket)
+    date       DateTime  @default(now())
+
+    // Core Physical Metrics
+    height          Float? // in cm
+    weight          Float? // in kg
+    sprint_20m_time Float? // in seconds
+    yo_yo_score     Float? // Level e.g., 17.4
+
+    // Skill-Specific Metrics
+    bowling_speed_avg Float? // in km/h
+    bowling_speed_max Float?
+    bat_swing_speed   Float? // in km/h
+    jump_height       Float? // in cm
+    flexibility_score Float? // out of 10
+
+    // Injury & Fitness Status
+    injury_notes   String? @db.VarChar(255)
+    fitness_status String? @db.VarChar(20) // Fit / Injured / Partial
+
+    created_at DateTime @default(now())
+    updated_at DateTime @updatedAt
+
+    player player @relation(fields: [player_id], references: [id])
+
+    @@map("player_fitness")
+}
+
+model playerDailyWellness {
+    id         BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+    player_id  BigInt    @db.UnsignedBigInt
+    sport_type sportType @default(cricket)
+    date       DateTime  @default(now())
+
+    // Player Self-Reported Wellness Inputs
+    sleep_quality    Int? // 1–10 scale
+    soreness_level   String? @db.VarChar(20) // Low / Medium / High
+    mental_freshness Int? // 1–10 scale
+    stress_level     String? @db.VarChar(20) // Low / Medium / High
+    injury_pain      String? @db.VarChar(50) // e.g., "Hamstring tightness", "None"
+
+    // Calculated Field (Optional)
+    wellness_score Float? // Optional: calculated by backend or AI
+
+    created_at DateTime @default(now())
+    updated_at DateTime @updatedAt
+
+    player player @relation(fields: [player_id], references: [id])
+
+    @@map("player_daily_wellness")
 }
 
 model coach {
@@ -178,8 +244,12 @@ model player {
     team    team?   @relation(fields: [team_id], references: [id])
     team_id BigInt? @db.UnsignedBigInt
 
-    nationality_id BigInt? @db.UnsignedBigInt
-    nationality   nationality? @relation(fields: [nationality_id], references: [id])
+    nationality_id BigInt?      @db.UnsignedBigInt
+    nationality    nationality? @relation(fields: [nationality_id], references: [id])
+
+    // Fitness relation
+    playerFitness       playerFitness[]
+    playerDailyWellness playerDailyWellness[]
 
     @@unique([email, login_type, sport_type])
     @@map("players")
