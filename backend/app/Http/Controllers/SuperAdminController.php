@@ -17,17 +17,22 @@ class SuperAdminController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name'          => 'required|string|max:100',
-            'email'         => 'required|email|unique:super_admin,email',
-            'password'      => 'required|string|min:6',
-            'phone_number'  => 'nullable|string|max:20',
-            'profile_image' => 'nullable',
-            'state'         => 'nullable|string|max:100',
-            'city'          => 'nullable|string|max:100',
-            'address'       => 'nullable|string|max:255',
-            'zip_code'      => 'nullable|string|max:10',
-            'country'       => 'nullable|string|max:100',
-            'is_active'     => 'nullable|boolean'
+            'email'          => 'required|string|max:100',
+            'password'          => 'required|string|max:100',
+            'address'          => 'required|string|max:100',
+            'nationality'          => 'required|string|max:100',
+            'phone'          => 'required|string|max:100',
         ]);
+
+        $existsEmail = SuperAdmin::where('email', $request->email)->exists();
+
+    // Check if email already exists
+    if (SuperAdmin::where('email', $request->email)->exists()) {
+        return response()->json([
+            'error' => true,
+            'message' => 'Email already exists: ' . $request->email
+        ], 200);
+    }
 
         if ($validator->fails()) {
             return response()->json([
@@ -37,37 +42,29 @@ class SuperAdminController extends Controller
             ], 422);
         }
 
-        // ✅ Handle image if uploaded
-        $imagePath = null;
-        if ($request->hasFile('profile_image')) {
-            $imagePath = HelperFunctions::uploadImage(
-                $request->file('profile_image'),
-                'profiles/superadmin'
-            );
-        }
+        // // ✅ Handle image if uploaded
+        // $imagePath = null;
+        // if ($request->hasFile('profile_image')) {
+        //     $imagePath = HelperFunctions::uploadImage(
+        //         $request->file('profile_image'),
+        //         'profiles/superadmin'
+        //     );
+        // }
 
         $admin = SuperAdmin::create([
             'name'          => $request->name,
             'email'         => $request->email,
             'password'      => Hash::make($request->password),
-            'phone_number'  => $request->phone_number,
-            'profile_image' => $imagePath,
-            'state'         => $request->state,
-            'city'          => $request->city,
+            'phone_number'  => $request->phone,
             'address'       => $request->address,
-            'zip_code'      => $request->zip_code,
-            'country'       => $request->country,
-            'is_active'     => $request->has('is_active') ? $request->is_active : true,
+            'nationality'   => $request->nationality,
         ]);
 
         return response()->json([
             'error'   => false,
             'message' => 'Admin registered successfully!',
-            'records' => $admin->only([
-                'id', 'name', 'email', 'phone_number', 'profile_image',
-                'state', 'city', 'address', 'zip_code', 'country', 'is_active'
-            ])
-        ], 201);
+            'records' => $admin
+        ], 200);
     }
 
     /**
@@ -86,7 +83,7 @@ class SuperAdminController extends Controller
             return response()->json([
                 'error'   => true,
                 'message' => 'Email not found',
-                'input_email' => $request->email
+                'records' => $request->email
             ], 404);
         }
 
@@ -151,7 +148,7 @@ class SuperAdminController extends Controller
             return response()->json([
                 'error'   => true,
                 'message' => 'Validation failed',
-                'errors'  => $validator->errors()
+                'records'  => $validator->errors()
             ], 422);
         }
 
@@ -184,4 +181,17 @@ class SuperAdminController extends Controller
             ])
         ]);
     }
+    
+    /**
+ * ✅ Admin Logout (Current Device Only)
+ */
+public function adminLogout(Request $request)
+{
+    $request->user()->currentAccessToken()->delete();
+
+    return response()->json([
+        'error'   => false,
+        'message' => 'Logout successful (current device)'
+    ]);
+}
 }

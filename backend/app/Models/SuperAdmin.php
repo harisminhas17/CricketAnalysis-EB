@@ -12,10 +12,8 @@ class SuperAdmin extends Authenticatable
 
     protected $table = 'super_admin';
 
-    protected $fillable = [
-        'name', 'email', 'password', 'phone_number', 'profile_image',
-        'state', 'city', 'address', 'zip_code', 'country', 'is_active',
-    ];
+    // Allow all columns to be mass-assigned
+    protected $guarded = [];
 
     protected $hidden = [
         'password', 'remember_token',
