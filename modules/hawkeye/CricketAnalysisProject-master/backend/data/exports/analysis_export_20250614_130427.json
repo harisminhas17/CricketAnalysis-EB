@@ -1,0 +1,3424 @@
+{
+  "ball_tracking": {
+    "positions": [
+      [
+        456,
+        785
+      ],
+      [
+        456,
+        790
+      ],
+      [
+        455,
+        787
+      ],
+      [
+        452,
+        787
+      ],
+      [
+        452,
+        787
+      ],
+      [
+        452,
+        786
+      ],
+      [
+        451,
+        787
+      ],
+      [
+        450,
+        786
+      ],
+      [
+        450,
+        784
+      ],
+      [
+        451,
+        784
+      ],
+      [
+        451,
+        784
+      ],
+      [
+        453,
+        786
+      ],
+      [
+        445,
+        783
+      ],
+      [
+        456,
+        784
+      ],
+      [
+        455,
+        784
+      ],
+      [
+        455,
+        781
+      ],
+      [
+        456,
+        784
+      ],
+      [
+        444,
+        779
+      ],
+      [
+        444,
+        779
+      ],
+      [
+        442,
+        778
+      ],
+      [
+        452,
+        777
+      ],
+      [
+        454,
+        779
+      ],
+      [
+        454,
+        777
+      ],
+      [
+        453,
+        778
+      ],
+      [
+        456,
+        780
+      ],
+      [
+        454,
+        778
+      ],
+      [
+        454,
+        778
+      ],
+      [
+        454,
+        778
+      ],
+      [
+        454,
+        776
+      ],
+      [
+        458,
+        774
+      ],
+      [
+        457,
+        772
+      ],
+      [
+        457,
+        772
+      ],
+      [
+        455,
+        772
+      ],
+      [
+        456,
+        773
+      ],
+      [
+        457,
+        770
+      ],
+      [
+        453,
+        771
+      ],
+      [
+        452,
+        770
+      ],
+      [
+        454,
+        770
+      ],
+      [
+        453,
+        769
+      ],
+      [
+        452,
+        770
+      ],
+      [
+        454,
+        768
+      ],
+      [
+        457,
+        770
+      ],
+      [
+        457,
+        770
+      ],
+      [
+        458,
+        769
+      ],
+      [
+        457,
+        768
+      ],
+      [
+        460,
+        768
+      ],
+      [
+        462,
+        766
+      ],
+      [
+        463,
+        762
+      ],
+      [
+        462,
+        764
+      ],
+      [
+        464,
+        764
+      ],
+      [
+        463,
+        761
+      ],
+      [
+        465,
+        763
+      ],
+      [
+        468,
+        759
+      ],
+      [
+        466,
+        763
+      ],
+      [
+        466,
+        760
+      ],
+      [
+        471,
+        763
+      ],
+      [
+        467,
+        763
+      ],
+      [
+        467,
+        762
+      ],
+      [
+        470,
+        766
+      ],
+      [
+        469,
+        766
+      ],
+      [
+        465,
+        763
+      ],
+      [
+        464,
+        764
+      ],
+      [
+        465,
+        763
+      ],
+      [
+        462,
+        754
+      ],
+      [
+        463,
+        754
+      ],
+      [
+        462,
+        750
+      ],
+      [
+        462,
+        750
+      ],
+      [
+        462,
+        750
+      ],
+      [
+        461,
+        749
+      ],
+      [
+        461,
+        749
+      ],
+      [
+        462,
+        748
+      ],
+      [
+        461,
+        747
+      ],
+      [
+        459,
+        746
+      ],
+      [
+        462,
+        747
+      ],
+      [
+        464,
+        749
+      ],
+      [
+        461,
+        746
+      ],
+      [
+        465,
+        746
+      ],
+      [
+        468,
+        745
+      ],
+      [
+        469,
+        746
+      ],
+      [
+        468,
+        745
+      ],
+      [
+        464,
+        744
+      ],
+      [
+        466,
+        745
+      ],
+      [
+        468,
+        744
+      ],
+      [
+        467,
+        744
+      ],
+      [
+        471,
+        747
+      ],
+      [
+        464,
+        743
+      ],
+      [
+        465,
+        744
+      ],
+      [
+        463,
+        744
+      ],
+      [
+        463,
+        743
+      ],
+      [
+        461,
+        745
+      ],
+      [
+        463,
+        745
+      ],
+      [
+        461,
+        745
+      ],
+      [
+        457,
+        745
+      ],
+      [
+        457,
+        744
+      ],
+      [
+        456,
+        745
+      ],
+      [
+        457,
+        746
+      ],
+      [
+        456,
+        746
+      ],
+      [
+        457,
+        745
+      ],
+      [
+        458,
+        746
+      ],
+      [
+        459,
+        745
+      ],
+      [
+        458,
+        743
+      ],
+      [
+        460,
+        745
+      ],
+      [
+        460,
+        746
+      ],
+      [
+        460,
+        742
+      ],
+      [
+        459,
+        743
+      ],
+      [
+        465,
+        744
+      ],
+      [
+        465,
+        743
+      ],
+      [
+        465,
+        743
+      ],
+      [
+        465,
+        743
+      ],
+      [
+        464,
+        742
+      ],
+      [
+        463,
+        742
+      ],
+      [
+        463,
+        741
+      ],
+      [
+        463,
+        741
+      ],
+      [
+        463,
+        741
+      ],
+      [
+        465,
+        742
+      ],
+      [
+        470,
+        742
+      ],
+      [
+        468,
+        742
+      ],
+      [
+        469,
+        742
+      ],
+      [
+        469,
+        742
+      ],
+      [
+        470,
+        742
+      ],
+      [
+        470,
+        741
+      ],
+      [
+        475,
+        745
+      ],
+      [
+        471,
+        741
+      ],
+      [
+        474,
+        743
+      ],
+      [
+        476,
+        744
+      ],
+      [
+        479,
+        748
+      ],
+      [
+        481,
+        747
+      ],
+      [
+        479,
+        744
+      ],
+      [
+        475,
+        744
+      ],
+      [
+        475,
+        744
+      ],
+      [
+        475,
+        743
+      ],
+      [
+        475,
+        743
+      ],
+      [
+        475,
+        743
+      ],
+      [
+        475,
+        744
+      ],
+      [
+        477,
+        745
+      ],
+      [
+        474,
+        741
+      ],
+      [
+        473,
+        741
+      ],
+      [
+        473,
+        740
+      ],
+      [
+        472,
+        739
+      ],
+      [
+        474,
+        739
+      ],
+      [
+        473,
+        738
+      ],
+      [
+        473,
+        739
+      ],
+      [
+        472,
+        738
+      ],
+      [
+        473,
+        737
+      ],
+      [
+        472,
+        736
+      ],
+      [
+        475,
+        739
+      ],
+      [
+        471,
+        734
+      ],
+      [
+        467,
+        734
+      ],
+      [
+        475,
+        733
+      ],
+      [
+        475,
+        733
+      ],
+      [
+        486,
+        739
+      ],
+      [
+        485,
+        739
+      ],
+      [
+        485,
+        738
+      ],
+      [
+        486,
+        738
+      ],
+      [
+        483,
+        733
+      ],
+      [
+        480,
+        734
+      ],
+      [
+        480,
+        732
+      ],
+      [
+        480,
+        732
+      ],
+      [
+        488,
+        736
+      ],
+      [
+        480,
+        730
+      ],
+      [
+        477,
+        728
+      ],
+      [
+        485,
+        732
+      ],
+      [
+        488,
+        729
+      ],
+      [
+        489,
+        733
+      ],
+      [
+        490,
+        733
+      ],
+      [
+        487,
+        733
+      ],
+      [
+        491,
+        733
+      ],
+      [
+        488,
+        733
+      ],
+      [
+        485,
+        731
+      ],
+      [
+        483,
+        729
+      ],
+      [
+        485,
+        730
+      ],
+      [
+        484,
+        732
+      ],
+      [
+        485,
+        729
+      ],
+      [
+        485,
+        727
+      ],
+      [
+        490,
+        730
+      ],
+      [
+        491,
+        730
+      ],
+      [
+        492,
+        729
+      ],
+      [
+        490,
+        730
+      ],
+      [
+        488,
+        725
+      ],
+      [
+        491,
+        730
+      ],
+      [
+        493,
+        727
+      ],
+      [
+        491,
+        724
+      ],
+      [
+        489,
+        724
+      ],
+      [
+        486,
+        723
+      ],
+      [
+        459,
+        720
+      ],
+      [
+        462,
+        717
+      ],
+      [
+        463,
+        719
+      ],
+      [
+        463,
+        719
+      ],
+      [
+        460,
+        717
+      ],
+      [
+        460,
+        714
+      ],
+      [
+        463,
+        714
+      ],
+      [
+        464,
+        715
+      ],
+      [
+        461,
+        712
+      ],
+      [
+        464,
+        710
+      ],
+      [
+        463,
+        708
+      ],
+      [
+        459,
+        708
+      ],
+      [
+        458,
+        707
+      ],
+      [
+        451,
+        703
+      ],
+      [
+        461,
+        705
+      ],
+      [
+        464,
+        705
+      ],
+      [
+        462,
+        706
+      ],
+      [
+        467,
+        703
+      ],
+      [
+        468,
+        702
+      ],
+      [
+        469,
+        703
+      ],
+      [
+        471,
+        700
+      ],
+      [
+        474,
+        699
+      ],
+      [
+        477,
+        700
+      ],
+      [
+        478,
+        701
+      ],
+      [
+        483,
+        702
+      ],
+      [
+        485,
+        702
+      ],
+      [
+        487,
+        701
+      ],
+      [
+        486,
+        700
+      ],
+      [
+        485,
+        700
+      ],
+      [
+        483,
+        700
+      ],
+      [
+        488,
+        703
+      ],
+      [
+        487,
+        702
+      ],
+      [
+        488,
+        702
+      ],
+      [
+        484,
+        702
+      ],
+      [
+        484,
+        705
+      ],
+      [
+        480,
+        704
+      ],
+      [
+        482,
+        705
+      ],
+      [
+        479,
+        705
+      ],
+      [
+        478,
+        706
+      ],
+      [
+        476,
+        707
+      ],
+      [
+        477,
+        707
+      ],
+      [
+        475,
+        707
+      ],
+      [
+        473,
+        708
+      ],
+      [
+        472,
+        708
+      ],
+      [
+        470,
+        708
+      ],
+      [
+        470,
+        709
+      ],
+      [
+        474,
+        713
+      ],
+      [
+        475,
+        715
+      ],
+      [
+        472,
+        710
+      ],
+      [
+        474,
+        715
+      ],
+      [
+        472,
+        714
+      ],
+      [
+        471,
+        716
+      ],
+      [
+        473,
+        721
+      ],
+      [
+        473,
+        721
+      ],
+      [
+        476,
+        721
+      ],
+      [
+        472,
+        724
+      ],
+      [
+        467,
+        730
+      ],
+      [
+        466,
+        730
+      ]
+    ],
+    "shot_zones": [
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side"
+    ],
+    "lbw_analysis": {
+      "lbw_probability": 0.6252789805731953,
+      "impact_point": [
+        466,
+        730
+      ],
+      "trajectory": [
+        [
+          456,
+          785
+        ],
+        [
+          456,
+          790
+        ],
+        [
+          455,
+          787
+        ],
+        [
+          452,
+          787
+        ],
+        [
+          452,
+          787
+        ],
+        [
+          452,
+          786
+        ],
+        [
+          451,
+          787
+        ],
+        [
+          450,
+          786
+        ],
+        [
+          450,
+          784
+        ],
+        [
+          451,
+          784
+        ],
+        [
+          451,
+          784
+        ],
+        [
+          453,
+          786
+        ],
+        [
+          445,
+          783
+        ],
+        [
+          456,
+          784
+        ],
+        [
+          455,
+          784
+        ],
+        [
+          455,
+          781
+        ],
+        [
+          456,
+          784
+        ],
+        [
+          444,
+          779
+        ],
+        [
+          444,
+          779
+        ],
+        [
+          442,
+          778
+        ],
+        [
+          452,
+          777
+        ],
+        [
+          454,
+          779
+        ],
+        [
+          454,
+          777
+        ],
+        [
+          453,
+          778
+        ],
+        [
+          456,
+          780
+        ],
+        [
+          454,
+          778
+        ],
+        [
+          454,
+          778
+        ],
+        [
+          454,
+          778
+        ],
+        [
+          454,
+          776
+        ],
+        [
+          458,
+          774
+        ],
+        [
+          457,
+          772
+        ],
+        [
+          457,
+          772
+        ],
+        [
+          455,
+          772
+        ],
+        [
+          456,
+          773
+        ],
+        [
+          457,
+          770
+        ],
+        [
+          453,
+          771
+        ],
+        [
+          452,
+          770
+        ],
+        [
+          454,
+          770
+        ],
+        [
+          453,
+          769
+        ],
+        [
+          452,
+          770
+        ],
+        [
+          454,
+          768
+        ],
+        [
+          457,
+          770
+        ],
+        [
+          457,
+          770
+        ],
+        [
+          458,
+          769
+        ],
+        [
+          457,
+          768
+        ],
+        [
+          460,
+          768
+        ],
+        [
+          462,
+          766
+        ],
+        [
+          463,
+          762
+        ],
+        [
+          462,
+          764
+        ],
+        [
+          464,
+          764
+        ],
+        [
+          463,
+          761
+        ],
+        [
+          465,
+          763
+        ],
+        [
+          468,
+          759
+        ],
+        [
+          466,
+          763
+        ],
+        [
+          466,
+          760
+        ],
+        [
+          471,
+          763
+        ],
+        [
+          467,
+          763
+        ],
+        [
+          467,
+          762
+        ],
+        [
+          470,
+          766
+        ],
+        [
+          469,
+          766
+        ],
+        [
+          465,
+          763
+        ],
+        [
+          464,
+          764
+        ],
+        [
+          465,
+          763
+        ],
+        [
+          462,
+          754
+        ],
+        [
+          463,
+          754
+        ],
+        [
+          462,
+          750
+        ],
+        [
+          462,
+          750
+        ],
+        [
+          462,
+          750
+        ],
+        [
+          461,
+          749
+        ],
+        [
+          461,
+          749
+        ],
+        [
+          462,
+          748
+        ],
+        [
+          461,
+          747
+        ],
+        [
+          459,
+          746
+        ],
+        [
+          462,
+          747
+        ],
+        [
+          464,
+          749
+        ],
+        [
+          461,
+          746
+        ],
+        [
+          465,
+          746
+        ],
+        [
+          468,
+          745
+        ],
+        [
+          469,
+          746
+        ],
+        [
+          468,
+          745
+        ],
+        [
+          464,
+          744
+        ],
+        [
+          466,
+          745
+        ],
+        [
+          468,
+          744
+        ],
+        [
+          467,
+          744
+        ],
+        [
+          471,
+          747
+        ],
+        [
+          464,
+          743
+        ],
+        [
+          465,
+          744
+        ],
+        [
+          463,
+          744
+        ],
+        [
+          463,
+          743
+        ],
+        [
+          461,
+          745
+        ],
+        [
+          463,
+          745
+        ],
+        [
+          461,
+          745
+        ],
+        [
+          457,
+          745
+        ],
+        [
+          457,
+          744
+        ],
+        [
+          456,
+          745
+        ],
+        [
+          457,
+          746
+        ],
+        [
+          456,
+          746
+        ],
+        [
+          457,
+          745
+        ],
+        [
+          458,
+          746
+        ],
+        [
+          459,
+          745
+        ],
+        [
+          458,
+          743
+        ],
+        [
+          460,
+          745
+        ],
+        [
+          460,
+          746
+        ],
+        [
+          460,
+          742
+        ],
+        [
+          459,
+          743
+        ],
+        [
+          465,
+          744
+        ],
+        [
+          465,
+          743
+        ],
+        [
+          465,
+          743
+        ],
+        [
+          465,
+          743
+        ],
+        [
+          464,
+          742
+        ],
+        [
+          463,
+          742
+        ],
+        [
+          463,
+          741
+        ],
+        [
+          463,
+          741
+        ],
+        [
+          463,
+          741
+        ],
+        [
+          465,
+          742
+        ],
+        [
+          470,
+          742
+        ],
+        [
+          468,
+          742
+        ],
+        [
+          469,
+          742
+        ],
+        [
+          469,
+          742
+        ],
+        [
+          470,
+          742
+        ],
+        [
+          470,
+          741
+        ],
+        [
+          475,
+          745
+        ],
+        [
+          471,
+          741
+        ],
+        [
+          474,
+          743
+        ],
+        [
+          476,
+          744
+        ],
+        [
+          479,
+          748
+        ],
+        [
+          481,
+          747
+        ],
+        [
+          479,
+          744
+        ],
+        [
+          475,
+          744
+        ],
+        [
+          475,
+          744
+        ],
+        [
+          475,
+          743
+        ],
+        [
+          475,
+          743
+        ],
+        [
+          475,
+          743
+        ],
+        [
+          475,
+          744
+        ],
+        [
+          477,
+          745
+        ],
+        [
+          474,
+          741
+        ],
+        [
+          473,
+          741
+        ],
+        [
+          473,
+          740
+        ],
+        [
+          472,
+          739
+        ],
+        [
+          474,
+          739
+        ],
+        [
+          473,
+          738
+        ],
+        [
+          473,
+          739
+        ],
+        [
+          472,
+          738
+        ],
+        [
+          473,
+          737
+        ],
+        [
+          472,
+          736
+        ],
+        [
+          475,
+          739
+        ],
+        [
+          471,
+          734
+        ],
+        [
+          467,
+          734
+        ],
+        [
+          475,
+          733
+        ],
+        [
+          475,
+          733
+        ],
+        [
+          486,
+          739
+        ],
+        [
+          485,
+          739
+        ],
+        [
+          485,
+          738
+        ],
+        [
+          486,
+          738
+        ],
+        [
+          483,
+          733
+        ],
+        [
+          480,
+          734
+        ],
+        [
+          480,
+          732
+        ],
+        [
+          480,
+          732
+        ],
+        [
+          488,
+          736
+        ],
+        [
+          480,
+          730
+        ],
+        [
+          477,
+          728
+        ],
+        [
+          485,
+          732
+        ],
+        [
+          488,
+          729
+        ],
+        [
+          489,
+          733
+        ],
+        [
+          490,
+          733
+        ],
+        [
+          487,
+          733
+        ],
+        [
+          491,
+          733
+        ],
+        [
+          488,
+          733
+        ],
+        [
+          485,
+          731
+        ],
+        [
+          483,
+          729
+        ],
+        [
+          485,
+          730
+        ],
+        [
+          484,
+          732
+        ],
+        [
+          485,
+          729
+        ],
+        [
+          485,
+          727
+        ],
+        [
+          490,
+          730
+        ],
+        [
+          491,
+          730
+        ],
+        [
+          492,
+          729
+        ],
+        [
+          490,
+          730
+        ],
+        [
+          488,
+          725
+        ],
+        [
+          491,
+          730
+        ],
+        [
+          493,
+          727
+        ],
+        [
+          491,
+          724
+        ],
+        [
+          489,
+          724
+        ],
+        [
+          486,
+          723
+        ],
+        [
+          459,
+          720
+        ],
+        [
+          462,
+          717
+        ],
+        [
+          463,
+          719
+        ],
+        [
+          463,
+          719
+        ],
+        [
+          460,
+          717
+        ],
+        [
+          460,
+          714
+        ],
+        [
+          463,
+          714
+        ],
+        [
+          464,
+          715
+        ],
+        [
+          461,
+          712
+        ],
+        [
+          464,
+          710
+        ],
+        [
+          463,
+          708
+        ],
+        [
+          459,
+          708
+        ],
+        [
+          458,
+          707
+        ],
+        [
+          451,
+          703
+        ],
+        [
+          461,
+          705
+        ],
+        [
+          464,
+          705
+        ],
+        [
+          462,
+          706
+        ],
+        [
+          467,
+          703
+        ],
+        [
+          468,
+          702
+        ],
+        [
+          469,
+          703
+        ],
+        [
+          471,
+          700
+        ],
+        [
+          474,
+          699
+        ],
+        [
+          477,
+          700
+        ],
+        [
+          478,
+          701
+        ],
+        [
+          483,
+          702
+        ],
+        [
+          485,
+          702
+        ],
+        [
+          487,
+          701
+        ],
+        [
+          486,
+          700
+        ],
+        [
+          485,
+          700
+        ],
+        [
+          483,
+          700
+        ],
+        [
+          488,
+          703
+        ],
+        [
+          487,
+          702
+        ],
+        [
+          488,
+          702
+        ],
+        [
+          484,
+          702
+        ],
+        [
+          484,
+          705
+        ],
+        [
+          480,
+          704
+        ],
+        [
+          482,
+          705
+        ],
+        [
+          479,
+          705
+        ],
+        [
+          478,
+          706
+        ],
+        [
+          476,
+          707
+        ],
+        [
+          477,
+          707
+        ],
+        [
+          475,
+          707
+        ],
+        [
+          473,
+          708
+        ],
+        [
+          472,
+          708
+        ],
+        [
+          470,
+          708
+        ],
+        [
+          470,
+          709
+        ],
+        [
+          474,
+          713
+        ],
+        [
+          475,
+          715
+        ],
+        [
+          472,
+          710
+        ],
+        [
+          474,
+          715
+        ],
+        [
+          472,
+          714
+        ],
+        [
+          471,
+          716
+        ],
+        [
+          473,
+          721
+        ],
+        [
+          473,
+          721
+        ],
+        [
+          476,
+          721
+        ],
+        [
+          472,
+          724
+        ],
+        [
+          467,
+          730
+        ],
+        [
+          466,
+          730
+        ]
+      ]
+    }
+  },
+  "fitness_metrics": {
+    "distance_covered": 0.0,
+    "average_speed": 0.0,
+    "max_speed": 0.0,
+    "acceleration": 0,
+    "movement_patterns": {
+      "walking": 0,
+      "running": 0,
+      "sprinting": 0,
+      "standing": 0
+    },
+    "energy_expenditure": 0.0
+  },
+  "feedback": [
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    },
+    {
+      "message": "Move closer to the ball",
+      "confidence": 0.8,
+      "category": "technique"
+    }
+  ],
+  "heatmaps": {
+    "shot_zone": "shot_zone_heatmap.png",
+    "impact_zone": "impact_zone_heatmap.png"
+  }
+}
