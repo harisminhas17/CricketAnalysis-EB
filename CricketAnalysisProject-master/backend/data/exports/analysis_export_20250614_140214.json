@@ -1,0 +1,7308 @@
+{
+  "ball_tracking": {
+    "positions": [
+      {
+        "x": 456,
+        "y": 785
+      },
+      {
+        "x": 456,
+        "y": 790
+      },
+      {
+        "x": 455,
+        "y": 787
+      },
+      {
+        "x": 452,
+        "y": 787
+      },
+      {
+        "x": 452,
+        "y": 787
+      },
+      {
+        "x": 452,
+        "y": 786
+      },
+      {
+        "x": 451,
+        "y": 787
+      },
+      {
+        "x": 450,
+        "y": 786
+      },
+      {
+        "x": 450,
+        "y": 784
+      },
+      {
+        "x": 451,
+        "y": 784
+      },
+      {
+        "x": 451,
+        "y": 784
+      },
+      {
+        "x": 453,
+        "y": 786
+      },
+      {
+        "x": 445,
+        "y": 783
+      },
+      {
+        "x": 456,
+        "y": 784
+      },
+      {
+        "x": 455,
+        "y": 784
+      },
+      {
+        "x": 455,
+        "y": 781
+      },
+      {
+        "x": 456,
+        "y": 784
+      },
+      {
+        "x": 444,
+        "y": 779
+      },
+      {
+        "x": 444,
+        "y": 779
+      },
+      {
+        "x": 442,
+        "y": 778
+      },
+      {
+        "x": 452,
+        "y": 777
+      },
+      {
+        "x": 454,
+        "y": 779
+      },
+      {
+        "x": 454,
+        "y": 777
+      },
+      {
+        "x": 453,
+        "y": 778
+      },
+      {
+        "x": 456,
+        "y": 780
+      },
+      {
+        "x": 454,
+        "y": 778
+      },
+      {
+        "x": 454,
+        "y": 778
+      },
+      {
+        "x": 454,
+        "y": 778
+      },
+      {
+        "x": 454,
+        "y": 776
+      },
+      {
+        "x": 458,
+        "y": 774
+      },
+      {
+        "x": 457,
+        "y": 772
+      },
+      {
+        "x": 457,
+        "y": 772
+      },
+      {
+        "x": 455,
+        "y": 772
+      },
+      {
+        "x": 456,
+        "y": 773
+      },
+      {
+        "x": 457,
+        "y": 770
+      },
+      {
+        "x": 453,
+        "y": 771
+      },
+      {
+        "x": 452,
+        "y": 770
+      },
+      {
+        "x": 454,
+        "y": 770
+      },
+      {
+        "x": 453,
+        "y": 769
+      },
+      {
+        "x": 452,
+        "y": 770
+      },
+      {
+        "x": 454,
+        "y": 768
+      },
+      {
+        "x": 457,
+        "y": 770
+      },
+      {
+        "x": 457,
+        "y": 770
+      },
+      {
+        "x": 458,
+        "y": 769
+      },
+      {
+        "x": 457,
+        "y": 768
+      },
+      {
+        "x": 460,
+        "y": 768
+      },
+      {
+        "x": 462,
+        "y": 766
+      },
+      {
+        "x": 463,
+        "y": 762
+      },
+      {
+        "x": 462,
+        "y": 764
+      },
+      {
+        "x": 464,
+        "y": 764
+      },
+      {
+        "x": 463,
+        "y": 761
+      },
+      {
+        "x": 465,
+        "y": 763
+      },
+      {
+        "x": 468,
+        "y": 759
+      },
+      {
+        "x": 466,
+        "y": 763
+      },
+      {
+        "x": 466,
+        "y": 760
+      },
+      {
+        "x": 471,
+        "y": 763
+      },
+      {
+        "x": 467,
+        "y": 763
+      },
+      {
+        "x": 467,
+        "y": 762
+      },
+      {
+        "x": 470,
+        "y": 766
+      },
+      {
+        "x": 469,
+        "y": 766
+      },
+      {
+        "x": 465,
+        "y": 763
+      },
+      {
+        "x": 464,
+        "y": 764
+      },
+      {
+        "x": 465,
+        "y": 763
+      },
+      {
+        "x": 462,
+        "y": 754
+      },
+      {
+        "x": 463,
+        "y": 754
+      },
+      {
+        "x": 462,
+        "y": 750
+      },
+      {
+        "x": 462,
+        "y": 750
+      },
+      {
+        "x": 462,
+        "y": 750
+      },
+      {
+        "x": 461,
+        "y": 749
+      },
+      {
+        "x": 461,
+        "y": 749
+      },
+      {
+        "x": 462,
+        "y": 748
+      },
+      {
+        "x": 461,
+        "y": 747
+      },
+      {
+        "x": 459,
+        "y": 746
+      },
+      {
+        "x": 462,
+        "y": 747
+      },
+      {
+        "x": 464,
+        "y": 749
+      },
+      {
+        "x": 461,
+        "y": 746
+      },
+      {
+        "x": 465,
+        "y": 746
+      },
+      {
+        "x": 468,
+        "y": 745
+      },
+      {
+        "x": 469,
+        "y": 746
+      },
+      {
+        "x": 468,
+        "y": 745
+      },
+      {
+        "x": 464,
+        "y": 744
+      },
+      {
+        "x": 466,
+        "y": 745
+      },
+      {
+        "x": 468,
+        "y": 744
+      },
+      {
+        "x": 467,
+        "y": 744
+      },
+      {
+        "x": 471,
+        "y": 747
+      },
+      {
+        "x": 464,
+        "y": 743
+      },
+      {
+        "x": 465,
+        "y": 744
+      },
+      {
+        "x": 463,
+        "y": 744
+      },
+      {
+        "x": 463,
+        "y": 743
+      },
+      {
+        "x": 461,
+        "y": 745
+      },
+      {
+        "x": 463,
+        "y": 745
+      },
+      {
+        "x": 461,
+        "y": 745
+      },
+      {
+        "x": 457,
+        "y": 745
+      },
+      {
+        "x": 457,
+        "y": 744
+      },
+      {
+        "x": 456,
+        "y": 745
+      },
+      {
+        "x": 457,
+        "y": 746
+      },
+      {
+        "x": 456,
+        "y": 746
+      },
+      {
+        "x": 457,
+        "y": 745
+      },
+      {
+        "x": 458,
+        "y": 746
+      },
+      {
+        "x": 459,
+        "y": 745
+      },
+      {
+        "x": 458,
+        "y": 743
+      },
+      {
+        "x": 460,
+        "y": 745
+      },
+      {
+        "x": 460,
+        "y": 746
+      },
+      {
+        "x": 460,
+        "y": 742
+      },
+      {
+        "x": 459,
+        "y": 743
+      },
+      {
+        "x": 465,
+        "y": 744
+      },
+      {
+        "x": 465,
+        "y": 743
+      },
+      {
+        "x": 465,
+        "y": 743
+      },
+      {
+        "x": 465,
+        "y": 743
+      },
+      {
+        "x": 464,
+        "y": 742
+      },
+      {
+        "x": 463,
+        "y": 742
+      },
+      {
+        "x": 463,
+        "y": 741
+      },
+      {
+        "x": 463,
+        "y": 741
+      },
+      {
+        "x": 463,
+        "y": 741
+      },
+      {
+        "x": 465,
+        "y": 742
+      },
+      {
+        "x": 470,
+        "y": 742
+      },
+      {
+        "x": 468,
+        "y": 742
+      },
+      {
+        "x": 469,
+        "y": 742
+      },
+      {
+        "x": 469,
+        "y": 742
+      },
+      {
+        "x": 470,
+        "y": 742
+      },
+      {
+        "x": 470,
+        "y": 741
+      },
+      {
+        "x": 475,
+        "y": 745
+      },
+      {
+        "x": 471,
+        "y": 741
+      },
+      {
+        "x": 474,
+        "y": 743
+      },
+      {
+        "x": 476,
+        "y": 744
+      },
+      {
+        "x": 479,
+        "y": 748
+      },
+      {
+        "x": 481,
+        "y": 747
+      },
+      {
+        "x": 479,
+        "y": 744
+      },
+      {
+        "x": 475,
+        "y": 744
+      },
+      {
+        "x": 475,
+        "y": 744
+      },
+      {
+        "x": 475,
+        "y": 743
+      },
+      {
+        "x": 475,
+        "y": 743
+      },
+      {
+        "x": 475,
+        "y": 743
+      },
+      {
+        "x": 475,
+        "y": 744
+      },
+      {
+        "x": 477,
+        "y": 745
+      },
+      {
+        "x": 474,
+        "y": 741
+      },
+      {
+        "x": 473,
+        "y": 741
+      },
+      {
+        "x": 473,
+        "y": 740
+      },
+      {
+        "x": 472,
+        "y": 739
+      },
+      {
+        "x": 474,
+        "y": 739
+      },
+      {
+        "x": 473,
+        "y": 738
+      },
+      {
+        "x": 473,
+        "y": 739
+      },
+      {
+        "x": 472,
+        "y": 738
+      },
+      {
+        "x": 473,
+        "y": 737
+      },
+      {
+        "x": 472,
+        "y": 736
+      },
+      {
+        "x": 475,
+        "y": 739
+      },
+      {
+        "x": 471,
+        "y": 734
+      },
+      {
+        "x": 467,
+        "y": 734
+      },
+      {
+        "x": 475,
+        "y": 733
+      },
+      {
+        "x": 475,
+        "y": 733
+      },
+      {
+        "x": 486,
+        "y": 739
+      },
+      {
+        "x": 485,
+        "y": 739
+      },
+      {
+        "x": 485,
+        "y": 738
+      },
+      {
+        "x": 486,
+        "y": 738
+      },
+      {
+        "x": 483,
+        "y": 733
+      },
+      {
+        "x": 480,
+        "y": 734
+      },
+      {
+        "x": 480,
+        "y": 732
+      },
+      {
+        "x": 480,
+        "y": 732
+      },
+      {
+        "x": 488,
+        "y": 736
+      },
+      {
+        "x": 480,
+        "y": 730
+      },
+      {
+        "x": 477,
+        "y": 728
+      },
+      {
+        "x": 485,
+        "y": 732
+      },
+      {
+        "x": 488,
+        "y": 729
+      },
+      {
+        "x": 489,
+        "y": 733
+      },
+      {
+        "x": 490,
+        "y": 733
+      },
+      {
+        "x": 487,
+        "y": 733
+      },
+      {
+        "x": 491,
+        "y": 733
+      },
+      {
+        "x": 488,
+        "y": 733
+      },
+      {
+        "x": 485,
+        "y": 731
+      },
+      {
+        "x": 483,
+        "y": 729
+      },
+      {
+        "x": 485,
+        "y": 730
+      },
+      {
+        "x": 484,
+        "y": 732
+      },
+      {
+        "x": 485,
+        "y": 729
+      },
+      {
+        "x": 485,
+        "y": 727
+      },
+      {
+        "x": 490,
+        "y": 730
+      },
+      {
+        "x": 491,
+        "y": 730
+      },
+      {
+        "x": 492,
+        "y": 729
+      },
+      {
+        "x": 490,
+        "y": 730
+      },
+      {
+        "x": 488,
+        "y": 725
+      },
+      {
+        "x": 491,
+        "y": 730
+      },
+      {
+        "x": 493,
+        "y": 727
+      },
+      {
+        "x": 491,
+        "y": 724
+      },
+      {
+        "x": 489,
+        "y": 724
+      },
+      {
+        "x": 486,
+        "y": 723
+      },
+      {
+        "x": 459,
+        "y": 720
+      },
+      {
+        "x": 462,
+        "y": 717
+      },
+      {
+        "x": 463,
+        "y": 719
+      },
+      {
+        "x": 463,
+        "y": 719
+      },
+      {
+        "x": 460,
+        "y": 717
+      },
+      {
+        "x": 460,
+        "y": 714
+      },
+      {
+        "x": 463,
+        "y": 714
+      },
+      {
+        "x": 464,
+        "y": 715
+      },
+      {
+        "x": 461,
+        "y": 712
+      },
+      {
+        "x": 464,
+        "y": 710
+      },
+      {
+        "x": 463,
+        "y": 708
+      },
+      {
+        "x": 459,
+        "y": 708
+      },
+      {
+        "x": 458,
+        "y": 707
+      },
+      {
+        "x": 451,
+        "y": 703
+      },
+      {
+        "x": 461,
+        "y": 705
+      },
+      {
+        "x": 464,
+        "y": 705
+      },
+      {
+        "x": 462,
+        "y": 706
+      },
+      {
+        "x": 467,
+        "y": 703
+      },
+      {
+        "x": 468,
+        "y": 702
+      },
+      {
+        "x": 469,
+        "y": 703
+      },
+      {
+        "x": 471,
+        "y": 700
+      },
+      {
+        "x": 474,
+        "y": 699
+      },
+      {
+        "x": 477,
+        "y": 700
+      },
+      {
+        "x": 478,
+        "y": 701
+      },
+      {
+        "x": 483,
+        "y": 702
+      },
+      {
+        "x": 485,
+        "y": 702
+      },
+      {
+        "x": 487,
+        "y": 701
+      },
+      {
+        "x": 486,
+        "y": 700
+      },
+      {
+        "x": 485,
+        "y": 700
+      },
+      {
+        "x": 483,
+        "y": 700
+      },
+      {
+        "x": 488,
+        "y": 703
+      },
+      {
+        "x": 487,
+        "y": 702
+      },
+      {
+        "x": 488,
+        "y": 702
+      },
+      {
+        "x": 484,
+        "y": 702
+      },
+      {
+        "x": 484,
+        "y": 705
+      },
+      {
+        "x": 480,
+        "y": 704
+      },
+      {
+        "x": 482,
+        "y": 705
+      },
+      {
+        "x": 479,
+        "y": 705
+      },
+      {
+        "x": 478,
+        "y": 706
+      },
+      {
+        "x": 476,
+        "y": 707
+      },
+      {
+        "x": 477,
+        "y": 707
+      },
+      {
+        "x": 475,
+        "y": 707
+      },
+      {
+        "x": 473,
+        "y": 708
+      },
+      {
+        "x": 472,
+        "y": 708
+      },
+      {
+        "x": 470,
+        "y": 708
+      },
+      {
+        "x": 470,
+        "y": 709
+      },
+      {
+        "x": 474,
+        "y": 713
+      },
+      {
+        "x": 475,
+        "y": 715
+      },
+      {
+        "x": 472,
+        "y": 710
+      },
+      {
+        "x": 474,
+        "y": 715
+      },
+      {
+        "x": 472,
+        "y": 714
+      },
+      {
+        "x": 471,
+        "y": 716
+      },
+      {
+        "x": 473,
+        "y": 721
+      },
+      {
+        "x": 473,
+        "y": 721
+      },
+      {
+        "x": 476,
+        "y": 721
+      },
+      {
+        "x": 472,
+        "y": 724
+      },
+      {
+        "x": 467,
+        "y": 730
+      },
+      {
+        "x": 466,
+        "y": 730
+      }
+    ],
+    "shot_zones": [
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side",
+      "leg_side"
+    ],
+    "lbw_analysis": {
+      "lbw_possible": false,
+      "impact_point": null,
+      "trajectory": {
+        "start": {
+          "x": 467,
+          "y": 730
+        },
+        "end": {
+          "x": 466,
+          "y": 730
+        },
+        "direction": {
+          "dx": -1,
+          "dy": 0
+        }
+      },
+      "confidence": 0.3
+    }
+  },
+  "ball_by_ball": [
+    {
+      "ball_number": 1,
+      "position": {
+        "x": 456,
+        "y": 785
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891592.8422227
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "position": {
+        "x": 456,
+        "y": 790
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891592.842314
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "position": {
+        "x": 455,
+        "y": 787
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891593.3726044
+        }
+      ]
+    },
+    {
+      "ball_number": 4,
+      "position": {
+        "x": 452,
+        "y": 787
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891593.3726134
+        }
+      ]
+    },
+    {
+      "ball_number": 5,
+      "position": {
+        "x": 452,
+        "y": 787
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891593.9522457
+        }
+      ]
+    },
+    {
+      "ball_number": 6,
+      "position": {
+        "x": 452,
+        "y": 786
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891593.9522521
+        }
+      ]
+    },
+    {
+      "ball_number": 7,
+      "position": {
+        "x": 451,
+        "y": 787
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891594.5830307
+        }
+      ]
+    },
+    {
+      "ball_number": 8,
+      "position": {
+        "x": 450,
+        "y": 786
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891594.5830507
+        }
+      ]
+    },
+    {
+      "ball_number": 9,
+      "position": {
+        "x": 450,
+        "y": 784
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891595.5573673
+        }
+      ]
+    },
+    {
+      "ball_number": 10,
+      "position": {
+        "x": 451,
+        "y": 784
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891595.5573742
+        }
+      ]
+    },
+    {
+      "ball_number": 11,
+      "position": {
+        "x": 451,
+        "y": 784
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891597.2996113
+        }
+      ]
+    },
+    {
+      "ball_number": 12,
+      "position": {
+        "x": 453,
+        "y": 786
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891597.2996175
+        }
+      ]
+    },
+    {
+      "ball_number": 13,
+      "position": {
+        "x": 445,
+        "y": 783
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891598.7719672
+        }
+      ]
+    },
+    {
+      "ball_number": 14,
+      "position": {
+        "x": 456,
+        "y": 784
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891598.7719734
+        }
+      ]
+    },
+    {
+      "ball_number": 15,
+      "position": {
+        "x": 455,
+        "y": 784
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891600.613796
+        }
+      ]
+    },
+    {
+      "ball_number": 16,
+      "position": {
+        "x": 455,
+        "y": 781
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891600.6138048
+        }
+      ]
+    },
+    {
+      "ball_number": 17,
+      "position": {
+        "x": 456,
+        "y": 784
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891601.4265442
+        }
+      ]
+    },
+    {
+      "ball_number": 18,
+      "position": {
+        "x": 444,
+        "y": 779
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891601.4265504
+        }
+      ]
+    },
+    {
+      "ball_number": 19,
+      "position": {
+        "x": 444,
+        "y": 779
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891602.2716653
+        }
+      ]
+    },
+    {
+      "ball_number": 20,
+      "position": {
+        "x": 442,
+        "y": 778
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891602.271674
+        }
+      ]
+    },
+    {
+      "ball_number": 21,
+      "position": {
+        "x": 452,
+        "y": 777
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891602.9306424
+        }
+      ]
+    },
+    {
+      "ball_number": 22,
+      "position": {
+        "x": 454,
+        "y": 779
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891602.930648
+        }
+      ]
+    },
+    {
+      "ball_number": 23,
+      "position": {
+        "x": 454,
+        "y": 777
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891603.5056574
+        }
+      ]
+    },
+    {
+      "ball_number": 24,
+      "position": {
+        "x": 453,
+        "y": 778
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891603.5056632
+        }
+      ]
+    },
+    {
+      "ball_number": 25,
+      "position": {
+        "x": 456,
+        "y": 780
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891604.3046942
+        }
+      ]
+    },
+    {
+      "ball_number": 26,
+      "position": {
+        "x": 454,
+        "y": 778
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891604.3047
+        }
+      ]
+    },
+    {
+      "ball_number": 27,
+      "position": {
+        "x": 454,
+        "y": 778
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891604.8436038
+        }
+      ]
+    },
+    {
+      "ball_number": 28,
+      "position": {
+        "x": 454,
+        "y": 778
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891604.8436108
+        }
+      ]
+    },
+    {
+      "ball_number": 29,
+      "position": {
+        "x": 454,
+        "y": 776
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891605.6190252
+        }
+      ]
+    },
+    {
+      "ball_number": 30,
+      "position": {
+        "x": 458,
+        "y": 774
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891605.6190317
+        }
+      ]
+    },
+    {
+      "ball_number": 31,
+      "position": {
+        "x": 457,
+        "y": 772
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891606.501965
+        }
+      ]
+    },
+    {
+      "ball_number": 32,
+      "position": {
+        "x": 457,
+        "y": 772
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891606.5019712
+        }
+      ]
+    },
+    {
+      "ball_number": 33,
+      "position": {
+        "x": 455,
+        "y": 772
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891607.776492
+        }
+      ]
+    },
+    {
+      "ball_number": 34,
+      "position": {
+        "x": 456,
+        "y": 773
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891607.7764978
+        }
+      ]
+    },
+    {
+      "ball_number": 35,
+      "position": {
+        "x": 457,
+        "y": 770
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891609.443011
+        }
+      ]
+    },
+    {
+      "ball_number": 36,
+      "position": {
+        "x": 453,
+        "y": 771
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891609.443018
+        }
+      ]
+    },
+    {
+      "ball_number": 37,
+      "position": {
+        "x": 452,
+        "y": 770
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891610.3702748
+        }
+      ]
+    },
+    {
+      "ball_number": 38,
+      "position": {
+        "x": 454,
+        "y": 770
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891610.3702824
+        }
+      ]
+    },
+    {
+      "ball_number": 39,
+      "position": {
+        "x": 453,
+        "y": 769
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891611.2790787
+        }
+      ]
+    },
+    {
+      "ball_number": 40,
+      "position": {
+        "x": 452,
+        "y": 770
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891611.2790852
+        }
+      ]
+    },
+    {
+      "ball_number": 41,
+      "position": {
+        "x": 454,
+        "y": 768
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891612.1265182
+        }
+      ]
+    },
+    {
+      "ball_number": 42,
+      "position": {
+        "x": 457,
+        "y": 770
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891612.1265259
+        }
+      ]
+    },
+    {
+      "ball_number": 43,
+      "position": {
+        "x": 457,
+        "y": 770
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891612.9859753
+        }
+      ]
+    },
+    {
+      "ball_number": 44,
+      "position": {
+        "x": 458,
+        "y": 769
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891612.9859827
+        }
+      ]
+    },
+    {
+      "ball_number": 45,
+      "position": {
+        "x": 457,
+        "y": 768
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891613.7784886
+        }
+      ]
+    },
+    {
+      "ball_number": 46,
+      "position": {
+        "x": 460,
+        "y": 768
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891613.7784936
+        }
+      ]
+    },
+    {
+      "ball_number": 47,
+      "position": {
+        "x": 462,
+        "y": 766
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891614.4184523
+        }
+      ]
+    },
+    {
+      "ball_number": 48,
+      "position": {
+        "x": 463,
+        "y": 762
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891614.4184585
+        }
+      ]
+    },
+    {
+      "ball_number": 49,
+      "position": {
+        "x": 462,
+        "y": 764
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891614.9140043
+        }
+      ]
+    },
+    {
+      "ball_number": 50,
+      "position": {
+        "x": 464,
+        "y": 764
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891614.9140098
+        }
+      ]
+    },
+    {
+      "ball_number": 51,
+      "position": {
+        "x": 463,
+        "y": 761
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891615.3789382
+        }
+      ]
+    },
+    {
+      "ball_number": 52,
+      "position": {
+        "x": 465,
+        "y": 763
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891615.378944
+        }
+      ]
+    },
+    {
+      "ball_number": 53,
+      "position": {
+        "x": 468,
+        "y": 759
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891615.9052923
+        }
+      ]
+    },
+    {
+      "ball_number": 54,
+      "position": {
+        "x": 466,
+        "y": 763
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891615.9052992
+        }
+      ]
+    },
+    {
+      "ball_number": 55,
+      "position": {
+        "x": 466,
+        "y": 760
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891616.3601353
+        }
+      ]
+    },
+    {
+      "ball_number": 56,
+      "position": {
+        "x": 471,
+        "y": 763
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891616.3601742
+        }
+      ]
+    },
+    {
+      "ball_number": 57,
+      "position": {
+        "x": 467,
+        "y": 763
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891616.9262383
+        }
+      ]
+    },
+    {
+      "ball_number": 58,
+      "position": {
+        "x": 467,
+        "y": 762
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891616.9262457
+        }
+      ]
+    },
+    {
+      "ball_number": 59,
+      "position": {
+        "x": 470,
+        "y": 766
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891617.493894
+        }
+      ]
+    },
+    {
+      "ball_number": 60,
+      "position": {
+        "x": 469,
+        "y": 766
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891617.4939039
+        }
+      ]
+    },
+    {
+      "ball_number": 61,
+      "position": {
+        "x": 465,
+        "y": 763
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891618.0959187
+        }
+      ]
+    },
+    {
+      "ball_number": 62,
+      "position": {
+        "x": 464,
+        "y": 764
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891618.0959249
+        }
+      ]
+    },
+    {
+      "ball_number": 63,
+      "position": {
+        "x": 465,
+        "y": 763
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891618.7377515
+        }
+      ]
+    },
+    {
+      "ball_number": 64,
+      "position": {
+        "x": 462,
+        "y": 754
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891618.7377577
+        }
+      ]
+    },
+    {
+      "ball_number": 65,
+      "position": {
+        "x": 463,
+        "y": 754
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891619.3067107
+        }
+      ]
+    },
+    {
+      "ball_number": 66,
+      "position": {
+        "x": 462,
+        "y": 750
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891619.306716
+        }
+      ]
+    },
+    {
+      "ball_number": 67,
+      "position": {
+        "x": 462,
+        "y": 750
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891619.8040507
+        }
+      ]
+    },
+    {
+      "ball_number": 68,
+      "position": {
+        "x": 462,
+        "y": 750
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891619.8040562
+        }
+      ]
+    },
+    {
+      "ball_number": 69,
+      "position": {
+        "x": 461,
+        "y": 749
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891620.389802
+        }
+      ]
+    },
+    {
+      "ball_number": 70,
+      "position": {
+        "x": 461,
+        "y": 749
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891620.3898087
+        }
+      ]
+    },
+    {
+      "ball_number": 71,
+      "position": {
+        "x": 462,
+        "y": 748
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891621.0134614
+        }
+      ]
+    },
+    {
+      "ball_number": 72,
+      "position": {
+        "x": 461,
+        "y": 747
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891621.0134668
+        }
+      ]
+    },
+    {
+      "ball_number": 73,
+      "position": {
+        "x": 459,
+        "y": 746
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891621.8188832
+        }
+      ]
+    },
+    {
+      "ball_number": 74,
+      "position": {
+        "x": 462,
+        "y": 747
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891621.8188906
+        }
+      ]
+    },
+    {
+      "ball_number": 75,
+      "position": {
+        "x": 464,
+        "y": 749
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891622.4583292
+        }
+      ]
+    },
+    {
+      "ball_number": 76,
+      "position": {
+        "x": 461,
+        "y": 746
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891622.4583375
+        }
+      ]
+    },
+    {
+      "ball_number": 77,
+      "position": {
+        "x": 465,
+        "y": 746
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891623.3464918
+        }
+      ]
+    },
+    {
+      "ball_number": 78,
+      "position": {
+        "x": 468,
+        "y": 745
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891623.3464956
+        }
+      ]
+    },
+    {
+      "ball_number": 79,
+      "position": {
+        "x": 469,
+        "y": 746
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891623.8762963
+        }
+      ]
+    },
+    {
+      "ball_number": 80,
+      "position": {
+        "x": 468,
+        "y": 745
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891623.8763008
+        }
+      ]
+    },
+    {
+      "ball_number": 81,
+      "position": {
+        "x": 464,
+        "y": 744
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891624.3690076
+        }
+      ]
+    },
+    {
+      "ball_number": 82,
+      "position": {
+        "x": 466,
+        "y": 745
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891624.369013
+        }
+      ]
+    },
+    {
+      "ball_number": 83,
+      "position": {
+        "x": 468,
+        "y": 744
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891625.4576073
+        }
+      ]
+    },
+    {
+      "ball_number": 84,
+      "position": {
+        "x": 467,
+        "y": 744
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891625.4576132
+        }
+      ]
+    },
+    {
+      "ball_number": 85,
+      "position": {
+        "x": 471,
+        "y": 747
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891626.5322905
+        }
+      ]
+    },
+    {
+      "ball_number": 86,
+      "position": {
+        "x": 464,
+        "y": 743
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891626.5323007
+        }
+      ]
+    },
+    {
+      "ball_number": 87,
+      "position": {
+        "x": 465,
+        "y": 744
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891627.316481
+        }
+      ]
+    },
+    {
+      "ball_number": 88,
+      "position": {
+        "x": 463,
+        "y": 744
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891627.3164883
+        }
+      ]
+    },
+    {
+      "ball_number": 89,
+      "position": {
+        "x": 463,
+        "y": 743
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891628.0576074
+        }
+      ]
+    },
+    {
+      "ball_number": 90,
+      "position": {
+        "x": 461,
+        "y": 745
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891628.0576143
+        }
+      ]
+    },
+    {
+      "ball_number": 91,
+      "position": {
+        "x": 463,
+        "y": 745
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891628.7535691
+        }
+      ]
+    },
+    {
+      "ball_number": 92,
+      "position": {
+        "x": 461,
+        "y": 745
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891628.7535868
+        }
+      ]
+    },
+    {
+      "ball_number": 93,
+      "position": {
+        "x": 457,
+        "y": 745
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891630.3490458
+        }
+      ]
+    },
+    {
+      "ball_number": 94,
+      "position": {
+        "x": 457,
+        "y": 744
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891630.3490515
+        }
+      ]
+    },
+    {
+      "ball_number": 95,
+      "position": {
+        "x": 456,
+        "y": 745
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891631.2280686
+        }
+      ]
+    },
+    {
+      "ball_number": 96,
+      "position": {
+        "x": 457,
+        "y": 746
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891631.2280755
+        }
+      ]
+    },
+    {
+      "ball_number": 97,
+      "position": {
+        "x": 456,
+        "y": 746
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891631.8069062
+        }
+      ]
+    },
+    {
+      "ball_number": 98,
+      "position": {
+        "x": 457,
+        "y": 745
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891631.8069115
+        }
+      ]
+    },
+    {
+      "ball_number": 99,
+      "position": {
+        "x": 458,
+        "y": 746
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891632.6375322
+        }
+      ]
+    },
+    {
+      "ball_number": 100,
+      "position": {
+        "x": 459,
+        "y": 745
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891632.637539
+        }
+      ]
+    },
+    {
+      "ball_number": 101,
+      "position": {
+        "x": 458,
+        "y": 743
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891633.3999007
+        }
+      ]
+    },
+    {
+      "ball_number": 102,
+      "position": {
+        "x": 460,
+        "y": 745
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891633.399921
+        }
+      ]
+    },
+    {
+      "ball_number": 103,
+      "position": {
+        "x": 460,
+        "y": 746
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891634.2104697
+        }
+      ]
+    },
+    {
+      "ball_number": 104,
+      "position": {
+        "x": 460,
+        "y": 742
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891634.210478
+        }
+      ]
+    },
+    {
+      "ball_number": 105,
+      "position": {
+        "x": 459,
+        "y": 743
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891635.0443
+        }
+      ]
+    },
+    {
+      "ball_number": 106,
+      "position": {
+        "x": 465,
+        "y": 744
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891635.044337
+        }
+      ]
+    },
+    {
+      "ball_number": 107,
+      "position": {
+        "x": 465,
+        "y": 743
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891635.6505797
+        }
+      ]
+    },
+    {
+      "ball_number": 108,
+      "position": {
+        "x": 465,
+        "y": 743
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891635.6505857
+        }
+      ]
+    },
+    {
+      "ball_number": 109,
+      "position": {
+        "x": 465,
+        "y": 743
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891636.3975627
+        }
+      ]
+    },
+    {
+      "ball_number": 110,
+      "position": {
+        "x": 464,
+        "y": 742
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891636.397568
+        }
+      ]
+    },
+    {
+      "ball_number": 111,
+      "position": {
+        "x": 463,
+        "y": 742
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891636.9494026
+        }
+      ]
+    },
+    {
+      "ball_number": 112,
+      "position": {
+        "x": 463,
+        "y": 741
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891636.9494076
+        }
+      ]
+    },
+    {
+      "ball_number": 113,
+      "position": {
+        "x": 463,
+        "y": 741
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891637.3976724
+        }
+      ]
+    },
+    {
+      "ball_number": 114,
+      "position": {
+        "x": 463,
+        "y": 741
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891637.3976781
+        }
+      ]
+    },
+    {
+      "ball_number": 115,
+      "position": {
+        "x": 465,
+        "y": 742
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891637.8379433
+        }
+      ]
+    },
+    {
+      "ball_number": 116,
+      "position": {
+        "x": 470,
+        "y": 742
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891637.837947
+        }
+      ]
+    },
+    {
+      "ball_number": 117,
+      "position": {
+        "x": 468,
+        "y": 742
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891638.3005984
+        }
+      ]
+    },
+    {
+      "ball_number": 118,
+      "position": {
+        "x": 469,
+        "y": 742
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891638.3006172
+        }
+      ]
+    },
+    {
+      "ball_number": 119,
+      "position": {
+        "x": 469,
+        "y": 742
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891638.7008107
+        }
+      ]
+    },
+    {
+      "ball_number": 120,
+      "position": {
+        "x": 470,
+        "y": 742
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891638.7008178
+        }
+      ]
+    },
+    {
+      "ball_number": 121,
+      "position": {
+        "x": 470,
+        "y": 741
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891639.1601043
+        }
+      ]
+    },
+    {
+      "ball_number": 122,
+      "position": {
+        "x": 475,
+        "y": 745
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891639.160111
+        }
+      ]
+    },
+    {
+      "ball_number": 123,
+      "position": {
+        "x": 471,
+        "y": 741
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891639.565219
+        }
+      ]
+    },
+    {
+      "ball_number": 124,
+      "position": {
+        "x": 474,
+        "y": 743
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891639.5652242
+        }
+      ]
+    },
+    {
+      "ball_number": 125,
+      "position": {
+        "x": 476,
+        "y": 744
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891640.027942
+        }
+      ]
+    },
+    {
+      "ball_number": 126,
+      "position": {
+        "x": 479,
+        "y": 748
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891640.0279455
+        }
+      ]
+    },
+    {
+      "ball_number": 127,
+      "position": {
+        "x": 481,
+        "y": 747
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891640.449952
+        }
+      ]
+    },
+    {
+      "ball_number": 128,
+      "position": {
+        "x": 479,
+        "y": 744
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891640.44996
+        }
+      ]
+    },
+    {
+      "ball_number": 129,
+      "position": {
+        "x": 475,
+        "y": 744
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891640.904903
+        }
+      ]
+    },
+    {
+      "ball_number": 130,
+      "position": {
+        "x": 475,
+        "y": 744
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891640.9049115
+        }
+      ]
+    },
+    {
+      "ball_number": 131,
+      "position": {
+        "x": 475,
+        "y": 743
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891641.3496695
+        }
+      ]
+    },
+    {
+      "ball_number": 132,
+      "position": {
+        "x": 475,
+        "y": 743
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891641.3496747
+        }
+      ]
+    },
+    {
+      "ball_number": 133,
+      "position": {
+        "x": 475,
+        "y": 743
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891641.7908947
+        }
+      ]
+    },
+    {
+      "ball_number": 134,
+      "position": {
+        "x": 475,
+        "y": 744
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891641.7909002
+        }
+      ]
+    },
+    {
+      "ball_number": 135,
+      "position": {
+        "x": 477,
+        "y": 745
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891642.2658184
+        }
+      ]
+    },
+    {
+      "ball_number": 136,
+      "position": {
+        "x": 474,
+        "y": 741
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891642.2658243
+        }
+      ]
+    },
+    {
+      "ball_number": 137,
+      "position": {
+        "x": 473,
+        "y": 741
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891642.7053647
+        }
+      ]
+    },
+    {
+      "ball_number": 138,
+      "position": {
+        "x": 473,
+        "y": 740
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891642.7053707
+        }
+      ]
+    },
+    {
+      "ball_number": 139,
+      "position": {
+        "x": 472,
+        "y": 739
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891643.1641593
+        }
+      ]
+    },
+    {
+      "ball_number": 140,
+      "position": {
+        "x": 474,
+        "y": 739
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891643.164167
+        }
+      ]
+    },
+    {
+      "ball_number": 141,
+      "position": {
+        "x": 473,
+        "y": 738
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891643.6012797
+        }
+      ]
+    },
+    {
+      "ball_number": 142,
+      "position": {
+        "x": 473,
+        "y": 739
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891643.6012857
+        }
+      ]
+    },
+    {
+      "ball_number": 143,
+      "position": {
+        "x": 472,
+        "y": 738
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891644.0215778
+        }
+      ]
+    },
+    {
+      "ball_number": 144,
+      "position": {
+        "x": 473,
+        "y": 737
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891644.0215833
+        }
+      ]
+    },
+    {
+      "ball_number": 145,
+      "position": {
+        "x": 472,
+        "y": 736
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891644.4939053
+        }
+      ]
+    },
+    {
+      "ball_number": 146,
+      "position": {
+        "x": 475,
+        "y": 739
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891644.4939106
+        }
+      ]
+    },
+    {
+      "ball_number": 147,
+      "position": {
+        "x": 471,
+        "y": 734
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891644.9403515
+        }
+      ]
+    },
+    {
+      "ball_number": 148,
+      "position": {
+        "x": 467,
+        "y": 734
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891644.9403555
+        }
+      ]
+    },
+    {
+      "ball_number": 149,
+      "position": {
+        "x": 475,
+        "y": 733
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891645.3737264
+        }
+      ]
+    },
+    {
+      "ball_number": 150,
+      "position": {
+        "x": 475,
+        "y": 733
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891645.373732
+        }
+      ]
+    },
+    {
+      "ball_number": 151,
+      "position": {
+        "x": 486,
+        "y": 739
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891645.7836068
+        }
+      ]
+    },
+    {
+      "ball_number": 152,
+      "position": {
+        "x": 485,
+        "y": 739
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891645.7836113
+        }
+      ]
+    },
+    {
+      "ball_number": 153,
+      "position": {
+        "x": 485,
+        "y": 738
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891646.2473884
+        }
+      ]
+    },
+    {
+      "ball_number": 154,
+      "position": {
+        "x": 486,
+        "y": 738
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891646.2473938
+        }
+      ]
+    },
+    {
+      "ball_number": 155,
+      "position": {
+        "x": 483,
+        "y": 733
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891646.7092717
+        }
+      ]
+    },
+    {
+      "ball_number": 156,
+      "position": {
+        "x": 480,
+        "y": 734
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891646.7092803
+        }
+      ]
+    },
+    {
+      "ball_number": 157,
+      "position": {
+        "x": 480,
+        "y": 732
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891647.157575
+        }
+      ]
+    },
+    {
+      "ball_number": 158,
+      "position": {
+        "x": 480,
+        "y": 732
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891647.157582
+        }
+      ]
+    },
+    {
+      "ball_number": 159,
+      "position": {
+        "x": 488,
+        "y": 736
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891647.5916739
+        }
+      ]
+    },
+    {
+      "ball_number": 160,
+      "position": {
+        "x": 480,
+        "y": 730
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891647.5916796
+        }
+      ]
+    },
+    {
+      "ball_number": 161,
+      "position": {
+        "x": 477,
+        "y": 728
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891648.003134
+        }
+      ]
+    },
+    {
+      "ball_number": 162,
+      "position": {
+        "x": 485,
+        "y": 732
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891648.0031395
+        }
+      ]
+    },
+    {
+      "ball_number": 163,
+      "position": {
+        "x": 488,
+        "y": 729
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891648.4639018
+        }
+      ]
+    },
+    {
+      "ball_number": 164,
+      "position": {
+        "x": 489,
+        "y": 733
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891648.463909
+        }
+      ]
+    },
+    {
+      "ball_number": 165,
+      "position": {
+        "x": 490,
+        "y": 733
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891648.8734808
+        }
+      ]
+    },
+    {
+      "ball_number": 166,
+      "position": {
+        "x": 487,
+        "y": 733
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891648.873486
+        }
+      ]
+    },
+    {
+      "ball_number": 167,
+      "position": {
+        "x": 491,
+        "y": 733
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891649.3209686
+        }
+      ]
+    },
+    {
+      "ball_number": 168,
+      "position": {
+        "x": 488,
+        "y": 733
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891649.320974
+        }
+      ]
+    },
+    {
+      "ball_number": 169,
+      "position": {
+        "x": 485,
+        "y": 731
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891649.750602
+        }
+      ]
+    },
+    {
+      "ball_number": 170,
+      "position": {
+        "x": 483,
+        "y": 729
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891649.750607
+        }
+      ]
+    },
+    {
+      "ball_number": 171,
+      "position": {
+        "x": 485,
+        "y": 730
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891650.1982703
+        }
+      ]
+    },
+    {
+      "ball_number": 172,
+      "position": {
+        "x": 484,
+        "y": 732
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891650.198275
+        }
+      ]
+    },
+    {
+      "ball_number": 173,
+      "position": {
+        "x": 485,
+        "y": 729
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891650.6194735
+        }
+      ]
+    },
+    {
+      "ball_number": 174,
+      "position": {
+        "x": 485,
+        "y": 727
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891650.619478
+        }
+      ]
+    },
+    {
+      "ball_number": 175,
+      "position": {
+        "x": 490,
+        "y": 730
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891651.067166
+        }
+      ]
+    },
+    {
+      "ball_number": 176,
+      "position": {
+        "x": 491,
+        "y": 730
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891651.0671713
+        }
+      ]
+    },
+    {
+      "ball_number": 177,
+      "position": {
+        "x": 492,
+        "y": 729
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891651.5146976
+        }
+      ]
+    },
+    {
+      "ball_number": 178,
+      "position": {
+        "x": 490,
+        "y": 730
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891651.5147054
+        }
+      ]
+    },
+    {
+      "ball_number": 179,
+      "position": {
+        "x": 488,
+        "y": 725
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891652.0181339
+        }
+      ]
+    },
+    {
+      "ball_number": 180,
+      "position": {
+        "x": 491,
+        "y": 730
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891652.0181386
+        }
+      ]
+    },
+    {
+      "ball_number": 181,
+      "position": {
+        "x": 493,
+        "y": 727
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891652.5087967
+        }
+      ]
+    },
+    {
+      "ball_number": 182,
+      "position": {
+        "x": 491,
+        "y": 724
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891652.5088012
+        }
+      ]
+    },
+    {
+      "ball_number": 183,
+      "position": {
+        "x": 489,
+        "y": 724
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891652.9273498
+        }
+      ]
+    },
+    {
+      "ball_number": 184,
+      "position": {
+        "x": 486,
+        "y": 723
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891652.9273553
+        }
+      ]
+    },
+    {
+      "ball_number": 185,
+      "position": {
+        "x": 459,
+        "y": 720
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891653.3492942
+        }
+      ]
+    },
+    {
+      "ball_number": 186,
+      "position": {
+        "x": 462,
+        "y": 717
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891653.3492992
+        }
+      ]
+    },
+    {
+      "ball_number": 187,
+      "position": {
+        "x": 463,
+        "y": 719
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891653.7769868
+        }
+      ]
+    },
+    {
+      "ball_number": 188,
+      "position": {
+        "x": 463,
+        "y": 719
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891653.7769926
+        }
+      ]
+    },
+    {
+      "ball_number": 189,
+      "position": {
+        "x": 460,
+        "y": 717
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891654.217363
+        }
+      ]
+    },
+    {
+      "ball_number": 190,
+      "position": {
+        "x": 460,
+        "y": 714
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891654.2173684
+        }
+      ]
+    },
+    {
+      "ball_number": 191,
+      "position": {
+        "x": 463,
+        "y": 714
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891654.6485238
+        }
+      ]
+    },
+    {
+      "ball_number": 192,
+      "position": {
+        "x": 464,
+        "y": 715
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891654.6485286
+        }
+      ]
+    },
+    {
+      "ball_number": 193,
+      "position": {
+        "x": 461,
+        "y": 712
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891655.073611
+        }
+      ]
+    },
+    {
+      "ball_number": 194,
+      "position": {
+        "x": 464,
+        "y": 710
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891655.073617
+        }
+      ]
+    },
+    {
+      "ball_number": 195,
+      "position": {
+        "x": 463,
+        "y": 708
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891655.5255241
+        }
+      ]
+    },
+    {
+      "ball_number": 196,
+      "position": {
+        "x": 459,
+        "y": 708
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891655.5255296
+        }
+      ]
+    },
+    {
+      "ball_number": 197,
+      "position": {
+        "x": 458,
+        "y": 707
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891655.9680245
+        }
+      ]
+    },
+    {
+      "ball_number": 198,
+      "position": {
+        "x": 451,
+        "y": 703
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891655.968032
+        }
+      ]
+    },
+    {
+      "ball_number": 199,
+      "position": {
+        "x": 461,
+        "y": 705
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891656.4680562
+        }
+      ]
+    },
+    {
+      "ball_number": 200,
+      "position": {
+        "x": 464,
+        "y": 705
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891656.4680612
+        }
+      ]
+    },
+    {
+      "ball_number": 201,
+      "position": {
+        "x": 462,
+        "y": 706
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891656.9921625
+        }
+      ]
+    },
+    {
+      "ball_number": 202,
+      "position": {
+        "x": 467,
+        "y": 703
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891656.992185
+        }
+      ]
+    },
+    {
+      "ball_number": 203,
+      "position": {
+        "x": 468,
+        "y": 702
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891657.4247768
+        }
+      ]
+    },
+    {
+      "ball_number": 204,
+      "position": {
+        "x": 469,
+        "y": 703
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891657.4247828
+        }
+      ]
+    },
+    {
+      "ball_number": 205,
+      "position": {
+        "x": 471,
+        "y": 700
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891657.8435078
+        }
+      ]
+    },
+    {
+      "ball_number": 206,
+      "position": {
+        "x": 474,
+        "y": 699
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891657.8435156
+        }
+      ]
+    },
+    {
+      "ball_number": 207,
+      "position": {
+        "x": 477,
+        "y": 700
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891658.3057275
+        }
+      ]
+    },
+    {
+      "ball_number": 208,
+      "position": {
+        "x": 478,
+        "y": 701
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891658.3057327
+        }
+      ]
+    },
+    {
+      "ball_number": 209,
+      "position": {
+        "x": 483,
+        "y": 702
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891658.722824
+        }
+      ]
+    },
+    {
+      "ball_number": 210,
+      "position": {
+        "x": 485,
+        "y": 702
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891658.7228305
+        }
+      ]
+    },
+    {
+      "ball_number": 211,
+      "position": {
+        "x": 487,
+        "y": 701
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891659.1912866
+        }
+      ]
+    },
+    {
+      "ball_number": 212,
+      "position": {
+        "x": 486,
+        "y": 700
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891659.191292
+        }
+      ]
+    },
+    {
+      "ball_number": 213,
+      "position": {
+        "x": 485,
+        "y": 700
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891659.6225202
+        }
+      ]
+    },
+    {
+      "ball_number": 214,
+      "position": {
+        "x": 483,
+        "y": 700
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891659.6225243
+        }
+      ]
+    },
+    {
+      "ball_number": 215,
+      "position": {
+        "x": 488,
+        "y": 703
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891660.0829923
+        }
+      ]
+    },
+    {
+      "ball_number": 216,
+      "position": {
+        "x": 487,
+        "y": 702
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891660.0829976
+        }
+      ]
+    },
+    {
+      "ball_number": 217,
+      "position": {
+        "x": 488,
+        "y": 702
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891660.5153944
+        }
+      ]
+    },
+    {
+      "ball_number": 218,
+      "position": {
+        "x": 484,
+        "y": 702
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891660.5154002
+        }
+      ]
+    },
+    {
+      "ball_number": 219,
+      "position": {
+        "x": 484,
+        "y": 705
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891660.8937104
+        }
+      ]
+    },
+    {
+      "ball_number": 220,
+      "position": {
+        "x": 480,
+        "y": 704
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891660.8937154
+        }
+      ]
+    },
+    {
+      "ball_number": 221,
+      "position": {
+        "x": 482,
+        "y": 705
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891661.3595443
+        }
+      ]
+    },
+    {
+      "ball_number": 222,
+      "position": {
+        "x": 479,
+        "y": 705
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891661.3595498
+        }
+      ]
+    },
+    {
+      "ball_number": 223,
+      "position": {
+        "x": 478,
+        "y": 706
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891661.792179
+        }
+      ]
+    },
+    {
+      "ball_number": 224,
+      "position": {
+        "x": 476,
+        "y": 707
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891661.7921846
+        }
+      ]
+    },
+    {
+      "ball_number": 225,
+      "position": {
+        "x": 477,
+        "y": 707
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891662.2542748
+        }
+      ]
+    },
+    {
+      "ball_number": 226,
+      "position": {
+        "x": 475,
+        "y": 707
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891662.254279
+        }
+      ]
+    },
+    {
+      "ball_number": 227,
+      "position": {
+        "x": 473,
+        "y": 708
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891662.782024
+        }
+      ]
+    },
+    {
+      "ball_number": 228,
+      "position": {
+        "x": 472,
+        "y": 708
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891662.782029
+        }
+      ]
+    },
+    {
+      "ball_number": 229,
+      "position": {
+        "x": 470,
+        "y": 708
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891663.20428
+        }
+      ]
+    },
+    {
+      "ball_number": 230,
+      "position": {
+        "x": 470,
+        "y": 709
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891663.2042856
+        }
+      ]
+    },
+    {
+      "ball_number": 231,
+      "position": {
+        "x": 474,
+        "y": 713
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891663.6582975
+        }
+      ]
+    },
+    {
+      "ball_number": 232,
+      "position": {
+        "x": 475,
+        "y": 715
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891663.658303
+        }
+      ]
+    },
+    {
+      "ball_number": 233,
+      "position": {
+        "x": 472,
+        "y": 710
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891664.0923738
+        }
+      ]
+    },
+    {
+      "ball_number": 234,
+      "position": {
+        "x": 474,
+        "y": 715
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891664.0923789
+        }
+      ]
+    },
+    {
+      "ball_number": 235,
+      "position": {
+        "x": 472,
+        "y": 714
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891664.5484228
+        }
+      ]
+    },
+    {
+      "ball_number": 236,
+      "position": {
+        "x": 471,
+        "y": 716
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891664.5484288
+        }
+      ]
+    },
+    {
+      "ball_number": 237,
+      "position": {
+        "x": 473,
+        "y": 721
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891664.976504
+        }
+      ]
+    },
+    {
+      "ball_number": 238,
+      "position": {
+        "x": 473,
+        "y": 721
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891664.9765098
+        }
+      ]
+    },
+    {
+      "ball_number": 239,
+      "position": {
+        "x": 476,
+        "y": 721
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891665.4116595
+        }
+      ]
+    },
+    {
+      "ball_number": 240,
+      "position": {
+        "x": 472,
+        "y": 724
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891665.4116645
+        }
+      ]
+    },
+    {
+      "ball_number": 241,
+      "position": {
+        "x": 467,
+        "y": 730
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Maintain better balance by distributing weight evenly",
+          "confidence": 0.7,
+          "category": "balance",
+          "timestamp": 1749891665.8337321
+        }
+      ]
+    },
+    {
+      "ball_number": 242,
+      "position": {
+        "x": 466,
+        "y": 730
+      },
+      "shot_zone": "leg_side",
+      "feedback": [
+        {
+          "message": "Get into position earlier to play the shot",
+          "confidence": 0.7,
+          "category": "timing",
+          "timestamp": 1749891665.8337405
+        }
+      ]
+    }
+  ],
+  "fitness_metrics": {
+    "distance_covered": 0.0,
+    "average_speed": 0.0,
+    "max_speed": 0.0,
+    "acceleration": 0,
+    "movement_patterns": {
+      "walking": 0,
+      "running": 0,
+      "sprinting": 0,
+      "standing": 0
+    },
+    "energy_expenditure": 0.0
+  },
+  "feedback": [
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891592.8422227
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891592.842314
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891593.3726044
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891593.3726134
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891593.9522457
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891593.9522521
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891594.5830307
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891594.5830507
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891595.5573673
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891595.5573742
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891597.2996113
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891597.2996175
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891598.7719672
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891598.7719734
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891600.613796
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891600.6138048
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891601.4265442
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891601.4265504
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891602.2716653
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891602.271674
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891602.9306424
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891602.930648
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891603.5056574
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891603.5056632
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891604.3046942
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891604.3047
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891604.8436038
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891604.8436108
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891605.6190252
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891605.6190317
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891606.501965
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891606.5019712
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891607.776492
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891607.7764978
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891609.443011
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891609.443018
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891610.3702748
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891610.3702824
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891611.2790787
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891611.2790852
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891612.1265182
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891612.1265259
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891612.9859753
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891612.9859827
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891613.7784886
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891613.7784936
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891614.4184523
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891614.4184585
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891614.9140043
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891614.9140098
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891615.3789382
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891615.378944
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891615.9052923
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891615.9052992
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891616.3601353
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891616.3601742
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891616.9262383
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891616.9262457
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891617.493894
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891617.4939039
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891618.0959187
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891618.0959249
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891618.7377515
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891618.7377577
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891619.3067107
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891619.306716
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891619.8040507
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891619.8040562
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891620.389802
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891620.3898087
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891621.0134614
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891621.0134668
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891621.8188832
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891621.8188906
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891622.4583292
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891622.4583375
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891623.3464918
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891623.3464956
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891623.8762963
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891623.8763008
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891624.3690076
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891624.369013
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891625.4576073
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891625.4576132
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891626.5322905
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891626.5323007
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891627.316481
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891627.3164883
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891628.0576074
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891628.0576143
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891628.7535691
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891628.7535868
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891630.3490458
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891630.3490515
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891631.2280686
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891631.2280755
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891631.8069062
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891631.8069115
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891632.6375322
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891632.637539
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891633.3999007
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891633.399921
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891634.2104697
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891634.210478
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891635.0443
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891635.044337
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891635.6505797
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891635.6505857
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891636.3975627
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891636.397568
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891636.9494026
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891636.9494076
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891637.3976724
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891637.3976781
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891637.8379433
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891637.837947
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891638.3005984
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891638.3006172
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891638.7008107
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891638.7008178
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891639.1601043
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891639.160111
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891639.565219
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891639.5652242
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891640.027942
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891640.0279455
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891640.449952
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891640.44996
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891640.904903
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891640.9049115
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891641.3496695
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891641.3496747
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891641.7908947
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891641.7909002
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891642.2658184
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891642.2658243
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891642.7053647
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891642.7053707
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891643.1641593
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891643.164167
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891643.6012797
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891643.6012857
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891644.0215778
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891644.0215833
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891644.4939053
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891644.4939106
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891644.9403515
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891644.9403555
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891645.3737264
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891645.373732
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891645.7836068
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891645.7836113
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891646.2473884
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891646.2473938
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891646.7092717
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891646.7092803
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891647.157575
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891647.157582
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891647.5916739
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891647.5916796
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891648.003134
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891648.0031395
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891648.4639018
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891648.463909
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891648.8734808
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891648.873486
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891649.3209686
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891649.320974
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891649.750602
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891649.750607
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891650.1982703
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891650.198275
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891650.6194735
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891650.619478
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891651.067166
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891651.0671713
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891651.5146976
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891651.5147054
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891652.0181339
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891652.0181386
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891652.5087967
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891652.5088012
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891652.9273498
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891652.9273553
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891653.3492942
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891653.3492992
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891653.7769868
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891653.7769926
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891654.217363
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891654.2173684
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891654.6485238
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891654.6485286
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891655.073611
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891655.073617
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891655.5255241
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891655.5255296
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891655.9680245
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891655.968032
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891656.4680562
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891656.4680612
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891656.9921625
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891656.992185
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891657.4247768
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891657.4247828
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891657.8435078
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891657.8435156
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891658.3057275
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891658.3057327
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891658.722824
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891658.7228305
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891659.1912866
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891659.191292
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891659.6225202
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891659.6225243
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891660.0829923
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891660.0829976
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891660.5153944
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891660.5154002
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891660.8937104
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891660.8937154
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891661.3595443
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891661.3595498
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891661.792179
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891661.7921846
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891662.2542748
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891662.254279
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891662.782024
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891662.782029
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891663.20428
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891663.2042856
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891663.6582975
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891663.658303
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891664.0923738
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891664.0923789
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891664.5484228
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891664.5484288
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891664.976504
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891664.9765098
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891665.4116595
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891665.4116645
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891665.8337321
+    },
+    {
+      "message": "Get into position earlier to play the shot",
+      "confidence": 0.7,
+      "category": "timing",
+      "timestamp": 1749891665.8337405
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891666.258518
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891666.679498
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891667.1282573
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891667.582369
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891668.012535
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891668.4541068
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891668.880324
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891669.3396547
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891669.7786412
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891670.224689
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891670.6855416
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891671.0990038
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891671.5366538
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891671.9694853
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891672.3850214
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891672.8228974
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891673.27777
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891673.7290857
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891674.1391494
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891674.5819771
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891675.003214
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891675.453044
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891675.8692946
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891676.3200758
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891676.744934
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891677.177159
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891677.6047192
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891678.0318055
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891678.471841
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891678.9243212
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891679.4083397
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891679.8245459
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891680.2884126
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891680.7344837
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891681.1533215
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891681.5963397
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891682.040369
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891682.462122
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891682.9030213
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891683.3324282
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891683.7722206
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891684.2191265
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891684.6502678
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891685.1041858
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891685.5428178
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891685.983459
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891686.4155765
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891686.874135
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891687.3772578
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891687.8245037
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891688.348511
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891688.9046066
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891689.4450336
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891690.024316
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891690.6290877
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891691.2179632
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891691.8858004
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891692.2848566
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891692.7259014
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891693.1567519
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891693.602801
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891694.0452187
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891694.487323
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891694.9491756
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891695.3965604
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891695.8452048
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891696.264701
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891696.707598
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891697.1251981
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891697.5711966
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891697.9928436
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891698.4520128
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891698.9206045
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891699.3251035
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891699.7538035
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891700.232969
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891700.8568547
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891701.3748956
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891701.9657364
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891702.37637
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891702.8170393
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891703.2460537
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891703.68431
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891704.1240854
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891704.5682204
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891705.0088325
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891705.446762
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891705.8844671
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891706.313258
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891706.7587678
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891707.2442257
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891707.6783319
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891708.1255648
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891708.5656574
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891709.0188577
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891709.904608
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891710.9503317
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891711.8911626
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891712.899733
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891713.8248153
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891714.795469
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891715.7573206
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891716.712718
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891717.6194053
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891718.5803497
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891719.6395597
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891720.7875297
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891721.7189004
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891722.6968946
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891723.7264464
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891724.725984
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891725.6578474
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891726.6411314
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891727.601554
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891728.5890954
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891729.635521
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891730.5802066
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891731.4740353
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891732.4734905
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891733.44146
+    },
+    {
+      "message": "Maintain better balance by distributing weight evenly",
+      "confidence": 0.7,
+      "category": "balance",
+      "timestamp": 1749891734.3986683
+    }
+  ],
+  "heatmaps": {
+    "shot_zone": "shot_zone_heatmap.png",
+    "impact_zone": "impact_zone_heatmap.png"
+  }
+}

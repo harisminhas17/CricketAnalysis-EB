@@ -1,0 +1,32 @@
+{
+  "total_frames": 336,
+  "enhanced_detections": 0,
+  "traditional_detections": 336,
+  "player_detections": 24,
+  "object_detections": {},
+  "trajectory_points": [],
+  "velocity_history": [],
+  "shot_analysis": [],
+  "lbw_analysis": [],
+  "performance_metrics": {
+    "enhanced_detection_rate": 0.0,
+    "traditional_detection_rate": 1.0,
+    "player_detection_rate": 0.07142857142857142,
+    "total_enhanced_detections": 0,
+    "total_traditional_detections": 336,
+    "total_player_detections": 24,
+    "enhanced_tracking_statistics": {
+      "total_distance": 0.0,
+      "average_velocity": 0.0,
+      "max_velocity": 0.0,
+      "tracking_duration": 0.0,
+      "detection_rate": 0.0
+    },
+    "requirements_met": {
+      "minimum_velocity_30kmph": false,
+      "minimum_distance_15m": false,
+      "spherical_detection": true,
+      "motion_consistency": false
+    }
+  }
+}

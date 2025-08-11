@@ -1,0 +1,5 @@
+train: dataset/train/images
+val: dataset/train/images  # Using same images for validation since test contains videos
+
+nc: 2
+names: ['ball', 'bat']
