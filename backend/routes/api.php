@@ -22,7 +22,27 @@ Route::middleware('auth:sanctum')->group(function () {
     // ✅ Admin routes
     Route::get('adminProfile', [SuperAdminController::class, 'adminProfile']);
     Route::post('updateProfile', [SuperAdminController::class, 'updateProfile']);
-    Route::post('adminLogout', [SuperAdminController::class, 'adminLogout']); 
+    Route::post('adminLogout', [SuperAdminController::class, 'adminLogout']);
+    //Player routes
+    Route::post('addPlayer', [SuperAdminController::class, 'addPlayer']);
+    Route::post('editPlayers', [SuperAdminController::class, 'editPlayers']);
+    Route::delete('deletePlayer', [AuthController::class, 'deletePlayer']);
+    //Teams routes
+    Route::post('addTeam', [SuperAdminController::class, 'addTeam']);
+    Route::post('editTeam', [SuperAdminController::class, 'editTeam']);
+    Route::delete('deleteTeam', [SuperAdminController::class, 'deleteTeam']);
+   // Coach Routes
+   Route::post('addCoach', [SuperAdminController::class, 'addCoach']);
+   Route::post('editCoach', [SuperAdminController::class, 'editCoach']);
+   Route::delete('deleteCoach', [SuperAdminController::class, 'deleteCoach']);
+
+  // Club Routes
+  Route::post('addClub', [SuperAdminController::class, 'addClub']);
+  Route::post('editClub', [SuperAdminController::class, 'editClub']);
+  Route::delete('deleteClub', [SuperAdminController::class, 'deleteClub']);
+
+    
+    
 
     // ✅ Player routes
     Route::post('updatePlayerProfile', [AuthController::class, 'updatePlayerProfile']);

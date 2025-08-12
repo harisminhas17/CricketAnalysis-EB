@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use App\Models\SuperAdmin;
+use App\Models\Player;
+use App\Models\Team;
+use App\Models\Coach;
+use App\Models\Club;
 use App\HelperFunctions\HelperFunctions;
 
 class SuperAdminController extends Controller
@@ -16,23 +20,20 @@ class SuperAdminController extends Controller
     public function adminRegister(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'name'          => 'required|string|max:100',
-            'email'          => 'required|string|max:100',
-            'password'          => 'required|string|max:100',
-            'address'          => 'required|string|max:100',
-            'nationality'          => 'required|string|max:100',
-            'phone'          => 'required|string|max:100',
+            'name'         => 'required|string|max:100',
+            'email'        => 'required|string|max:100',
+            'password'     => 'required|string|max:100',
+            'address'      => 'required|string|max:100',
+            'nationality'  => 'required|string|max:100',
+            'phone'        => 'required|string|max:100',
         ]);
 
-        $existsEmail = SuperAdmin::where('email', $request->email)->exists();
-
-    // Check if email already exists
-    if (SuperAdmin::where('email', $request->email)->exists()) {
-        return response()->json([
-            'error' => true,
-            'message' => 'Email already exists: ' . $request->email
-        ], 200);
-    }
+        if (SuperAdmin::where('email', $request->email)->exists()) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'Email already exists: ' . $request->email
+            ], 200);
+        }
 
         if ($validator->fails()) {
             return response()->json([
@@ -42,22 +43,13 @@ class SuperAdminController extends Controller
             ], 422);
         }
 
-        // // ✅ Handle image if uploaded
-        // $imagePath = null;
-        // if ($request->hasFile('profile_image')) {
-        //     $imagePath = HelperFunctions::uploadImage(
-        //         $request->file('profile_image'),
-        //         'profiles/superadmin'
-        //     );
-        // }
-
         $admin = SuperAdmin::create([
-            'name'          => $request->name,
-            'email'         => $request->email,
-            'password'      => Hash::make($request->password),
-            'phone_number'  => $request->phone,
-            'address'       => $request->address,
-            'nationality'   => $request->nationality,
+            'name'         => $request->name,
+            'email'        => $request->email,
+            'password'     => Hash::make($request->password),
+            'phone_number' => $request->phone,
+            'address'      => $request->address,
+            'nationality'  => $request->nationality,
         ]);
 
         return response()->json([
@@ -94,7 +86,6 @@ class SuperAdminController extends Controller
             ], 401);
         }
 
-        // ✅ Generate Sanctum token
         $token = $admin->createToken('admin-token')->plainTextToken;
 
         return response()->json([
@@ -109,11 +100,11 @@ class SuperAdminController extends Controller
     }
 
     /**
-     * ✅ Admin Profile (Sanctum Protected Route)
+     * ✅ Admin Profile
      */
     public function adminProfile(Request $request)
     {
-        $admin = $request->user(); // Authenticated SuperAdmin via Sanctum
+        $admin = $request->user();
 
         return response()->json([
             'error'   => false,
@@ -130,7 +121,7 @@ class SuperAdminController extends Controller
      */
     public function updateProfile(Request $request)
     {
-        $admin = $request->user(); // Logged-in admin via Sanctum
+        $admin = $request->user();
 
         $validator = Validator::make($request->all(), [
             'name'          => 'sometimes|required|string|max:100',
@@ -148,11 +139,10 @@ class SuperAdminController extends Controller
             return response()->json([
                 'error'   => true,
                 'message' => 'Validation failed',
-                'records'  => $validator->errors()
+                'records' => $validator->errors()
             ], 422);
         }
 
-        // ✅ Handle profile image upload
         if ($request->hasFile('profile_image')) {
             $imagePath = HelperFunctions::uploadImage(
                 $request->file('profile_image'),
@@ -161,7 +151,6 @@ class SuperAdminController extends Controller
             $admin->profile_image = $imagePath;
         }
 
-        // ✅ Update other fields
         $admin->fill($request->only([
             'name', 'phone_number', 'state', 'city', 'address', 'zip_code', 'country'
         ]));
@@ -181,17 +170,129 @@ class SuperAdminController extends Controller
             ])
         ]);
     }
-    
+
     /**
- * ✅ Admin Logout (Current Device Only)
- */
-public function adminLogout(Request $request)
+     * ✅ Logout
+     */
+    public function adminLogout(Request $request)
+    {
+        $request->user()->currentAccessToken()->delete();
+
+        return response()->json([
+            'error'   => false,
+            'message' => 'Logout successful (current device)'
+        ]);
+    }
+
+    //------------------ Players -----------------
+
+    public function deletePlayer(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'player_ID' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'Validation failed',
+                'records' => $validator->errors()
+            ], 422);
+        }
+
+        $player = Player::findOrFail($request->player_ID);
+        $player->delete();
+
+        return response()->json([
+            'error'   => false,
+            'message' => 'Player deleted successfully ' . $request->player_ID,
+        ]);
+    }
+
+    public function editPlayers(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'player_ID'    => 'required',
+            'user_name'    => 'sometimes',
+            'email'        => 'sometimes',
+            'password'     => 'sometimes',
+            'phone_number' => 'sometimes',
+            'sport_type'   => 'sometimes',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'Validation failed',
+                'records' => $validator->errors()
+            ], 422);
+        }
+
+        $player = Player::find($request->player_ID);
+
+        if ($request->filled('password')) {
+            $request->merge(['password' => Hash::make($request->password)]);
+        }
+
+        $player->update($request->only([
+            'user_name',
+            'email',
+            'password',
+            'phone_number',
+            'sport_type'
+        ]));
+
+        return response()->json([
+            'error'   => false,
+            'message' => 'Player updated successfully',
+            'records' => $player
+        ], 200);
+    }
+
+    //------------------ Teams -----------------
+
+    public function addTeam(Request $request)
+    {
+        $validated = $request->validate([
+            'name'        => 'required|string|max:255',
+            'sport_type'  => 'required|string|max:255',
+            'club_id'     => 'nullable|integer',
+            'coach_id'    => 'nullable|integer',
+            'level'       => 'nullable|string|max:255',
+        ]);
+
+        $team = Team::create($validated);
+
+        return response()->json([
+            'error'   => false,
+            'message' => 'Team created successfully',
+            'records'    => $team
+        ], 201);
+    }
+//edit team
+public function editTeam(Request $request)
 {
-    $request->user()->currentAccessToken()->delete();
+    $validated = $request->validate([
+        'team_id'     => 'required|integer|exists:teams,id',
+        'name'        => 'sometimes|string|max:255',
+        'sport_type'  => 'sometimes|string|max:255',
+        'club_id'     => 'nullable|integer',
+        'coach_id'    => 'nullable|integer',
+        'level'       => 'sometimes|string|max:255',
+    ]);
+
+    $team = Team::findOrFail($validated['team_id']);
+
+    // Remove team_id from update array so it doesn't try to overwrite PK
+    unset($validated['team_id']);
+
+    $team->update($validated);
 
     return response()->json([
         'error'   => false,
-        'message' => 'Logout successful (current device)'
-    ]);
+        'message' => 'Team updated successfully',
+        'records'    => $team
+    ], 200);
 }
+
 }
