@@ -16,7 +16,7 @@ const SplashScreen: React.FC = () => {
   return (
     <div style={styles.container}>
       <img
-        src="logo.png" 
+        src="Group 1.png" 
         alt="CricketZone Splash"
         style={{ width: '200px' }}
       />

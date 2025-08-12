@@ -19,7 +19,7 @@ const ResetPassword: React.FC = () => {
 
     
     alert('Password reset successfully!');
-    navigate('/superadmin/signinn'); 
+    navigate('/signinn'); 
   };
 
   const containerStyle: React.CSSProperties = {
