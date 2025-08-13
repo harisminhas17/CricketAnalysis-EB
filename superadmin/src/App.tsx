@@ -18,7 +18,7 @@ import Coaches from "./Pages/Coaches";
 import Clubs from "./Pages/Clubs";
 import SocialMedia from "./Pages/SocialMedia";
 import Settings from "./Pages/Settings";
-
+import Balltrack from "./Pages/Balltrack";
 const App: React.FC = () => {
   return (
     <Router>
@@ -41,6 +41,7 @@ const App: React.FC = () => {
         <Route path="/Clubs" element={<Clubs/>} />
         <Route path="/SocialMedia" element={<SocialMedia/>} />
         <Route path="/Settings" element={<Settings/>} />
+        <Route path="/Balltrack" element={<Balltrack/>} />
       </Routes>
     </Router>
   );

@@ -176,6 +176,7 @@ const SignupStep2: React.FC = () => {
             <option value="">City</option>
             <option value="Karachi">Karachi</option>
             <option value="Lahore">Lahore</option>
+            <option value="Rawalpindi">Rawalpindi</option>
           </select>
         </div>
       </div>
