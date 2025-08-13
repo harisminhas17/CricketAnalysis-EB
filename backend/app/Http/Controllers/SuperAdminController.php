@@ -14,9 +14,7 @@ use App\HelperFunctions\HelperFunctions;
 
 class SuperAdminController extends Controller
 {
-    /**
-     * ✅ Admin Registration
-     */
+    //----------------------Admin Register----------------
     public function adminRegister(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -59,9 +57,7 @@ class SuperAdminController extends Controller
         ], 200);
     }
 
-    /**
-     * ✅ Admin Login
-     */
+   //----------------------Admin Login----------------
     public function adminLogin(Request $request)
     {
         $request->validate([
@@ -99,9 +95,7 @@ class SuperAdminController extends Controller
         ], 200);
     }
 
-    /**
-     * ✅ Admin Profile
-     */
+    //----------------------Admin Profile----------------
     public function adminProfile(Request $request)
     {
         $admin = $request->user();
@@ -116,9 +110,7 @@ class SuperAdminController extends Controller
         ], 200);
     }
 
-    /**
-     * ✅ Update Admin Profile
-     */
+    //----------------------Update Admin Profile--------------------------------
     public function updateProfile(Request $request)
     {
         $admin = $request->user();
@@ -171,9 +163,7 @@ class SuperAdminController extends Controller
         ]);
     }
 
-    /**
-     * ✅ Logout
-     */
+    //----------------------Logout----------------
     public function adminLogout(Request $request)
     {
         $request->user()->currentAccessToken()->delete();
@@ -183,116 +173,4 @@ class SuperAdminController extends Controller
             'message' => 'Logout successful (current device)'
         ]);
     }
-
-    //------------------ Players -----------------
-
-    public function deletePlayer(Request $request)
-    {
-        $validator = Validator::make($request->all(), [
-            'player_ID' => 'required',
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json([
-                'error'   => true,
-                'message' => 'Validation failed',
-                'records' => $validator->errors()
-            ], 422);
-        }
-
-        $player = Player::findOrFail($request->player_ID);
-        $player->delete();
-
-        return response()->json([
-            'error'   => false,
-            'message' => 'Player deleted successfully ' . $request->player_ID,
-        ]);
-    }
-
-    public function editPlayers(Request $request)
-    {
-        $validator = Validator::make($request->all(), [
-            'player_ID'    => 'required',
-            'user_name'    => 'sometimes',
-            'email'        => 'sometimes',
-            'password'     => 'sometimes',
-            'phone_number' => 'sometimes',
-            'sport_type'   => 'sometimes',
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json([
-                'error'   => true,
-                'message' => 'Validation failed',
-                'records' => $validator->errors()
-            ], 422);
-        }
-
-        $player = Player::find($request->player_ID);
-
-        if ($request->filled('password')) {
-            $request->merge(['password' => Hash::make($request->password)]);
-        }
-
-        $player->update($request->only([
-            'user_name',
-            'email',
-            'password',
-            'phone_number',
-            'sport_type'
-        ]));
-
-        return response()->json([
-            'error'   => false,
-            'message' => 'Player updated successfully',
-            'records' => $player
-        ], 200);
-    }
-
-    //------------------ Teams -----------------
-
-    public function addTeam(Request $request)
-    {
-        $validated = $request->validate([
-            'name'        => 'required|string|max:255',
-            'sport_type'  => 'required|string|max:255',
-            'club_id'     => 'nullable|integer',
-            'coach_id'    => 'nullable|integer',
-            'level'       => 'nullable|string|max:255',
-        ]);
-
-        $team = Team::create($validated);
-
-        return response()->json([
-            'error'   => false,
-            'message' => 'Team created successfully',
-            'records'    => $team
-        ], 201);
-    }
-//edit team
-public function editTeam(Request $request)
-{
-    $validated = $request->validate([
-        'team_id'     => 'required|integer|exists:teams,id',
-        'name'        => 'sometimes|string|max:255',
-        'sport_type'  => 'sometimes|string|max:255',
-        'club_id'     => 'nullable|integer',
-        'coach_id'    => 'nullable|integer',
-        'level'       => 'sometimes|string|max:255',
-    ]);
-
-    $team = Team::findOrFail($validated['team_id']);
-
-    // Remove team_id from update array so it doesn't try to overwrite PK
-    unset($validated['team_id']);
-
-    $team->update($validated);
-
-    return response()->json([
-        'error'   => false,
-        'message' => 'Team updated successfully',
-        'records'    => $team
-    ], 200);
-}
-
 }

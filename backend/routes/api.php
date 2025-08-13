@@ -19,7 +19,7 @@ Route::post('checkCredentials', [AuthController::class, 'checkCredentials']);
 // Protected routes (Require Sanctum token)
 Route::middleware('auth:sanctum')->group(function () {
 
-    // ✅ Admin routes
+    //  Admin routes
     Route::get('adminProfile', [SuperAdminController::class, 'adminProfile']);
     Route::post('updateProfile', [SuperAdminController::class, 'updateProfile']);
     Route::post('adminLogout', [SuperAdminController::class, 'adminLogout']);
