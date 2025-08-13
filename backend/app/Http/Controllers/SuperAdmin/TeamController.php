@@ -1,17 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\SuperAdmin; 
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use App\Models\SuperAdmin;
 use App\Models\Team;
-use App\HelperFunctions\HelperFunctions;
-//------------------ Teams -----------------
-//------------------Add team---------------------
-class SuperAdminController extends Controller
+
+class TeamController extends Controller
 {
+    //------------------Add team---------------------
     public function addTeam(Request $request)
     {
         $validated = $request->validate([
@@ -27,37 +25,38 @@ class SuperAdminController extends Controller
         return response()->json([
             'error'   => false,
             'message' => 'Team created successfully',
-            'records'    => $team
+            'records' => $team
         ], 201);
     }
-//------------------Edit team---------------------
-public function editTeam(Request $request)
-{
-    $validated = $request->validate([
-        'team_id'     => 'required|integer|exists:teams,id',
-        'name'        => 'sometimes|string|max:255',
-        'sport_type'  => 'sometimes|string|max:255',
-        'club_id'     => 'nullable|integer',
-        'coach_id'    => 'nullable|integer',
-        'level'       => 'sometimes|string|max:255',
-    ]);
 
-    $team = Team::findOrFail($validated['team_id']);
+    //------------------Edit team---------------------
+    public function editTeam(Request $request)
+    {
+        $validated = $request->validate([
+            'team_id'     => 'required|integer|exists:teams,id',
+            'name'        => 'sometimes|string|max:255',
+            'sport_type'  => 'sometimes|string|max:255',
+            'club_id'     => 'nullable|integer',
+            'coach_id'    => 'nullable|integer',
+            'level'       => 'sometimes|string|max:255',
+        ]);
 
-    // Remove team_id from update array so it doesn't try to overwrite PK
-    unset($validated['team_id']);
+        $team = Team::findOrFail($validated['team_id']);
 
-    $team->update($validated);
+        // Remove team_id from update array so it doesn't try to overwrite PK
+        unset($validated['team_id']);
 
-    return response()->json([
-        'error'   => false,
-        'message' => 'Team updated successfully',
-        'records'    => $team
-    ], 200);
-    
-}
-//------------------Delete team---------------------
-public function deleteTeam(Request $request)
+        $team->update($validated);
+
+        return response()->json([
+            'error'   => false,
+            'message' => 'Team updated successfully',
+            'records' => $team
+        ], 200);
+    }
+
+    //------------------Delete team---------------------
+    public function deleteTeam(Request $request)
     {
         $validator = Validator::make($request->all(), [
             'team_id' => 'required|integer',
@@ -78,5 +77,5 @@ public function deleteTeam(Request $request)
             'error'   => false,
             'message' => 'Team deleted successfully: ' . $request->team_id,
         ]);
-}
+    }
 }

@@ -4,7 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SuperAdminController;
-
+use App\Http\Controllers\SuperAdmin\TeamController;
+use App\Http\Controllers\SuperAdmin\ClubController;
 // Public routes
 Route::post('adminRegister', [SuperAdminController::class, 'adminRegister']);
 Route::post('adminLogin', [SuperAdminController::class, 'adminLogin']);
@@ -28,20 +29,19 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('editPlayers', [SuperAdminController::class, 'editPlayers']);
     Route::delete('deletePlayer', [AuthController::class, 'deletePlayer']);
     //Teams routes
-    Route::post('addTeam', [SuperAdminController::class, 'addTeam']);
-    Route::post('editTeam', [SuperAdminController::class, 'editTeam']);
-    Route::delete('deleteTeam', [SuperAdminController::class, 'deleteTeam']);
+    Route::post('addTeam', [TeamController::class, 'addTeam']);
+    Route::post('editTeam', [TeamController::class, 'editTeam']);
+    Route::delete('deleteTeam', [TeamController::class, 'deleteTeam']);
    // Coach Routes
    Route::post('addCoach', [SuperAdminController::class, 'addCoach']);
    Route::post('editCoach', [SuperAdminController::class, 'editCoach']);
    Route::delete('deleteCoach', [SuperAdminController::class, 'deleteCoach']);
 
   // Club Routes
-  Route::post('addClub', [SuperAdminController::class, 'addClub']);
-  Route::post('editClub', [SuperAdminController::class, 'editClub']);
-  Route::delete('deleteClub', [SuperAdminController::class, 'deleteClub']);
+  Route::post('addClub', [ClubController::class, 'addClub']);
+  Route::post('editClub', [ClubController::class, 'editClub']);
+  Route::delete('deleteClub', [ClubController::class, 'deleteClub']);
 
-    
     
 
     // ✅ Player routes

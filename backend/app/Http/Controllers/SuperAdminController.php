@@ -6,10 +6,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use App\Models\SuperAdmin;
-use App\Models\Player;
-use App\Models\Team;
-use App\Models\Coach;
-use App\Models\Club;
 use App\HelperFunctions\HelperFunctions;
 
 class SuperAdminController extends Controller
