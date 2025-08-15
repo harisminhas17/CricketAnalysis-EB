@@ -15,36 +15,43 @@ class ClubController extends Controller
 
     public function addClub(Request $request)
 {
-    $validated = $request->validate([
-        'name'         => 'required|string|max:255',
-        'email'        => 'required|email|unique:clubs,email',
-        'password'     => 'required|string|min:6',
-        'address'      => 'required|string',
-        'phone_number' => 'required|string',
-        'location'     => 'nullable|string',
-        'coach_id'     => 'nullable|integer',
-        'profile_image'=> 'nullable|string',
-        'sport_type'   => 'required|string',
-        'is_active'    => 'required|boolean',
-    ]);
-
-    // Hash password before creating
-    $validated['password'] = Hash::make($validated['password']);
-
     try {
+        $validated = $request->validate([
+            'name'          => 'required|string|max:100',
+            'email'         => 'required|email|max:120|unique:clubs,email',
+            'password'      => 'required|string|min:6',
+            'address'       => 'nullable|string|max:255',
+            'phone_number'  => 'nullable|string|max:20',
+            'location'      => 'nullable|string|max:255',
+            'coach_id'      => 'nullable|exists:coaches,id',
+            'profile_image' => 'nullable|image|max:2048',
+            'sport_type'    => 'required|in:cricket,football',
+            'is_active'     => 'required|boolean',
+        ]);
+
+        // Handle image
+        if ($request->hasFile('profile_image')) {
+            $validated['profile_image'] = $request->file('profile_image')->store('clubs', 'public');
+        }
+
+        // Hash password
+        $validated['password'] = Hash::make($validated['password']);
+
         $club = Club::create($validated);
-    } catch (\Exception $e) {
+
         return response()->json([
-            'error' => true,
-            'message' => 'Error creating club: ' . $e->getMessage(),
+            'error'   => false,
+            'message' => 'Club created successfully',
+            'records' => $club
+        ], 201);
+
+    } catch (\Throwable $e) {
+        \Log::error('Add Club Error: '.$e->getMessage(), ['trace' => $e->getTraceAsString()]);
+        return response()->json([
+            'error'   => true,
+            'message' => 'Error creating club: '.$e->getMessage(),
         ], 500);
     }
-
-    return response()->json([
-        'error' => false,
-        'message' => 'Club created successfully',
-        'records' => $club
-    ], 201);
 }
 
 

@@ -44,6 +44,8 @@ class SuperAdminController extends Controller
             'phone_number' => $request->phone,
             'address'      => $request->address,
             'nationality'  => $request->nationality,
+            'country'     => $request->country ,
+            'city'        => $request->city
         ]);
 
         return response()->json([
