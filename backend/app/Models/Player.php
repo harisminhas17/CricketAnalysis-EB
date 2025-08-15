@@ -2,10 +2,10 @@
 
 namespace App\Models;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Sanctum\HasApiTokens;
 
-class Player extends Model
+class Player extends Authenticatable
 {
     use HasApiTokens, Notifiable;
     protected $table = 'players';
