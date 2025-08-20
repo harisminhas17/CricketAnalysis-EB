@@ -2,12 +2,14 @@ import axios from 'axios';
 
 // Create axios instance with base configuration
 const api = axios.create({
-  baseURL: 'http://127.0.0.1:8000/api',
+  baseURL: 'http://18.139.29.162/api/',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
   },
 });
+
+
 
 // Request interceptor to add auth token
 api.interceptors.request.use(
