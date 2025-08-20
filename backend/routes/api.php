@@ -6,10 +6,15 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SuperAdminController;
 use App\Http\Controllers\SuperAdmin\TeamController;
 use App\Http\Controllers\SuperAdmin\ClubController;
+use App\Http\Controllers\HawkEye\HawkEyeController;
 
 // General Routes
 Route::get('getNationalities', [AuthController::class, 'getNationalities']);
 Route::get('getPlayerRoles', [AuthController::class, 'getPlayerRoles']);
+
+// HawkEye Routes
+ 
+Route::post('processTestingClip', [HawkEyeController::class, 'processTestingClip']);
 
 // Admin Auth Routes
 Route::post('adminRegister', [SuperAdminController::class, 'adminRegister']);

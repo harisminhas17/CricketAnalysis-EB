@@ -1,0 +1,4 @@
+ultralytics==8.3.179
+opencv-python
+matplotlib
+# NOTE: PyTorch aap apne system ke hisaab se install karein (CUDA/CPU)
