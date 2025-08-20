@@ -8,6 +8,7 @@ use App\Http\Controllers\Coach\CoachController;
 use App\Http\Controllers\Team\TeamController;
 use App\Http\Controllers\SuperAdmin\SuperAdminController;
 use App\Http\Controllers\HawkEye\HawkEyeController;
+use App\Http\Controllers\Player\PlayerController;
 
 // General Routes
 Route::get('getNationalities', [AuthController::class, 'getNationalities']);
@@ -44,7 +45,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     //Player routes
     Route::post('addPlayer', [SuperAdminController::class, 'addPlayer']);
-    Route::post('editPlayers', [\App\Http\Controllers\PlayerController\PlayerController::class, 'editPlayers']);
+    Route::post('editPlayers', [PlayerController::class, 'editPlayers']);
     Route::delete('deletePlayer', [AuthController::class, 'deletePlayer']);
     Route::post('updatePlayerProfile', [AuthController::class, 'updatePlayerProfile']);
 

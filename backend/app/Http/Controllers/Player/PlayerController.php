@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\PlayerController;
+namespace App\Http\Controllers\Player;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
