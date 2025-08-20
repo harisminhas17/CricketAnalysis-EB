@@ -2,10 +2,20 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Laravel\Sanctum\HasApiTokens;
 
-class Club extends Model
+class Club extends Authenticatable
 {
+    use HasApiTokens, HasFactory;
+    
+
     protected $table = 'clubs';
-    protected $guarded = [];
+
+    protected $guarded = []; 
+
+    protected $hidden = [
+        'password',
+    ];
 }
