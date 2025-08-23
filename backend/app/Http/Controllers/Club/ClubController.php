@@ -95,7 +95,7 @@ public function clubLogin(Request $request)
     try {
         $validated = $request->validate([
             'name'          => 'required|string|max:100',
-            'email'         => 'required|email|max:120|unique:clubs,email',
+            'email'         => 'required|string|max:120|unique:clubs,email',
             'password'      => 'required|string|min:6',
             'address'       => 'required|string|max:255',
             'phone'  => 'required',

@@ -34,8 +34,8 @@ class TeamController extends Controller
     {
         $validated = $request->validate([
             'team_id'     => 'required|integer|exists:teams,id',
-            'name'        => 'sometimes|string|max:255',
-            'sport_type'  => 'sometimes|string|max:255',
+            'name'        => 'required|string|max:255',
+            'sport_type'  => 'required|string|max:255',
             'club_id'     => 'nullable|integer',
             'coach_id'    => 'nullable|integer',
             'level'       => 'sometimes|string|max:255',

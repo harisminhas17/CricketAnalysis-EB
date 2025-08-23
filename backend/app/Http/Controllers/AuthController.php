@@ -22,7 +22,7 @@ class AuthController extends Controller
             'sport_type' => 'required',
             'name' => 'required',
             'email' => 'required',
-            'phone_number' => 'nullable',
+            'phone' => 'nullable',
             'password' => 'required|min:6',
             'login_type' => 'required',
             'gender' => 'required|in:male,female,other',
@@ -49,10 +49,10 @@ class AuthController extends Controller
         }
 
         // Check if phone number already exists
-        if (Player::where('phone_number', $request->phone_number)->exists()) {
+        if (Player::where('phone', $request->phone_number)->exists()) {
             return response()->json([
                 'error' => true,
-                'message' => 'Phone number ' . $request->phone_number . ' already exists',
+                'message' => 'Phone number ' . $request->phone . ' already exists',
             ], 200);
         }
 
@@ -68,7 +68,7 @@ class AuthController extends Controller
                 'sport_type' => $request->sport_type,
                 'user_name' => $request->name,
                 'email' => $request->email,
-                'phone_number' => $request->phone_number,
+                'phone' => $request->phone,
                 'password' => Hash::make($request->password),
                 'login_type' => $request->login_type,
                 'gender' => $request->gender,
@@ -103,7 +103,7 @@ class AuthController extends Controller
             'password' => 'required',
             'login_type' => 'required',
             'sport_type' => 'required',
-            'phone_number' => 'nullable',
+            'phone' => 'nullable',
         ]);
 
         try {
