@@ -18,6 +18,11 @@ return new class extends Migration
             $table->unsignedBigInteger('club_id')->nullable();
             $table->unsignedBigInteger('coach_id')->nullable();
             $table->string('level', 255)->nullable();
+            $table->string('city', 255);
+            $table->string('country', 255);
+            $table->integer('founded_year');
+            $table->text('description');
+            $table->string('team_logo')->nullable();
             $table->timestamps();
 
             // Optional foreign keys (if you already have clubs & coaches tables)

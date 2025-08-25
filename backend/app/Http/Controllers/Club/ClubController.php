@@ -146,7 +146,7 @@ public function clubLogin(Request $request)
             'phone' => 'required|string',
             'location'     => 'nullable|string',
             'coach_id'     => 'nullable|integer',
-            'sport_type'   => 'required|string',
+            
          
         ]);
 

@@ -102,7 +102,6 @@ class AuthController extends Controller
             'email' => 'required',
             'password' => 'required',
             'login_type' => 'required',
-            'sport_type' => 'required',
             'phone' => 'nullable',
         ]);
 
@@ -110,7 +109,6 @@ class AuthController extends Controller
 
             $player = Player::where('email', $request->email)
                 ->where('login_type', $request->login_type)
-                ->where('sport_type', $request->sport_type)
                 ->first();
 
             if (!$player) {

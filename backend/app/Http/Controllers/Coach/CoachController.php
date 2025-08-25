@@ -20,7 +20,8 @@ public function coachRegister(Request $request)
         'phone'        => 'required|string|max:100',
         'speciality'   => 'nullable|string|max:100',
         'experience'   => 'nullable|string|max:100',
-        'profile_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+        'profile_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'sport_type'=>'required|string|max:100'
         
     ]);
 
@@ -45,7 +46,8 @@ public function coachRegister(Request $request)
         'password'   => Hash::make($request->password),
         'phone'      => $request->phone,
         'speciality' => $request->speciality,
-        'experience' => $request->experience
+        'experience' => $request->experience,
+        'sport_type' => $request->sport_type,
     ]);
 
     return response()->json([
@@ -101,6 +103,7 @@ public function addCoach(Request $request)
         'phone'      => 'required',
         'speciality' => 'nullable',
         'experience' => 'nullable',
+        'sport_type' => 'required',
     ]);
     if (\App\Models\Coach::where('email', $request->email)->exists()) {
         return response()->json([
@@ -121,7 +124,8 @@ public function addCoach(Request $request)
         'password'   => Hash::make($request->password),
         'phone'      => $request->phone,
         'speciality' => $request->speciality,
-        'experience' => $request->experience
+        'experience' => $request->experience,
+        'sport_type' => $request->sport_type,
     ]);
     return response()->json([
         'error'   => false,
@@ -134,12 +138,17 @@ public function editCoach(Request $request)
 {
     $validated = $request->validate([
         'id'         => 'required|integer|exists:coaches,id',
-        'name'       => 'sometimes|string|max:100',
+        'name'       => 'required|string|max:100',
         'email'      => 'sometimes|email|unique:coaches,email,' . $request->id,
         'password'   => 'sometimes|string|min:6',
-        'phone'      => 'sometimes|string|max:20',
+        'phone'      => 'required|string|max:20',
         'speciality' => 'nullable|string|max:100',
         'experience' => 'nullable|string|max:100',
+        'address'    => 'required|string|max:255',
+        'city'       => 'required|string|max:100',
+        'country'    => 'required|string|max:100',
+        'dob'        => 'required|date',
+        
     ]);
 
     $coach = \App\Models\Coach::findOrFail($validated['id']);

@@ -40,7 +40,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     //  Admin routes
     Route::get('adminProfile', [SuperAdminController::class, 'adminProfile']);
-    Route::post('updateProfile', [SuperAdminController::class, 'updateProfile']);
+    Route::post('updateAdminProfile', [SuperAdminController::class, 'updateAdminProfile']);
     Route::post('adminLogout', [SuperAdminController::class, 'adminLogout']);
 
     //Player routes

@@ -109,7 +109,7 @@ class SuperAdminController extends Controller
     }
 
     //----------------------Update Admin Profile--------------------------------
-    public function updateProfile(Request $request)
+    public function updateAdminProfile(Request $request)
     {
         $admin = $request->user();
 

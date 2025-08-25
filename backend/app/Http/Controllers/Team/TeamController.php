@@ -18,6 +18,13 @@ class TeamController extends Controller
             'club_id'     => 'nullable|integer',
             'coach_id'    => 'nullable|integer',
             'level'       => 'nullable|string|max:255',
+            'city'=>'required|string|max:255',
+            'country'=>'required|string|max:255',
+            'founded_year'=>'required|integer',
+            'description'=>'required|string|max:1000',
+            'team_logo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+
+
         ]);
 
         $team = Team::create($validated);
@@ -26,7 +33,7 @@ class TeamController extends Controller
             'error'   => false,
             'message' => 'Team created successfully',
             'records' => $team
-        ], 201);
+        ], 200);
     }
 
     //------------------Edit team---------------------
@@ -35,7 +42,6 @@ class TeamController extends Controller
         $validated = $request->validate([
             'team_id'     => 'required|integer|exists:teams,id',
             'name'        => 'required|string|max:255',
-            'sport_type'  => 'required|string|max:255',
             'club_id'     => 'nullable|integer',
             'coach_id'    => 'nullable|integer',
             'level'       => 'sometimes|string|max:255',

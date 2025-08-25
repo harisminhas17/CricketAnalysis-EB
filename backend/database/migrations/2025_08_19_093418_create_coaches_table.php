@@ -19,6 +19,11 @@ return new class extends Migration
             $table->string('speciality', 100)->nullable();
             $table->string('experience', 100)->nullable();
             $table->string('password');
+            $table->string('sport_type', 100);
+            $table->string('address', 255)->nullable();
+            $table->string('city', 100)->nullable();
+            $table->string('country', 100)->nullable();
+            $table->date('dob')->nullable();
             $table->timestamps();
         });
     }
