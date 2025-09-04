@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\SuperAdmin;
 
+use App\HelperFunctions\HelperFunctions;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use App\Models\SuperAdmin;
+use Illuminate\Support\Facades\Auth;
 
 class SuperAdminController extends Controller
 {
@@ -25,7 +27,7 @@ class SuperAdminController extends Controller
         if (SuperAdmin::where('email', $request->email)->exists()) {
             return response()->json([
                 'error'   => true,
-                'message' => 'Email already exists: ' . $request->email
+                'message' => 'Admin Email already exists: ' . $request->email
             ], 200);
         }
 
@@ -34,7 +36,7 @@ class SuperAdminController extends Controller
                 'error'   => true,
                 'message' => 'Validation Error',
                 'records' => $validator->errors()
-            ], 422);
+            ], 200);
         }
 
         $admin = SuperAdmin::create([
@@ -44,7 +46,7 @@ class SuperAdminController extends Controller
             'phone_number' => $request->phone,
             'address'      => $request->address,
             'nationality'  => $request->nationality,
-            'country'     => $request->country ,
+            'country'     => $request->country,
             'city'        => $request->city
         ]);
 
@@ -55,7 +57,7 @@ class SuperAdminController extends Controller
         ], 200);
     }
 
-   //----------------------Admin Login----------------
+    //----------------------Admin Login----------------
     public function adminLogin(Request $request)
     {
         $request->validate([
@@ -68,55 +70,37 @@ class SuperAdminController extends Controller
         if (!$admin) {
             return response()->json([
                 'error'   => true,
-                'message' => 'Email not found',
+                'message' => 'Admin Email not found',
                 'records' => $request->email
-            ], 404);
+            ], 200);
         }
 
         if (!Hash::check($request->password, $admin->password)) {
             return response()->json([
                 'error'   => true,
                 'message' => 'Password does not match'
-            ], 401);
+            ], 200);
         }
 
         $token = $admin->createToken('admin-token')->plainTextToken;
 
         return response()->json([
             'error'   => false,
-            'message' => 'Login successful',
+            'message' => 'Admin Login successful',
             'token'   => $token,
-            'records' => $admin->only([
-                'id', 'name', 'email', 'phone_number', 'profile_image',
-                'state', 'city', 'address', 'zip_code', 'country', 'is_active'
-            ])
-        ], 200);
-    }
-
-    //----------------------Admin Profile----------------
-    public function adminProfile(Request $request)
-    {
-        $admin = $request->user();
-
-        return response()->json([
-            'error'   => false,
-            'message' => 'Admin profile fetched successfully',
-            'records' => $admin->only([
-                'id', 'name', 'email', 'phone_number', 'profile_image',
-                'state', 'city', 'address', 'zip_code', 'country', 'is_active'
-            ])
+            'records' => $admin
         ], 200);
     }
 
     //----------------------Update Admin Profile--------------------------------
     public function updateAdminProfile(Request $request)
     {
-        $admin = $request->user();
+        $admin = Auth::user();
 
         $validator = Validator::make($request->all(), [
             'name'          => 'sometimes|required|string|max:100',
             'phone_number'  => 'nullable|string|max:20',
-            'profile_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'profile_image' => 'nullable',
             'state'         => 'nullable|string|max:100',
             'city'          => 'nullable|string|max:100',
             'address'       => 'nullable|string|max:255',
@@ -130,7 +114,7 @@ class SuperAdminController extends Controller
                 'error'   => true,
                 'message' => 'Validation failed',
                 'records' => $validator->errors()
-            ], 422);
+            ], 200);
         }
 
         if ($request->hasFile('profile_image')) {
@@ -141,34 +125,34 @@ class SuperAdminController extends Controller
             $admin->profile_image = $imagePath;
         }
 
-        $admin->fill($request->only([
-            'name', 'phone_number', 'state', 'city', 'address', 'zip_code', 'country'
-        ]));
+        $updateData = $request->only([
+            'name',
+            'phone_number',
+            'state',
+            'city',
+            'address',
+            'zip_code',
+            'country',
+            'password'
+        ]);
 
         if ($request->filled('password')) {
-            $admin->password = Hash::make($request->password);
+            $updateData['password'] = Hash::make($request->password);
         }
 
-        $admin->save();
+        // Add profile_image to updateData if it was processed
+        if ($request->hasFile('profile_image')) {
+            $updateData['profile_image'] = $admin->profile_image;
+        }
+
+        SuperAdmin::where('id', $admin->id)->update($updateData);
+
+        $admin = SuperAdmin::find($admin->id);
 
         return response()->json([
             'error'   => false,
-            'message' => 'Profile updated successfully',
-            'records' => $admin->only([
-                'id', 'name', 'email', 'phone_number', 'profile_image',
-                'state', 'city', 'address', 'zip_code', 'country', 'is_active'
-            ])
-        ]);
-    }
-
-    //----------------------Logout----------------
-    public function adminLogout(Request $request)
-    {
-        $request->user()->currentAccessToken()->delete();
-
-        return response()->json([
-            'error'   => false,
-            'message' => 'Logout successful (current device)'
+            'message' => 'Admin Profile updated successfully',
+            'records' => $admin
         ]);
     }
 }

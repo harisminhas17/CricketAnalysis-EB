@@ -31,6 +31,7 @@ Route::post('checkCredentials', [AuthController::class, 'checkCredentials']);
 
 Route::post('coachRegister', [CoachController::class, 'coachRegister']);
 Route::post('coachLogin', [CoachController::class, 'coachLogin']);
+
 // Club Auth Routes
 Route::post('clubRegister', [ClubController::class, 'clubRegister']);
 Route::post('clubLogin', [ClubController::class, 'clubLogin']);
@@ -39,28 +40,30 @@ Route::post('clubLogin', [ClubController::class, 'clubLogin']);
 Route::middleware('auth:sanctum')->group(function () {
 
     //  Admin routes
-    Route::get('adminProfile', [SuperAdminController::class, 'adminProfile']);
     Route::post('updateAdminProfile', [SuperAdminController::class, 'updateAdminProfile']);
-    Route::post('adminLogout', [SuperAdminController::class, 'adminLogout']);
 
     //Player routes
-    Route::post('addPlayer', [SuperAdminController::class, 'addPlayer']);
-    Route::post('editPlayers', [PlayerController::class, 'editPlayers']);
-    Route::delete('deletePlayer', [AuthController::class, 'deletePlayer']);
+    Route::post('addPlayer', [PlayerController::class, 'addPlayer']);
+    Route::post('editPlayer', [PlayerController::class, 'editPlayer']);
+    Route::delete('deletePlayer', [PlayerController::class, 'deletePlayer']);
+    Route::get('getAllPlayers', [PlayerController::class, 'getAllPlayers']);
     Route::post('updatePlayerProfile', [AuthController::class, 'updatePlayerProfile']);
 
     //Teams routes
     Route::post('addTeam', [TeamController::class, 'addTeam']);
     Route::post('editTeam', [TeamController::class, 'editTeam']);
     Route::delete('deleteTeam', [TeamController::class, 'deleteTeam']);
+    Route::get('getAllTeams', [TeamController::class, 'getAllTeams']);
 
     // Coach Routes
     Route::post('addCoach', [CoachController::class, 'addCoach']);
     Route::post('editCoach', [CoachController::class, 'editCoach']);
     Route::delete('deleteCoach', [CoachController::class, 'deleteCoach']);
+    Route::get('getAllCoaches', [CoachController::class, 'getAllCoaches']);
 
     // Club Routes
     Route::post('addClub', [ClubController::class, 'addClub']);
     Route::post('editClub', [ClubController::class, 'editClub']);
     Route::delete('deleteClub', [ClubController::class, 'deleteClub']);
+    Route::get('getAllClubs', [ClubController::class, 'getAllClubs']);
 });

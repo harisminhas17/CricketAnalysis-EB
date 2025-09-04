@@ -17,7 +17,6 @@ model nationality {
 }
 
 model superAdmin {
-
     id            BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
     email         String    @unique @db.VarChar(120)
     password      String    @db.VarChar(255)
@@ -39,7 +38,6 @@ model superAdmin {
 }
 
 model playerRole {
-
     id          BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
     name        String    @unique @db.VarChar(50)
     description String?   @db.Text
@@ -54,7 +52,6 @@ model playerRole {
 }
 
 model cricketPlayerPerformance {
-    
     id            BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
     player_id     BigInt    @db.UnsignedBigInt
     sport_type    sportType @default(cricket)
@@ -256,15 +253,20 @@ model player {
 }
 
 model team {
-    id         BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
-    name       String
-    sport_type sportType @default(cricket)
-    club_id    BigInt?   @db.UnsignedBigInt
-    club       club?     @relation(fields: [club_id], references: [id])
-    coach      coach?    @relation(fields: [coach_id], references: [id])
-    coach_id   BigInt?   @db.UnsignedBigInt
-    level      String?
-    players    player[]
+    id           BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+    name         String?
+    city         String?
+    country      String?
+    founded_year Int?
+    description  String?
+    team_logo    String?
+    sport_type   sportType @default(cricket)
+    club_id      BigInt?   @db.UnsignedBigInt
+    club         club?     @relation(fields: [club_id], references: [id])
+    coach        coach?    @relation(fields: [coach_id], references: [id])
+    coach_id     BigInt?   @db.UnsignedBigInt
+    level        String?
+    players      player[]
 
     created_at DateTime @default(now())
     updated_at DateTime @updatedAt
@@ -317,6 +319,7 @@ model club {
     phone_number   String?   @db.VarChar(20)
     location       String?   @db.VarChar(255)
     coach_id       BigInt?   @db.UnsignedBigInt
+    team_id        BigInt?   @db.UnsignedBigInt
     profile_image  String?   @db.VarChar(255)
     sport_type     sportType @default(cricket)
     is_active      Boolean   @default(true)

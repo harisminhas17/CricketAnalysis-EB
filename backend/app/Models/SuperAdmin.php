@@ -10,7 +10,7 @@ class SuperAdmin extends Authenticatable
 {
     use HasApiTokens, Notifiable;
 
-    protected $table = 'super_admins';
+    protected $table = 'super_admin';
 
     // Allow all columns to be mass-assigned
     protected $guarded = [];

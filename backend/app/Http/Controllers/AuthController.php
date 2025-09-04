@@ -49,7 +49,7 @@ class AuthController extends Controller
         }
 
         // Check if phone number already exists
-        if (Player::where('phone', $request->phone_number)->exists()) {
+        if (Player::where('phone_number', $request->phone)->exists()) {
             return response()->json([
                 'error' => true,
                 'message' => 'Phone number ' . $request->phone . ' already exists',
@@ -68,7 +68,7 @@ class AuthController extends Controller
                 'sport_type' => $request->sport_type,
                 'user_name' => $request->name,
                 'email' => $request->email,
-                'phone' => $request->phone,
+                'phone_number' => $request->phone,
                 'password' => Hash::make($request->password),
                 'login_type' => $request->login_type,
                 'gender' => $request->gender,
@@ -267,32 +267,6 @@ class AuthController extends Controller
         $request->validate([
             'email' => 'required',
             'password' => 'required',
-        ]);
-    }
-
-    public function deletePlayer(Request $request)
-    {
-
-        $request->validate([
-            'player_ID' => 'required',
-        ]);
-
-        $playerExists = Player::where('id', $request->player_ID)->exists();
-
-        if (!$playerExists) {
-            return response()->json([
-                'error' => true,
-                'message' => 'Player not found with ID: ' . $request->player_ID,
-            ], 200);
-        }
-
-        // Assuming Player model exists and has a delete method
-        $player = PLayer::findOrFail($request->player_ID);
-        $player->delete();
-
-        return response()->json([
-            'error'   => false,
-            'message' => 'Player deleted successfully ' .' ' . $request->player_ID,
         ]);
     }
 }

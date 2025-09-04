@@ -10,185 +10,219 @@ use App\Models\Coach;
 
 class CoachController extends Controller
 {
-   //----------------------Coach Register----------------
-public function coachRegister(Request $request)
-{
-    $validator = Validator::make($request->all(), [
-        'name'         => 'required|string|max:100',
-        'email'        => 'required|string|email|max:100',
-        'password'     => 'required|string|max:100',
-        'phone'        => 'required|string|max:100',
-        'speciality'   => 'nullable|string|max:100',
-        'experience'   => 'nullable|string|max:100',
-        'profile_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        'sport_type'=>'required|string|max:100'
-        
-    ]);
+    public function coachRegister(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name'         => 'required|string|max:100',
+            'email'        => 'required|string|email|max:100',
+            'password'     => 'required|string|max:100',
+            'phone'        => 'required|string|max:100',
+            'speciality'   => 'nullable|string|max:100',
+            'experience'   => 'nullable|string|max:100',
+            'profile_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'sport_type' => 'required|string|max:100'
 
-    if (\App\Models\Coach::where('email', $request->email)->exists()) {
+        ]);
+
+        try {
+
+            $coachExists = Coach::where('email', $request->email)->exists();
+
+            if ($coachExists) {
+                return response()->json([
+                    'error'   => true,
+                    'message' => 'Email already exists: ' . $request->email
+                ], 200);
+            }
+
+            $coach = Coach::create([
+                'name'       => $request->name,
+                'email'      => $request->email,
+                'password'   => Hash::make($request->password),
+                'phone_number'   => $request->phone,
+                'coach_speciality' => $request->speciality,
+                'experience_years' => $request->experience,
+                'sport_type' => $request->sport_type,
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'Error checking email: ' . $e->getMessage()
+            ], 200);
+        }
+
+        if ($validator->fails()) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'Validation Error',
+                'records' => $validator->errors()
+            ], 200);
+        }
+
         return response()->json([
-            'error'   => true,
-            'message' => 'Email already exists: ' . $request->email
+            'error'   => false,
+            'message' => 'Coach registered successfully',
+            'records' => $coach
         ], 200);
     }
 
-    if ($validator->fails()) {
+    public function coachLogin(Request $request)
+    {
+        $request->validate([
+            'email'    => 'required|email',
+            'password' => 'required|string'
+        ]);
+
+        $coach = Coach::where('email', $request->email)->first();
+
+        if (!$coach) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'Coach Email not found',
+            ], 200);
+        }
+
+        if (!Hash::check($request->password, $coach->password)) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'Password does not match'
+            ], 200);
+        }
+
+        $token = $coach->createToken('coach-token')->plainTextToken;
+
         return response()->json([
-            'error'   => true,
-            'message' => 'Validation Error',
-            'records' => $validator->errors()
-        ], 422);
-    }
-
-    $coach = \App\Models\Coach::create([
-        'name'       => $request->name,
-        'email'      => $request->email,
-        'password'   => Hash::make($request->password),
-        'phone'      => $request->phone,
-        'speciality' => $request->speciality,
-        'experience' => $request->experience,
-        'sport_type' => $request->sport_type,
-    ]);
-
-    return response()->json([
-        'error'   => false,
-        'message' => 'Coach registered successfully!',
-        'records' => $coach
-    ], 200);
-}
-
-//----------------------Coach Login----------------
-public function coachLogin(Request $request)
-{
-    $request->validate([
-        'email'    => 'required|email',
-        'password' => 'required|string'
-    ]);
-
-    $coach = \App\Models\Coach::where('email', $request->email)->first();
-
-    if (!$coach) {
-        return response()->json([
-            'error'   => true,
-            'message' => 'Email not found',
-            'records' => $request->email
-        ], 404);
-    }
-
-    if (!Hash::check($request->password, $coach->password)) {
-        return response()->json([
-            'error'   => true,
-            'message' => 'Password does not match'
-        ], 401);
-    }
-
-    $token = $coach->createToken('coach-token')->plainTextToken;
-
-    return response()->json([
-        'error'   => false,
-        'message' => 'Login successful',
-        'token'   => $token,
-        'records' => $coach->only([
-            'id', 'name', 'email', 'phone', 'speciality', 'experience'
-        ])
-    ], 200);
-}
-//-------------------Add Coach---------------------
-public function addCoach(Request $request)
-{
-    $validator = Validator::make($request->all(), [
-        'name'       => 'required',
-        'email'      => 'required',
-        'password'   => 'required',
-        'phone'      => 'required',
-        'speciality' => 'nullable',
-        'experience' => 'nullable',
-        'sport_type' => 'required',
-    ]);
-    if (\App\Models\Coach::where('email', $request->email)->exists()) {
-        return response()->json([
-            'error'   => true,
-            'message' => 'Email already exists: ' . $request->email
+            'error'   => false,
+            'message' => 'Coach Login successful',
+            'token'   => $token,
+            'records' => $coach
         ], 200);
     }
-    if ($validator->fails()) {
+
+    //-------------------Add Coach---------------------
+    public function addCoach(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name'       => 'required',
+            'email'      => 'required',
+            'password'   => 'required',
+            'phone'      => 'required',
+            'speciality' => 'nullable',
+            'experience' => 'nullable',
+            'sport_type' => 'required',
+        ]);
+        if (Coach::where('email', $request->email)->exists()) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'Coach Email already exists: ' . $request->email
+            ], 200);
+        }
+        if ($validator->fails()) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'Validation Error',
+                'records' => $validator->errors()
+            ], 200);
+        }
+        $coach = Coach::create([
+            'name'       => $request->name,
+            'email'      => $request->email,
+            'password'   => Hash::make($request->password),
+            'phone_number'      => $request->phone,
+            'coach_speciality' => $request->speciality,
+            'experience_years' => $request->experience,
+            'sport_type' => $request->sport_type,
+        ]);
         return response()->json([
-            'error'   => true,
-            'message' => 'Validation Error',
-            'records' => $validator->errors()
-        ], 422);
+            'error'   => false,
+            'message' => 'Coach added successfully',
+            'records' => $coach
+        ], 200);
     }
-    $coach = \App\Models\Coach::create([
-        'name'       => $request->name,
-        'email'      => $request->email,
-        'password'   => Hash::make($request->password),
-        'phone'      => $request->phone,
-        'speciality' => $request->speciality,
-        'experience' => $request->experience,
-        'sport_type' => $request->sport_type,
-    ]);
-    return response()->json([
-        'error'   => false,
-        'message' => 'Coach added successfully!',
-        'records' => $coach
-    ], 200);
-}
-//------------------ Edit Coach ---------------------
-public function editCoach(Request $request)
-{
-    $validated = $request->validate([
-        'id'         => 'required|integer|exists:coaches,id',
-        'name'       => 'required|string|max:100',
-        'email'      => 'sometimes|email|unique:coaches,email,' . $request->id,
-        'password'   => 'sometimes|string|min:6',
-        'phone'      => 'required|string|max:20',
-        'speciality' => 'nullable|string|max:100',
-        'experience' => 'nullable|string|max:100',
-        'address'    => 'required|string|max:255',
-        'city'       => 'required|string|max:100',
-        'country'    => 'required|string|max:100',
-        'dob'        => 'required|date',
-        
-    ]);
+    public function editCoach(Request $request)
+    {
+        $validated = $request->validate([
+            'coach_id'         => 'required',
+            'name'       => 'required',
+            'email'      => 'sometimes',
+            'password'   => 'sometimes',
+            'phone_number'      => 'sometimes',
+            'coach_speciality' => 'nullable',
+            'experience_years' => 'nullable',
+            'sport_type' => 'sometimes',
 
-    $coach = \App\Models\Coach::findOrFail($validated['id']);
+        ]);
 
-    if (isset($validated['password'])) {
-        $validated['password'] = Hash::make($validated['password']);
-    }
+        $coach = Coach::where('id', $validated['coach_id'])->first();
 
-    unset($validated['id']); // Remove id before update
+        if (!$coach) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'Coach not found with ID: ' . $validated['coach_id']
+            ], 200);
+        }
 
-    $coach->update($validated);
+        if (isset($validated['password'])) {
+            $validated['password'] = Hash::make($validated['password']);
+        }
 
-    return response()->json([
-        'error'   => false,
-        'message' => 'Coach updated successfully',
-        'records' => $coach
-    ], 200);
-}
+        unset($validated['coach_id']); // Remove coach_id before update
 
-//------------------- Delete Coach ---------------------
-public function deleteCoach(Request $request)
-{
-    $validator = Validator::make($request->all(), [
-        'id' => 'required|integer|exists:coaches,id',
-    ]);
+        $coach->update($validated);
 
-    if ($validator->fails()) {
         return response()->json([
-            'error'   => true,
-            'message' => 'Validation failed',
-            'records' => $validator->errors()
-        ], 422);
+            'error'   => false,
+            'message' => 'Coach updated successfully',
+            'records' => $coach
+        ], 200);
     }
 
-    $coach = \App\Models\Coach::findOrFail($request->id);
-    $coach->delete();
+    public function deleteCoach(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'coach_id' => 'required',
+        ]);
 
-    return response()->json([
-        'error'   => false,
-        'message' => 'Coach deleted successfully!',
-    ], 200);
-}
+        if ($validator->fails()) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'Validation failed',
+                'records' => $validator->errors()
+            ], 200);
+        }
+
+        $coach = Coach::where('id', $request->coach_id)->first();
+
+        if (!$coach) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'Coach not found with ID: ' . $request->coach_id
+            ], 200);
+        }
+
+        $coach->delete();
+
+        return response()->json([
+            'error'   => false,
+            'message' => 'Coach ID: ' . $request->coach_id . ' deleted successfully'
+        ], 200);
+    }
+
+    public function getAllCoaches(Request $request)
+    {
+        $coaches = Coach::all();
+
+        if (!$coaches || $coaches->isEmpty()) {
+            return response()->json([
+                'error'   => true,
+                'message' => 'No coaches found'
+            ], 200);
+        }
+
+        return response()->json([
+            'error'   => false,
+            'message' => 'All coaches fetched successfully',
+            'records' => $coaches
+        ], 200);
+    }
 }
